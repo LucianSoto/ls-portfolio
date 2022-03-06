@@ -1,0 +1,33 @@
+.about-container {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.about-paragraph {
+  text-align:left;
+  /* display: flex; */
+  font-size: 25px;
+  line-height: 35px;
+  width: 65%;
+}
+
+.me-div {
+  height: 400px;
+  width: 400px;
+}
+
+.me-div img {
+  height: 100%;
+  width: 100%;
+  margin-left: 100px;
+  border-radius: 10px;
+  /* background: transparent url(/public/imgs/me.mia.jpg); */
+  object-fit: contain;
+  
+}
+

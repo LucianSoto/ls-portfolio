@@ -1,38 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fredoka+One&family=Fuzzy+Bubbles&family=Genos:wght@500&family=Krona+One&family=Merriweather+Sans:wght@300&family=Montserrat:wght@100&family=Press+Start+2P&family=Roboto:wght@300&family=Tajawal:wght@200&family=Titillium+Web:wght@300&display=swap');
+
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  scrollbar-width: 3px;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* ::-webkit-scrollbar-track {
+  background: #3900a3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 143, 172, 0.562);
+}  */
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* background-image: linear-gradient(
+    200deg, rgba(0, 0, 0, 0.904), rgb(14, 7, 7)
+  ); */
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: seashell; 
+  scroll-behavior: smooth;
+  scrollbar-width: 3px;
+  
 }

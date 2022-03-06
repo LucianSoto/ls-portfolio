@@ -1,0 +1,42 @@
+/* .project-styles {
+  background: linear-gradient(rgba(53, 1, 138, 0.568), rgb(0, 47, 53));
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+} */
+
+.project-a {
+  background: linear-gradient(rgba(53, 1, 138, 0.568), rgb(0, 47, 53));
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.project-image{
+  height: 70%;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.project-a h4 {
+  height: 30%;
+  font-size: 30px;
+}
+
+
+
+
+
+
+/* http://localhost:3000/public/imgs/twinkling.png */
