@@ -1,43 +1,60 @@
 nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 40px;
-  width: 100%;
-  border-bottom: 1px solid black;
-  background-color: rgba(54, 2, 122, 0.507);
+  height: 80px;
+  width: 90%;
   position: fixed;
   top: 0;
+  margin-top: 30px;
   z-index: 100;
-}
-
-.nav-items{
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  width: 60%;
-  font-size: 20px;
   font-weight: 600;
   letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.menu-item {
+  text-decoration: none;
+  background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   
 }
 
-.nav-item {
-  width: 200px;
+.menu-div {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: rgba(255, 245, 238, 0.842);
-  text-decoration: none;
+.lb-logo {
+  font-size: 40px;
 }
 
-@media screen and (max-width: 1100px){
-  .nav-items {
-    width: 75%;
-  }
+.menu-dd {
+  display: flex;
+  flex-direction: row;
+  /* width: 300px; */
+  color: gray;
 }
+
+.navLink {
+  padding-right: 3rem;
+}
+
+#x {
+  font-weight: 900;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 
