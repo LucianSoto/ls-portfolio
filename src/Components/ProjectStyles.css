@@ -21,6 +21,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  text-decoration: none;
 }
 
 .project-image{
@@ -29,12 +30,20 @@
   /* object-fit: cover; */
 }
 
-.project-a h4 {
-  height: 30%;
+ h4 {
+  height: 10%;
   font-size: 30px;
+  text-decoration: none;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
+h4:hover {
+  background: -webkit-linear-gradient(white, #6e6d04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 

@@ -48,10 +48,21 @@ nav{
   cursor: pointer;
 }
 
+.ellipsis {
+  text-decoration: none;
+  background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  color: rgba(185, 182, 182, 0.897);
+}
 
-
-
-
+.ellipsis:hover, .menu-item:hover, .lb-logo:hover {
+  color: #949209;
+  background: -webkit-linear-gradient(white, #6e6d04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 

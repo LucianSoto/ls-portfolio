@@ -25,7 +25,7 @@ function App() {
   return (
    
     <div className="App"> 
-      {/* { loader? <LoaderComponent /> : null  } */}
+      { loader? <LoaderComponent /> : null  }
       { !loader &&  <NavBar /> }
       
       <Routes>

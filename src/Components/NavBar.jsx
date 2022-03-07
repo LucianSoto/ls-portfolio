@@ -18,7 +18,7 @@ function NavBar() {
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>
           { dd? null :
-            <FaEllipsisV className='ellipsis' style={{ color: "lightgrey",}} onClick={changeDD} />
+            <FaEllipsisV className='ellipsis'  onClick={changeDD} />
           }
           { dd? 
             <div className="menu-dd" onClick={changeDD}>
