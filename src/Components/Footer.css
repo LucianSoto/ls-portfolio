@@ -29,8 +29,8 @@
   font-weight: 700;
   display: flex;
   align-items: center;
-  color: rgba(255, 245, 238, 0.774);
-  /* color: transparent;
+  /* color: rgba(255, 245, 238, 0.774); */
+  color: transparent;
   background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray); */
+  background-image: linear-gradient(to bottom, white, gray);
 }

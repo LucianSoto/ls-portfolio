@@ -10,7 +10,7 @@ function Footer() {
       <div className="contacts-cont">
         <a className="contact" href='https://github.com/LucianAiolos'>
         <svg width='0' height='0'>
-          <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%" >
+          <linearGradient id="blue-gradient" x1="00%" y1="00%" x2="0%" y2="100%" >
             <stop stopColor='white' offset='0%'/> 
             <stop stopColor='#38495a' offset='100%'/>
           </linearGradient>
@@ -19,7 +19,7 @@ function Footer() {
         </a>
         <a className="contact" href='https://www.instagram.com/kapitan_luxian/'>
         <svg width='0' height='0'>
-          <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%" >
+          <linearGradient id="blue-gradient" x1="0%" y1="00%" x2="0%" y2="100%" >
             <stop stopColor='white' offset='0%'/> 
             <stop stopColor='#38495a' offset='100%'/>
           </linearGradient>
@@ -28,12 +28,12 @@ function Footer() {
         </a>
         <a className="contact" href='https://www.instagram.com/kapitan_luxian/'>
         <svg width='0' height='0'>
-          <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%" >
+          <linearGradient id="env-gradient" x1="0%" y1="0%" x2="0%" y2="100%" >
             <stop stopColor='white' offset='0%'/> 
             <stop stopColor='#38495a' offset='100%'/>
           </linearGradient>
         </svg>
-        <FaEnvelope style={{ fill: "url(#blue-gradient)" , marginRight: "10px"}} />Email
+        <FaEnvelope style={{ fill: "url(#env-gradient)" , marginRight: "10px"}} />Email
         </a>
         
       </div>
