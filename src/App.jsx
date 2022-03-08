@@ -8,6 +8,7 @@ import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom"
 import Resume from "./Components/Resume";
+import Graph from "./Components/Graph";
 
 
 function App() {
@@ -32,9 +33,15 @@ function App() {
         <Route 
           path='/' 
           element={ 
-          !loader && <><Welcome /><AboutMe/></>} />
-        <Route path="/portfolio" element={ <Portfolio/> } />
-        <Route path="/resume" element={ <Resume/>} />
+            !loader && <><Welcome /><AboutMe/></> } />
+        <Route 
+          path="/portfolio" 
+          element={
+            !loader && <><Portfolio/><Graph/></> } />
+        <Route 
+          path="/resume" 
+          element={
+            !loader && <><Resume/></> }/>
       </Routes>
       { !loader && <Footer /> } 
       

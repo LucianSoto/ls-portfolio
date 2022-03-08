@@ -10,9 +10,9 @@
 .footer-h3 {
   font-size: 80px;
   color: rgba(255, 245, 238, 0.842);
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray);
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contacts-cont {
