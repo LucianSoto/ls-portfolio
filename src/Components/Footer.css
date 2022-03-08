@@ -10,6 +10,9 @@
 .footer-h3 {
   font-size: 80px;
   color: rgba(255, 245, 238, 0.842);
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, white, gray);
 }
 
 .contacts-cont {
@@ -18,7 +21,7 @@
   width: 60%;
 }
 
-.contact a {
+.contact {
   text-align: center;
   text-decoration: none;
   color: white;
@@ -27,4 +30,7 @@
   display: flex;
   align-items: center;
   color: rgba(255, 245, 238, 0.774);
+  /* color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, white, gray); */
 }

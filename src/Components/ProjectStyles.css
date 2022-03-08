@@ -10,33 +10,44 @@
 } */
 
 .project-a {
-  background: linear-gradient(rgba(53, 1, 138, 0.568), rgb(0, 47, 53));
+  background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
   border-radius: 10px;
   height: 100%;
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   height: 100%;
   width: 100%;
   text-decoration: none;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.project-a:hover {
+  /* darken component on hover  */
 }
 
 .project-image{
-  height: 70%;
+  height: 100%;
   width: 100%;
   /* object-fit: cover; */
 }
 
  h4 {
-  height: 10%;
+  /* height: 10%; */
   font-size: 30px;
   text-decoration: none;
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  /* font-weight: bolder; */
+ 
+  /* text-shadow: 0px 1px black; */
 }
 
 h4:hover {

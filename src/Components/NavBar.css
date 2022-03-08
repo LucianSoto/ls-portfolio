@@ -10,7 +10,8 @@ nav{
   justify-content: space-between;
   font-weight: 600;
   letter-spacing: 3px;
-  font-size: 30px;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .menu-item {
@@ -24,11 +25,11 @@ nav{
 .menu-div {
   display: flex;
   flex-direction: row;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .lb-logo {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .menu-dd {
@@ -53,7 +54,7 @@ nav{
   background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  font-size: 38px;
+  font-size: 25px;
   color: rgba(185, 182, 182, 0.897);
 }
 
