@@ -14,7 +14,7 @@ function NavBar() {
 
   return (
     <nav className="nav-bar">
-        <Link className="menu-item lb-logo" to="/" >LB</Link>
+        <Link className="menu-item lb-logo" to="/lb-portfolio" >LB</Link>
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>
           { dd? null :

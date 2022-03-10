@@ -31,7 +31,7 @@ function App() {
       
       <Routes>
         <Route 
-          path='/' 
+          path='/lb-portfolio' 
           element={ 
             !loader && <><Welcome /><AboutMe/></> } />
         <Route 
