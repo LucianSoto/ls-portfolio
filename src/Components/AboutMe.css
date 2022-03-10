@@ -19,16 +19,15 @@
 .me-div {
   height: 400px;
   width: 400px;
+  margin-left: 5rem;
 }
 
 .me-div img {
   height: 100%;
   width: 100%;
-  margin-left: 100px;
-  border-radius: 10px;
-  /* background: transparent url(/public/imgs/me.mia.jpg); */
+  /* margin-left: 100px; */
   object-fit: contain;
-  
+  /* border-radius: 50%; */
 }
 
 /* http://localhost:3000/static/media/me.mia.8edeaa2cc00d61827b05.jpg */

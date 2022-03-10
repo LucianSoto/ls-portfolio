@@ -15,7 +15,7 @@ function Graph() {
 
   return (
     <div className='graph-cont'>
-      <h3 className='graph-title'>My Stats</h3>
+      <h3 className='graph-title'>Capabilities Chart</h3>
       <BarChart width={800} height={450} data={data}>
     <XAxis dataKey="name" stroke="white" />
     <YAxis stroke='lightgray' />

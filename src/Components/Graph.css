@@ -1,16 +1,19 @@
 .graph-cont {
   width: 80%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 9rem;
+  margin-bottom: 1rem;
 }
 
 .graph-title {
   color: seashell;
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 80px;
+  background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .bar {

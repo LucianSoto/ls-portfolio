@@ -17,7 +17,7 @@ function AboutMe() {
       &nbsp;&nbsp;&nbsp;&nbsp;On my free time I play badminton, and make music on my laptop!
       </p>
       <div className="me-div">
-        <img src='http://localhost:3000/static/media/me.mia.8edeaa2cc00d61827b05.jpg' className='me' alt="" />
+        <img src='https://live.staticflickr.com/65535/51930346556_b48c6880f3_z.jpg' className='me' alt="" />
       </div>
     </div>
   )
