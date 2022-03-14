@@ -6,7 +6,7 @@ import './Footer.css'
 function Footer() {
   return (
     <div className='footer'>
-      <h3 className='footer-h3'>Let's work together</h3>
+      <h3 className='footer-h3'>Let's work together!</h3>
       <div className="contacts-cont">
         <a className="contact" href='https://github.com/LucianAiolos'>
         <svg width='0' height='0'>

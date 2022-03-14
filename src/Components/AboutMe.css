@@ -1,11 +1,11 @@
 .about-container {
-  height: 100vh;
+  height: 90vh;
   width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .about-paragraph {
@@ -30,4 +30,8 @@
   /* border-radius: 50%; */
 }
 
-/* http://localhost:3000/static/media/me.mia.8edeaa2cc00d61827b05.jpg */
+.about-paragraph span {
+  color: rgba(255, 217, 0, 0.801);
+  font-weight: 1000;
+}
+

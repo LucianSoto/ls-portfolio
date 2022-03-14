@@ -9,7 +9,7 @@ function Welcome() {
       <div className="stars" id="stars" ></div>
       <div className="twinkling"></div>
       <h1>LUCIAN BROOKS</h1>
-      <h3 className='welcome-h3'>A Self-Taught Web Dev</h3>
+      <h3 className='welcome-h3'>Web Developer</h3>
       
 
     </div>

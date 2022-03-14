@@ -5,9 +5,9 @@ import './Graph.css'
 function Graph() {
   const data = [
     { name: 'HTML', uv: 100, pv: 100,  },
-    { name: 'CSS', uv: 95, pv: 100,  },
-    { name: 'JavaScript', uv: 90, pv: 100, },
-    { name: 'ReactJS', uv: 80, pv: 100, },
+    { name: 'CSS', uv: 100, pv: 100,  },
+    { name: 'JavaScript', uv: 100, pv: 100, },
+    { name: 'ReactJS', uv: 90, pv: 100, },
     { name: 'PostgreSQL', uv: 20, pv: 100, },
     { name: 'NodeJS', uv: 30, pv: 100,  },
   ]
@@ -15,7 +15,7 @@ function Graph() {
 
   return (
     <div className='graph-cont'>
-      <h3 className='graph-title'>Capabilities Chart</h3>
+      <h3 className='graph-title'>Skills Chart</h3>
       <BarChart width={800} height={450} data={data}>
     <XAxis dataKey="name" stroke="white" />
     <YAxis stroke='lightgray' />
