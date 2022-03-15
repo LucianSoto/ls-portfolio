@@ -37,7 +37,7 @@ function App() {
         <Route 
           path="/portfolio" 
           element={
-            !loader && <><Portfolio/><Graph/></> } />
+            !loader && <><Portfolio/></> } />
         <Route 
           path="/resume" 
           element={
