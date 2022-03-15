@@ -50,21 +50,38 @@ nav{
 }
 
 .ellipsis {
-  text-decoration: none;
-  background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   font-size: 25px;
-  color: rgba(185, 182, 182, 0.897);
+  cursor: pointer;
 }
 
-.ellipsis:hover, .menu-item:hover, .lb-logo:hover {
+.menu-item:hover, .lb-logo:hover {
   color: #949209;
   background: -webkit-linear-gradient(white, #6e6d04);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.ellipsis:hover {
+  animation: jiggle .3s ease-in-out ;
+  transform: scale(1.08);
+}
+
+@-webkit-keyframes jiggle {
+  0%{
+    transform: translateY(2px);
+    transform: scale(1.08);
+  }
+  50%{
+    transform: translateY(-1px);
+    transform: scale(1.2);
+  }
+  100%{transform: translateY(0px)}
+}
+
+.ellipsis:hover #blue-gradient stop {
+  color: rgb(233, 2, 2);
+
+}
 
 
 

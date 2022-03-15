@@ -17,7 +17,7 @@ function Footer() {
         </svg>
         <FaGithub style={{ fill: "url(#blue-gradient)", marginRight: "10px" }} />GitHub
         </a>
-        <a className="contact" href='https://www.instagram.com/kapitan_luxian/'>
+        {/* <a className="contact" href='https://www.instagram.com/kapitan_luxian/'>
         <svg width='0' height='0'>
           <linearGradient id="blue-gradient" x1="0%" y1="00%" x2="0%" y2="100%" >
             <stop stopColor='white' offset='0%'/> 
@@ -25,7 +25,7 @@ function Footer() {
           </linearGradient>
         </svg>
         <FaInstagram style={{ fill: "url(#blue-gradient)", marginRight: "10px"}} />Instagram
-        </a>
+        </a> */}
         <a className="contact" href='https://www.instagram.com/kapitan_luxian/'>
         <svg width='0' height='0'>
           <linearGradient id="env-gradient" x1="0%" y1="0%" x2="0%" y2="100%" >

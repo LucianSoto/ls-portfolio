@@ -18,7 +18,16 @@ function NavBar() {
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>
           { dd? null :
-            <FaEllipsisV className='ellipsis'  onClick={changeDD} />
+            // <FaEllipsisV className='ellipsis'  onClick={changeDD} />
+            <>
+              <svg width='0' height='0'>
+                <linearGradient id='blue-gradient' x1="00%" y1="00%" x2="0%" y2="100%">
+                  <stop stopColor='white' offset='0%'/> 
+                  <stop stopColor='#38495a' offset='100%'/>
+                </linearGradient>
+              </svg>
+              <FaEllipsisV className='ellipsis' style={{ fill: "url(#blue-gradient)" }}  onClick={changeDD} />
+            </>
           }
           { dd? 
             <div className="menu-dd" onClick={changeDD}>
