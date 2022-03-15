@@ -33,6 +33,7 @@ function NavBar() {
             <div className="menu-dd" onClick={changeDD}>
               <Link className="menu-item navLink" to="/portfolio" >Portfolio</Link>
               <Link className="menu-item navLink" to="/resume" >Resume</Link>
+              <Link className="menu-item navLink" to="/email" >Contact</Link>
               <p className='menu-item' id='x'>X</p>
               {/* internal link to CONTACTS */}
             </div> 
