@@ -1,0 +1,85 @@
+.form-cont {
+  height: 100%;
+  width: 40%;
+  margin-top: 4rem;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-direction: column; */
+  /* border-left: 2px solid rgb(76, 54, 155);
+  border-bottom: 3px solid rgb(61, 8, 92); */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+
+}
+
+
+.email-title {
+  font-size: 40px;
+  background: 
+  -webkit-linear-gradient(white, rgb(250, 231, 218));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-bottom: 4rem;
+}
+
+label {
+  font-size: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+input {
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.input-cont {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  font-family:
+  Arial, Helvetica, sans-serif;
+}
+
+.message-cont {
+  height: 150px;
+}
+
+#btn-cont {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 40%;
+  height: 50px;
+  border: 1px solid seashell;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 
+  'Montserrat',
+  Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}

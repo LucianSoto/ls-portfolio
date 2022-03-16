@@ -1,12 +1,13 @@
 import React from 'react'
-import emailjs from 'emailjs'
+import emailjs from '@emailjs/browser'
+import './Email.css'
 
 function Email() {
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'youtube_template', e.target, 'user_JABO21I8Gm6sxByJH17Nu')
+    emailjs.sendForm('service_zxmhmnp', 'template_8gqkvjh', e.target, 'U8dd6PfryBHkf_mb3')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -16,7 +17,7 @@ function Email() {
   }
 
   return (
-    <div className='email-cont'>
+    <div className='form-cont'>
       <h3 className="email-title">Contact Me!</h3>
       <form action="" onSubmit={sendEmail}>
         <div className="input-cont">
@@ -24,8 +25,8 @@ function Email() {
           <input 
             type="text" 
             className="form-control" 
-            placeholder='Name'
-            name='name'
+            placeholder='First & Last'
+            name='from_name'
           />
         </div>
         <div className="input-cont">
@@ -33,8 +34,8 @@ function Email() {
           <input 
             type="email" 
             className="form-control" 
-            placeholder='Email Address'
-            name='email'
+            placeholder='example@gmail.com'
+            name='from_email'
           />
         </div>
         <div className="input-cont">
@@ -42,22 +43,23 @@ function Email() {
           <input 
             type="text" 
             className="form-control" 
-            placeholder='Subject'
+            placeholder='Reason for Contacting'
             name='subject'
           />
         </div>
-        <div className="input-cont">
+        <div className="input-cont message-cont">
           <label>Message</label>
-          <input 
+          <textarea 
             type="text" 
             className="form-control" 
             placeholder='Message'
             name='message'
-            cols='30'
-          />
+            // cols='30'
+          ></textarea>
         </div>
-        <div className="input-cont">
+        <div className="input-cont" id='btn-cont'>
           <input 
+            
             type="submit" 
             className="btn" 
             value='Send'
