@@ -6,6 +6,8 @@ function Email() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // const name = e.target
+    // console.log(e.target)
 
     emailjs.sendForm('service_zxmhmnp', 'template_8gqkvjh', e.target, 'U8dd6PfryBHkf_mb3')
         .then((result) => {
@@ -13,7 +15,9 @@ function Email() {
         }, (error) => {
             console.log(error.text);
         });
+        
         e.target.reset()
+        alert(`Your Email has been sent, Thank You!`)
   }
 
   return (
