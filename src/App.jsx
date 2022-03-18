@@ -39,10 +39,10 @@ function App() {
           path="/portfolio" 
           element={ !loader && <><Portfolio/></> }
         />
-        <Route 
+        {/* <Route 
           path="/resume" 
           element={ !loader && <><Resume/></> }
-        />
+        /> */}
         <Route 
           path="/email"
           element={ !loader && <><Email/></>}
