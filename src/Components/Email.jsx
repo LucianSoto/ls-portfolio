@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import './Email.css'
 
 function Email() {
+
+  console.log(window.pageYOffset)
+
+  useEffect(() => {
+    handleScroll()
+  })
+
+  const handleScroll = () => {
+    setTimeout(()=> {
+      window.scroll(0,0)
+    }) 
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
