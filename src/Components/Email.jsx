@@ -8,12 +8,15 @@ function Email() {
 
   useEffect(() => {
     handleScroll()
-  })
+  }, [])
 
   const handleScroll = () => {
     setTimeout(()=> {
-      window.scroll(0,0)
-    }) 
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }, 300) 
   }
 
   const sendEmail = (e) => {
