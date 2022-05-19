@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
-  scrollbar-width: 3px;
+  /* scrollbar-width: 3px; */
   margin: 0;
 }
 
