@@ -3,9 +3,7 @@ import emailjs from '@emailjs/browser'
 import './Email.css'
 
 function Email() {
-
-  console.log(window.pageYOffset)
-
+  
   useEffect(() => {
     handleScroll()
   }, [])
