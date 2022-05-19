@@ -14,16 +14,26 @@ function NavBar() {
 
   return (
     <nav className="nav-bar">
-        <Link className="menu-item lb-logo" to="/" >LB</Link>
+        <Link className="menu-item lb-logo" to="/lb-portfolio" >LB</Link>
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>
           { dd? null :
-            <FaEllipsisV className='ellipsis'  onClick={changeDD} />
+            // <FaEllipsisV className='ellipsis'  onClick={changeDD} />
+            <>
+              <svg width='0' height='0'>
+                <linearGradient id='blue-gradient' x1="00%" y1="00%" x2="0%" y2="100%">
+                  <stop stopColor='white' offset='0%'/> 
+                  <stop stopColor='#38495a' offset='100%'/>
+                </linearGradient>
+              </svg>
+              <FaEllipsisV className='ellipsis' style={{ fill: "url(#blue-gradient)" }}  onClick={changeDD} />
+            </>
           }
           { dd? 
             <div className="menu-dd" onClick={changeDD}>
               <Link className="menu-item navLink" to="/portfolio" >Portfolio</Link>
-              <Link className="menu-item navLink" to="/resume" >Resume</Link>
+              {/* <Link className="menu-item navLink" to="/resume" >Resume</Link> */}
+              <Link className="menu-item navLink" to="/email" >Contact</Link>
               <p className='menu-item' id='x'>X</p>
               {/* internal link to CONTACTS */}
             </div> 

@@ -7,17 +7,19 @@ function AboutMe() {
     <div className='about-container'>
       {/* <img src="/imgs/pageDivider.png" alt="" /> */}
       <p className="about-paragraph">
-      &nbsp;&nbsp;&nbsp;&nbsp;Hi I'm <span >Lucian! </span>It feels wrong saying "self-taught" when I learned from several online sources and I was blessed to have a few friends give me some guidance.
+      Hi I'm <span >Lucian! </span>Hi, I'm Lucian! I'm a self-taught developer — though it feels wrong to say "self-taught" when I was blessed to receive guidance from a few friends and learned through community-driven online resources.
       <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;I am currently still working on my React  
-      With intrests in learning more about animations and effects, not to mention that I have dipped my toes in NodeJS to make a few simple fullstack applicaitons.
       <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;My coding journey started when someone told me about FreeCodeCamp. After a while I started seeing myself sticking with this for the long run and also realized that I would be doing front-end so I decied to keep at it and took courses on Javascript and React thorugh sources such as Udemy and Scrimba.
+      My coding journey began when I expressed interest in being a developer to a close friend, who then introduced me to FreeCodeCamp as a way to dip my toes in coding. After continuing the coursework for a while, I started seeing myself really sticking with this for the long run. I also realized during the course that I wanted to do front-end web development; since this was my focus, I took courses on JavaScript and React through other resources like Udemy and Scrimba.
       <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;On my free time I play badminton, and make music on my laptop!
+      <br />
+      Currently, I'm continuing to expand on my skills and knowledge of React. I've also branched out to get experience in other facets of web development: I've gained an interest in learning more about animations and effects in the front-end and have even played around with NodeJS to make a few simple full stack applications.
+      <br />
+      <br />
+      In my free time, I enjoy playing badminton and making music in my tiny home studio!
       </p>
       <div className="me-div">
-        <img src='http://localhost:3000/static/media/me.mia.8edeaa2cc00d61827b05.jpg' className='me' alt="" />
+        <img src='https://live.staticflickr.com/65535/51930346556_b48c6880f3_z.jpg' className='me' alt="" />
       </div>
     </div>
   )

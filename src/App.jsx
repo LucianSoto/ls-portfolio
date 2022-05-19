@@ -8,6 +8,8 @@ import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom"
 import Resume from "./Components/Resume";
+import Graph from "./Components/Graph";
+import Email from "./Components/Email";
 
 
 function App() {
@@ -30,11 +32,21 @@ function App() {
       
       <Routes>
         <Route 
-          path='/' 
-          element={ 
-          !loader && <><Welcome /><AboutMe/></>} />
-        <Route path="/portfolio" element={ <Portfolio/> } />
-        <Route path="/resume" element={ <Resume/>} />
+          path='/lb-portfolio' 
+          element={ !loader && <><Welcome /><AboutMe/></> } 
+        />
+        <Route 
+          path="/portfolio" 
+          element={ !loader && <><Portfolio/></> }
+        />
+        {/* <Route 
+          path="/resume" 
+          element={ !loader && <><Resume/></> }
+        /> */}
+        <Route 
+          path="/email"
+          element={ !loader && <><Email/></>}
+        />
       </Routes>
       { !loader && <Footer /> } 
       

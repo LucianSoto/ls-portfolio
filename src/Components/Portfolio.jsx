@@ -25,7 +25,7 @@ function Portfolio() {
   />)
   return (
     <div className='portfolio-cont'>
-      <h3 className='portfolio-title'>These are some of my projects</h3>
+      <h3 className='portfolio-title'>Projects</h3>
       <div className="projects-grid">
         {ProjectComponents}
       </div>      

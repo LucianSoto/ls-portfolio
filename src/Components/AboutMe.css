@@ -1,11 +1,12 @@
 .about-container {
-  height: 100vh;
+  height: 100%;
   width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 
 .about-paragraph {
@@ -17,18 +18,23 @@
 }
 
 .me-div {
-  height: 400px;
+  height: 100%;
   width: 400px;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .me-div img {
-  height: 100%;
-  width: 100%;
-  margin-left: 100px;
-  border-radius: 10px;
-  /* background: transparent url(/public/imgs/me.mia.jpg); */
+  height: 400px;
+  width: 400px;
+  /* margin-left: 100px; */
   object-fit: contain;
-  
+  /* border-radius: 50%; */
 }
 
-/* http://localhost:3000/static/media/me.mia.8edeaa2cc00d61827b05.jpg */
+.about-paragraph span {
+  color: rgba(255, 217, 0, 0.801);
+  font-weight: 1000;
+}
+
