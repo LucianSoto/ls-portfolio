@@ -84,11 +84,23 @@ nav{
 }
 
 
-
-
-
-
-
-/* @media screen (max-width: 800px) {
-  .nav-items{ width: 50% }
-} */
+@media screen and (max-width: 800px) {
+  /* .nav-items{ 
+    /* width: 50%;  
+  } */
+  .menu-dd {
+    flex-direction: column-reverse;
+    height: 200px;
+    transition: height 1s ease-in;
+    -webkit-trasition: height 1s ease-in;
+  }
+  .navLink{
+    padding:0;
+    justify-self: end;
+    text-align: right;
+  }
+  #x {
+    margin: 0;
+    text-align: right;
+  }
+}
