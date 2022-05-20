@@ -1,14 +1,3 @@
-/* .project-styles {
-  background: linear-gradient(rgba(53, 1, 138, 0.568), rgb(0, 47, 53));
-  display: flex;
-  flex-direction: column;
-  align-items: space-around;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-} */
-
 .project-a {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
   border-radius: 10px;
@@ -55,8 +44,3 @@ h4:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-
-
-/* http://localhost:3000/public/imgs/twinkling.png */

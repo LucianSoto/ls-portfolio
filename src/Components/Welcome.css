@@ -52,3 +52,17 @@ h1 {
   z-index: -1;
   animation: move-twinkle-back 180s linear infinite;
 }
+
+@media screen and (max-width: 600px) {
+  .welcome-section {
+    height: 100vh;
+  }
+
+  h1{
+    font-size: 70px;
+  }
+
+  .welcome-h3{
+    font-size: 40px;
+  }
+}

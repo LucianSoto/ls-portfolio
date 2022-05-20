@@ -85,14 +85,18 @@ nav{
 
 
 @media screen and (max-width: 800px) {
+  nav { 
+    width: 90%;
+  }
   /* .nav-items{ 
     /* width: 50%;  
   } */
   .menu-dd {
     flex-direction: column-reverse;
-    height: 200px;
+    height: 80px;
     transition: height 1s ease-in;
-    -webkit-trasition: height 1s ease-in;
+    -webkit-trasition: height .5s ease-in;
+    /* maybe add opacity to .01 sec ease in to make the items "appear" to drop down */
   }
   .navLink{
     padding:0;

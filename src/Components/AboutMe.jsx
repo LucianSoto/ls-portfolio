@@ -7,16 +7,16 @@ function AboutMe() {
     <div className='about-container'>
       {/* <img src="/imgs/pageDivider.png" alt="" /> */}
       <p className="about-paragraph">
-      Hi I'm <span >Lucian! </span>Hi, I'm Lucian! I'm a self-taught developer — though it feels wrong to say "self-taught" when I was blessed to receive guidance from a few friends and learned through community-driven online resources.
+      👋 Hi I'm <span >Lucian! </span>&nbsp; A self-taught developer - though it feels wrong to say "self-taught" when I've been blessed with guidance from a few friends and we all learn through community-driven online resources.
       <br/>
       <br />
-      My coding journey began when I expressed interest in being a developer to a close friend, who then introduced me to FreeCodeCamp as a way to dip my toes in coding. After continuing the coursework for a while, I started seeing myself really sticking with this for the long run. I also realized during the course that I wanted to do front-end web development; since this was my focus, I took courses on JavaScript and React through other resources like Udemy and Scrimba.
+      My coding journey began when a friend introduced me to FreeCodeCamp as a way to dip my toes into coding. At first I felt indifferent about it but I stuck with it, and now I can say that I truly enjoy it! 💜
       <br />
       <br />
-      Currently, I'm continuing to expand on my skills and knowledge of React. I've also branched out to get experience in other facets of web development: I've gained an interest in learning more about animations and effects in the front-end and have even played around with NodeJS to make a few simple full stack applications.
+      Currently, I work with JavaScript, ReactJS and NodeJS. I've done some freelance gigs and although my main focus is in front-end work, my goal is to become a full-stack developer.
       <br />
       <br />
-      In my free time, I enjoy playing badminton and making music in my tiny home studio!
+      In my free time, I enjoy playing badminton and making music on my laptop.
       </p>
       <div className="me-div">
         <img src='https://live.staticflickr.com/65535/51930346556_b48c6880f3_z.jpg' className='me' alt="" />

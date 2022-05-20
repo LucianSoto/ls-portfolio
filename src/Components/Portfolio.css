@@ -23,7 +23,7 @@
   display: grid;
   width: 70%;
   height: 100%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   /* grid-template-rows: 1fr 1fr; */
   /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); */
   /* grid-template-rows: 1fr 1fr; */
@@ -31,4 +31,11 @@
   align-items: center;
   justify-content: center;
   /* margin-bottom: 6rem; */
+}
+
+@media screen and (max-width: 700px) {
+  .projects-grid {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
 }

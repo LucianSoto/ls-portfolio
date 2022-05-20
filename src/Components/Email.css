@@ -16,7 +16,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 50%;
 
 }
 
@@ -87,5 +87,9 @@ textarea {
   .form-cont{
     margin-top: 4rem;
     padding-bottom: 0;
+  }
+
+  form {
+    width: 85%;
   }
 }
