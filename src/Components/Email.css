@@ -88,4 +88,8 @@ textarea {
     margin-top: 4rem;
     padding-bottom: 0;
   }
+
+  form {
+    width: 85%;
+  }
 }
