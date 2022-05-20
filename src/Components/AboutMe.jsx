@@ -7,10 +7,10 @@ function AboutMe() {
     <div className='about-container'>
       {/* <img src="/imgs/pageDivider.png" alt="" /> */}
       <p className="about-paragraph">
-      Hi I'm <span >Lucian! </span>&nbsp; A self-taught developer - though it feels wrong to say "self-taught" when I've been blessed with guidance from a few friends and we all learn through community-driven online resources.
+      👋 Hi I'm <span >Lucian! </span>&nbsp; A self-taught developer - though it feels wrong to say "self-taught" when I've been blessed with guidance from a few friends and we all learn through community-driven online resources.
       <br/>
       <br />
-      My coding journey began when a friend introduced me to FreeCodeCamp as a way to dip my toes into coding. At first I felt indifferent about it but I stuck with it, and now I can say that I truly enjoy it!
+      My coding journey began when a friend introduced me to FreeCodeCamp as a way to dip my toes into coding. At first I felt indifferent about it but I stuck with it, and now I can say that I truly enjoy it! 💜
       <br />
       <br />
       Currently, I work with JavaScript, ReactJS and NodeJS. I've done some freelance gigs and although my main focus is in front-end work, my goal is to become a full-stack developer.
