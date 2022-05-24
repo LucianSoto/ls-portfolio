@@ -7,6 +7,13 @@
   justify-content: center;
 }
 
+.contacts-cont a {
+  text-decoration: none;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, white, gray);
+}
+
 .footer-h3 {
   font-size: 80px;
   color: rgba(255, 245, 238, 0.842);
@@ -29,10 +36,9 @@
   font-weight: 700;
   display: flex;
   align-items: center;
-  /* color: rgba(255, 245, 238, 0.774); */
-  color: transparent;
+  /* color: transparent;
   background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray);
+  background-image: linear-gradient(to bottom, white, gray); */
 }
 
 @media screen and (max-width: 600px) {
