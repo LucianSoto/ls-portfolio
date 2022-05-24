@@ -1,19 +1,25 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './NavBar.css'
 import { Link } from 'react-router-dom'
 import { FaEllipsisV, FaXmark } from 'react-icons/fa'
-import { useState } from 'react'
+
 
 function NavBar() {
-
+  const [navBar, setNavBar] = useState(false)
   const [dd, setDD] = useState(false)
 
   const changeDD = () => {
     setDD(!dd)
   }
 
+  const changeNavBackground = () => {
+    window.scrollY >= 120 ? setNavBar(true) : setNavBar(false)
+  }
+
+  window.addEventListener('scroll', changeNavBackground)
+
   return (
-    <nav className="nav-bar">
+    <nav className={navBar ? 'nav-bar active' : 'nav-bar'}>
         <Link className="menu-item lb-logo" to="/lb-portfolio" >LB</Link>
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>
