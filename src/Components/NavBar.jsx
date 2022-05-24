@@ -5,21 +5,24 @@ import { FaEllipsisV, FaXmark } from 'react-icons/fa'
 
 
 function NavBar() {
-  const [navBar, setNavBar] = useState(false)
+  // const [navBar, setNavBar] = useState(false)
   const [dd, setDD] = useState(false)
 
   const changeDD = () => {
     setDD(!dd)
   }
 
-  const changeNavBackground = () => {
-    window.scrollY >= 120 ? setNavBar(true) : setNavBar(false)
-  }
+  // const changeNavBackground = () => {
+  //   window.scrollY >= 120 ? setNavBar(true) : setNavBar(false)
+  // }
 
-  window.addEventListener('scroll', changeNavBackground)
+  // window.addEventListener('scroll', changeNavBackground)
 
   return (
-    <nav className={navBar ? 'nav-bar active' : 'nav-bar'}>
+    <nav 
+    // className={navBar ? 'nav-bar active' : 'nav-bar'}
+      className='nav-bar'
+    >
         <Link className="menu-item lb-logo" to="/lb-portfolio" >LB</Link>
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>

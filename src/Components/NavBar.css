@@ -89,8 +89,9 @@ nav{
 @media screen and (max-width: 800px) {
   nav { 
     width: 100%;
-    height: 55px;
+    height: 65px;
     margin-top: 5px;
+    position: absolute;
   }
   /* .nav-items{ 
     /* width: 50%;  
@@ -118,16 +119,13 @@ nav{
     padding:0;
     justify-self: end;
     text-align: right;
-    background: rgba(0, 0, 0, 0.95);
+    /* background: rgba(0, 0, 0, 0.95); */
   }
   #x {
     margin: 0;
     text-align: right;
   }
-  nav.active {
+  /* nav.active {
     background-color: rgba(0, 0, 0, 0.95);
-  }
-  .link-active {
-    background-color: red;
-  }
+  } */
 }
