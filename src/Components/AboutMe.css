@@ -38,6 +38,19 @@
   font-weight: 1000;
 }
 
+@media screen and (max-width: 900px) {
+  .about-container{
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .me-div {
+    width: 80%;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about-container{
     width: 100%;
