@@ -12,6 +12,10 @@
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to bottom, white, gray);
+  background-image: -webkit-linear-gradient(to bottom, white, gray);
+  background-image: -moz-linear-gradient(to bottom, white, gray);
+  background-image: -o-linear-gradient(to bottom, white, gray);
+  background-image: -ms-linear-gradient(to bottom, white, gray);
 }
 
 .footer-h3 {
@@ -57,5 +61,12 @@
   }
   .contact {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contacts-cont{
+    /* height: 300px; */
+    padding-bottom: 25px;
   }
 }
