@@ -19,7 +19,7 @@ function Footer() {
           </svg>
           <FaGithub style={{ fill: "url(#blue-gradient)", marginRight: "10px" }} />GitHub
         </a>
-        <a className="contact" href='https://www.linkedin.com/in/lucian-brooks-a6aba0232/'>
+        <a className="contact" style={browserName = 'Safari' ? {color: 'transparent'} : {color: 'lightgray'}} href='https://www.linkedin.com/in/lucian-brooks-a6aba0232/'>
         <svg width='0' height='0'>
           <linearGradient id="blue-gradient" x1="0%" y1="00%" x2="0%" y2="100%" >
             <stop stopColor='white' offset='0%'/> 
@@ -28,7 +28,7 @@ function Footer() {
         </svg>
         <FaLinkedin style={{ fill: "url(#blue-gradient)", marginRight: "10px"}} />LinkedIn
         </a>
-        <Link className="contact" to='/email' >
+        <Link className="contact" style={browserName = 'Safari' ? {color: 'transparent'} : {color: 'lightgray'}} to='/email' >
           {/* onClick={()=> window.scroll(0,0)} */}
           <svg width='0' height='0'>
             <linearGradient id="env-gradient" x1="0%" y1="0%" x2="0%" y2="100%" >

@@ -14,7 +14,14 @@
 }
 
 .contacts-cont a {
-  
+  text-decoration: none;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, white, gray);
+  background-image: -webkit-linear-gradient(to bottom, white, gray);
+  background-image: -moz-linear-gradient(to bottom, white, gray);
+  background-image: -o-linear-gradient(to bottom, white, gray);
+  background-image: -ms-linear-gradient(to bottom, white, gray);
 }
 
 .footer-h3 {
@@ -28,19 +35,11 @@
 .contact {
   text-align: center;
   text-decoration: none;
-  /* color: white; */
+  color: white;
   font-size: 25px;
   font-weight: 700;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray);
-  background-image: -webkit-linear-gradient(to bottom, white, gray);
-  background-image: -moz-linear-gradient(to bottom, white, gray);
-  background-image: -o-linear-gradient(to bottom, white, gray);
-  background-image: -ms-linear-gradient(to bottom, white, gray);
   /* color: transparent;
   background-clip: text;
   background-image: linear-gradient(to bottom, white, gray); */
