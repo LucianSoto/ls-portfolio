@@ -5,12 +5,14 @@
     name: "Restaurant Website",
     image: 'https://live.staticflickr.com/65535/51923918182_c0ec4f79f2_b.jpg',
     address: 'https://www.mamhanoi.com/',
+    info: 'A Vanilla Javascript website, built and deployed for client.'
   },
   {
     id: '2',
     name: "Pokedex",
     image: 'https://live.staticflickr.com/65535/51923918152_f9bdf0c2af_b.jpg',
     address: 'https://lucianaiolos.github.io/PokeDex-Luxian/',
+    info: 'Thanks to the Pokemon API I was able to build my own version of the Pokedex'
   },
   {
     id: '3',

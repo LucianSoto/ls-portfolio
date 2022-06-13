@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react'
+// import React, { useEffect } from 'react'
 import { FaGithub, FaFacebook, FaInstagram, FaMobileAlt, FaAt, FaEnvelope, FaEllipsisV, FaLinkedin } from 'react-icons/fa'
 import './Footer.css'
 import { Link } from 'react-router-dom'
-import {browserName, browserVersion} from "react-device-detect"
+import { browserName } from "react-device-detect"
 
 function Footer() {
-
   let browserType = browserName
-  console.log(browserName, browserVersion)
 
   return (
     <div className='footer'>

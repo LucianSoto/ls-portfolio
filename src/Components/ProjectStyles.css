@@ -1,41 +1,39 @@
 .project-a {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
   width: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  height: 100%;
-  width: 100%;
   text-decoration: none;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.project-a:hover {
+.project-a:hover .overlay{
   /* darken component on hover  */
+  position: relative;
+  height: inherit;
+  width: inherit;
 }
 
 .project-image{
-  height: 100%;
+  height: 420px;
   width: 100%;
+  overflow: hidden;
   /* object-fit: cover; */
+  border-radius: 5px 5px 0 0 ;
 }
 
  h4 {
-  /* height: 10%; */
   font-size: 30px;
   text-decoration: none;
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  /* font-weight: bolder; */
- 
   /* text-shadow: 0px 1px black; */
 }
 

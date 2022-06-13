@@ -19,8 +19,8 @@ function Portfolio() {
       image={project.image}
       string={project.address}
       projectStyle={project.projectStyle}
+      info={project.info}
       // onClick={}
-
     // {console.log(project.name)}
   />)
   return (
