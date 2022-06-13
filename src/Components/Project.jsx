@@ -1,14 +1,15 @@
 import React from 'react'
 import './ProjectStyles.css'
-// import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Project({ id, name, image, address, info }) {
   return (
     <>
       <div className='project-cont' >
           <img className='project-image' src={image} alt="" />
-          <div className="overlay">
-            <p className="project-overlay-info"></p>
+          <div className="project-overlay">
+            <p className="project-overlay-info">{info}</p>
+            {/* <Link rel="stylesheet" href="" />Go To Project<Link/> */}
           </div>
           <h4 className="project-name" onClick={()=> window.open(`${address}`, '_blank') }><span>{name}</span></h4>
       </div>

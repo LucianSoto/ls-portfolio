@@ -1,7 +1,7 @@
 .project-cont {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
   border-radius: 5px;
-  height: 500px;
+  height: 510px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,24 +11,47 @@
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-.project-a:hover .overlay{
-  /* darken component on hover  */
   position: relative;
-  height: inherit;
-  width: inherit;
-}
-
-.project-a:hover .project-image{
-  display: none;
 }
 
 .project-image{
-  height: 420px;
+  height: 430px;
   width: 100%;
   overflow: hidden;
-  border-radius: 5px 5px 0 0 ;
+  border-radius: 5px 5px 0 0;
+  transition: .5s ease;
+  opacity: 1;
+  /* backface-visibility: hidden; */
+}
+
+.project-overlay-info {
+  font-size: 30px;
+}
+
+.project-overlay {
+  opacity: 0;
+  transition-duration: 2s;
+  position: absolute;
+  height: 428.33px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
+}
+
+.project-cont:hover .project-overlay{
+  opacity: 1;
+}
+
+.project-cont:hover .project-image{
+  opacity: .1;
+}
+
+.project-overlay-info {
+  width: 85%;
 }
 
  h4 {
@@ -41,7 +64,7 @@
   width: 60%;
   transition-delay: 2s;
   transition-duration: 2s;
-  margin: 10px 0 25px 0;
+  margin: 20px 0 25px 0;
 }
 
 h4:hover {
