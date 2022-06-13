@@ -15,7 +15,7 @@
 
 .contacts-cont a {
   text-decoration: none;
-  color: transparent;
+  color: lightgray;
   background-clip: text;
   background-image: linear-gradient(to bottom, white, gray);
   background-image: -webkit-linear-gradient(to bottom, white, gray);
@@ -24,18 +24,10 @@
   background-image: -ms-linear-gradient(to bottom, white, gray);
 }
 
-.footer-h3 {
-  font-size: 80px;
-  color: rgba(255, 245, 238, 0.842);
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .contact {
   text-align: center;
   text-decoration: none;
-  color: white;
+  /* color: white; */
   font-size: 25px;
   font-weight: 700;
   display: flex;
@@ -43,6 +35,14 @@
   /* color: transparent;
   background-clip: text;
   background-image: linear-gradient(to bottom, white, gray); */
+}
+
+.footer-h3 {
+  font-size: 80px;
+  color: rgba(255, 245, 238, 0.842);
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 600px) {
