@@ -17,7 +17,7 @@ function Portfolio() {
       key={project.id}
       name={project.name}
       image={project.image}
-      string={project.address}
+      address={project.address}
       projectStyle={project.projectStyle}
       info={project.info}
       // onClick={}
