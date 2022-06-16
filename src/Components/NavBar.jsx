@@ -23,7 +23,7 @@ function NavBar() {
     // className={navBar ? 'nav-bar active' : 'nav-bar'}
       className='nav-bar'
     >
-        <Link className="menu-item lb-logo" to="/lb-portfolio" >LX</Link>
+        <Link className="menu-item lb-logo" to="/lb-portfolio" >LB</Link>
         {/* <Link className='nav-item'>About</Link> */}
         <div className='menu-div' id='menu-div'>
           { dd? null :

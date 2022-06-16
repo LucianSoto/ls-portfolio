@@ -10,14 +10,45 @@
   overflow: hidden;
 }
 
+.name-wrapper {
+  width: 90%;
+}
+
 h1 {
+  /* margin: 0; */
+  width: 90%;position: relative;
+  top: 50%;
+  left: 50%;
+  /* width: 90%; */
+  transform: translate(-50%, -50%);
   font-size: 110px;
   font-weight: 700;
-  background: -webkit-linear-gradient(white, #38495a);
+  background: #b1b162cc -webkit-gradient(linear, left top, right top, from(#6e6d04), to(#6e6d04), color-stop(0.5, rgba(228, 228, 228, 0.952))) 0 0 no-repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
+  -webkit-background-size: 150px;
+  /* -webkit-text-fill-color: transparent; */
+  color: rgba(255,255,255,0.1);
+  animation: animate 5s infinite;
+  /* position: relative; */
   z-index: 3;
+}
+
+@keyframes animate {
+  0%, 10%{
+    background-position: -1000px;
+  }
+  20%{
+    background-position: top left;
+  }
+  80% {
+    background-position: top right;
+  }
+  99%{
+    background-position: 990px;
+  }
+  100%{
+    background-position: 1000px;
+  }
 }
 
 .welcome-h3 {

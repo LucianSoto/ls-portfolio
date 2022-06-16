@@ -60,24 +60,14 @@
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* text-shadow: 0px 1px black; */
   width: 60%;
-  transition-delay: 2s;
-  transition-duration: 2s;
   margin: 20px 0 25px 0;
+  cursor: pointer;
 }
 
 h4:hover {
+  color: #949209;
   background: -webkit-linear-gradient(white, #6e6d04);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h4:hover span {
-  display: none;
-
-}
-
-h4:hover:after {
-  content: "Go To Site"
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

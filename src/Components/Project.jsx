@@ -11,7 +11,7 @@ function Project({ id, name, image, address, info }) {
             <p className="project-overlay-info">{info}</p>
             {/* <Link rel="stylesheet" href="" />Go To Project<Link/> */}
           </div>
-          <h4 className="project-name" onClick={()=> window.open(`${address}`, '_blank') }><span>{name}</span></h4>
+          <h4 className="project-name" onClick={()=> window.open(`${address}`, '_blank') }>{name}</h4>
       </div>
     </>
   )
