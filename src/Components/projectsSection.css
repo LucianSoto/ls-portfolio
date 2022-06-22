@@ -1,0 +1,24 @@
+.projects-cont {
+  width: 80%;
+  margin-top: 10rem;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 40px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+
+
+.project-description {
+  padding: 20px;
+  width: 100%;
+}
+

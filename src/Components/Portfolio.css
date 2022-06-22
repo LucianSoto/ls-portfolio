@@ -12,7 +12,7 @@
 }
 
 .portfolio-title {
-  font-size: 40px;
+  font-size: 45px;
   margin-bottom: 3rem;
   background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
@@ -22,7 +22,7 @@
 .under-construction {
   font-size: 20px;
   padding-bottom: 40px;
-  color: rgb(223, 223, 223);
+  color: rgb(255, 196, 2);
 }
 
 .projects-grid {

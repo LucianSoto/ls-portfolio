@@ -1,1 +1,0 @@
-// display info and pic and talk about project with more pics???!!

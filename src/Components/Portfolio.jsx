@@ -1,7 +1,8 @@
 import React from 'react'
 import './Portfolio.css'
-import ProjectsData from './ProjectsData.js'
-import Project from './Project'
+import ProjectsData from './ProjectTilesData.js'
+import Project from './ProjectTile'
+import ProjectsSection from './ProjectsSection'
 import { useState, useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -33,11 +34,11 @@ function Portfolio() {
     <div className='portfolio-cont'>
       <h3 className='portfolio-title'>Projects</h3>
       <p className="under-construction">Under Construction</p>
-      
       <div className="projects-grid">
         {ProjectComponents}
-      </div>  
-      <ToastContainer theme="dark" />    
+      </div>   
+      <ProjectsSection/>
+      <ToastContainer theme="dark" />
     </div>
   )
 }
