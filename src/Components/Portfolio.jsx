@@ -2,16 +2,22 @@ import React from 'react'
 import './Portfolio.css'
 import ProjectsData from './ProjectsData.js'
 import Project from './Project'
-import { State } from 'react'
-
+import { useState, useEffect } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 // import waitlistImage from '/public/imgs/ProjectImages/waitlist.PNG'
-
 // import wI from '/imgs/waitlist.png'
 
 
 function Portfolio() {
-  const [data, setData] = React.useState(ProjectsData)
-  
+  // const notificationString = ;
+  useEffect(() => {
+    setTimeout(()=> notify(), 3000)
+  }, [])
+
+  const [data, setData] = useState(ProjectsData)
+  const notify = () => toast("Hover and click on project descriptions to learn more or click on the titles to go to site")
+
   const ProjectComponents = data.map((project) => 
   <Project
       key={project.id}
@@ -26,10 +32,12 @@ function Portfolio() {
   return (
     <div className='portfolio-cont'>
       <h3 className='portfolio-title'>Projects</h3>
-      <p className="under-construction">Currently Under Construction</p>
+      <p className="under-construction">Under Construction</p>
+      
       <div className="projects-grid">
         {ProjectComponents}
-      </div>      
+      </div>  
+      <ToastContainer theme="dark" />    
     </div>
   )
 }

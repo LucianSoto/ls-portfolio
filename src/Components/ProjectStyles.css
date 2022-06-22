@@ -60,7 +60,7 @@
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 60%;
+  width: 70%;
   margin: 20px 0 25px 0;
   cursor: pointer;
 }
@@ -70,4 +70,17 @@ h4:hover {
   background: -webkit-linear-gradient(white, #6e6d04);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .project-cont {
+    height: 400px;
+  }
+  .project-overlay {
+    height: 328px;
+  }
+  h4{
+    font-size: 23px;
+  }
 }

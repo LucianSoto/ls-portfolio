@@ -29,7 +29,7 @@
   display: grid;
   width: 70%;
   height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   /* grid-template-rows: 1fr 1fr; */
   /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); */
   /* grid-template-rows: 1fr 1fr; */
@@ -39,9 +39,11 @@
   /* margin-bottom: 6rem; */
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 1000) */
+
+@media screen and (max-width: 1300px) {
   .projects-grid {
-    width: 90%;
+    width: 50%;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
