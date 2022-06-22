@@ -8,7 +8,9 @@ function Project({ id, name, image, address, info }) {
       <div className='project-cont' >
           <img className='project-image' src={image} alt="" />
           <div className="project-overlay">
-            <p className="project-overlay-info">{info}</p>
+            <p className="project-overlay-info" 
+              // make a LINK!!!!
+            >{info}</p>
             {/* <Link rel="stylesheet" href="" />Go To Project<Link/> */}
           </div>
           <h4 className="project-name" onClick={()=> window.open(`${address}`, '_blank') }>{name}</h4>

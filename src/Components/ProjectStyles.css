@@ -12,6 +12,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
+  
 }
 
 .project-image{
@@ -26,6 +27,7 @@
 
 .project-overlay-info {
   font-size: 30px;
+  cursor: pointer;
 }
 
 .project-overlay {

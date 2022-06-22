@@ -1,4 +1,4 @@
-const projectsData = [
+const projectPagesData = [
   {
     projectName: 'Mam Hanoi'
   },
