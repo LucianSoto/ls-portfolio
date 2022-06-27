@@ -30,7 +30,7 @@ h1 {
   -webkit-background-size: 150px;
   /* -webkit-text-fill-color: transparent; */
   color: rgba(255,255,255,0.1);
-  animation: animate 7s infinite;
+  animation: animate 4s infinite;
   /* position: relative; */
   z-index: 3;
 }
@@ -42,7 +42,7 @@ h1 {
   10%{
     background-position: top left;
   }
-  95% {
+  98% {
     background-position: top right;
   }
 
