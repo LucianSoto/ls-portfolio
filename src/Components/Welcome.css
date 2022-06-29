@@ -74,12 +74,12 @@ h1 {
 }
 
 .stars {
-  background: rgb(0, 0, 0) url(/public/imgs/stars.png);
+  background: rgb(0, 0, 0) url(/src/assets/images/other-images/stars.png);
   z-index: -2;
 }
 
 .twinkling {
-  background: transparent url(/public/imgs/twinkling.png);
+  background: transparent url(/src/assets/images/other-images/twinkling.png);
   z-index: -1;
   animation: move-twinkle-back 180s linear infinite;
 }
@@ -95,5 +95,23 @@ h1 {
 
   .welcome-h3{
     font-size: 40px;
+  }
+
+  .name-wrapper{
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+    animation: animate 8s infinite;
+  }
+  @keyframes animate {
+    0%{
+      background-position: -800px;
+    }
+  
+    100%{
+      background-position: 1000px;
+    }
   }
 }

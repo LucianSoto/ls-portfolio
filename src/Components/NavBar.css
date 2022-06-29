@@ -38,8 +38,9 @@ nav{
 .menu-dd {
   display: flex;
   flex-direction: row;
-  color: gray;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.836);
+  padding-left: 30px;
 }
 
 .navLink {
@@ -110,7 +111,6 @@ nav{
     height: 80px;
     transition: height 1s ease-in;
     -webkit-trasition: height .5s ease-in;
-    /* maybe add opacity to .01 sec ease in to make the items "appear" to drop down */
     align-items: flex-end;
     margin-top: 65px;
     margin-right: 3px;
