@@ -1,23 +1,26 @@
 .graph-cont {
-  width: 80%;
-  height: 90vh;
+  width: 95%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+  /* justify-content: center; */
+  margin-left: -2rem;
 }
 
 .graph-title {
-  color: seashell;
-  font-size: 35px;
-  margin-bottom: 80px;
-  background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  margin-left: 2rem;
+  color: lightgray;
 }
 
 .bar {
   fill: #949209;
   background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .graph-cont {
+    width: 110%;
+  }
 }

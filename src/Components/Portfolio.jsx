@@ -32,7 +32,7 @@ function Portfolio() {
   />)
   return (
     <div className='portfolio-cont'>
-      <h3 className='portfolio-title'>Projects</h3>
+      <h3 className='portfolio-title'>Portfolio</h3>
       <p className="under-construction">Under Construction</p>
       <div className="projects-grid">
         {ProjectComponents}

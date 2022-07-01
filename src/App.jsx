@@ -6,7 +6,6 @@ import LoaderComponent from "./Components/LoaderComponent";
 import { useState } from 'react'
 import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
-import Resume from "./Components/Resume";
 import Email from "./Components/Email";
 import { Routes, Route } from "react-router-dom"
 
@@ -37,10 +36,6 @@ function App() {
           path="/portfolio" 
           element={ !loader && <><Portfolio/></> }
         />
-        {/* <Route 
-          path="/resume" 
-          element={ !loader && <><Resume/></> }
-        /> */}
         <Route 
           path="/email"
           element={ !loader && <><Email/></>}

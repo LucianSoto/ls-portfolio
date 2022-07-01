@@ -45,6 +45,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 1000px) {
+  .footer-h3 {
+    font-size: 60px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .footer{
     height: 30vh;

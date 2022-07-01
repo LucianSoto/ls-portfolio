@@ -41,6 +41,24 @@ nav{
   align-items: center;
   background-color: rgba(0, 0, 0, 0.836);
   padding-left: 30px;
+  animation: rotateZ 300ms ease-in-out ;
+  transform-origin: top center;
+}
+
+@keyframes rotateZ {
+  0% {
+    opacity: 0;
+    transform: translateZ(290px);
+  }
+  
+  80% {
+    transform: translateZ(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
 .navLink {
@@ -55,6 +73,7 @@ nav{
 .ellipsis {
   font-size: 25px;
   cursor: pointer;
+  animation: rotateZ 300ms ease-in-out ;
 }
 
 .menu-item:hover, .lb-logo:hover {
