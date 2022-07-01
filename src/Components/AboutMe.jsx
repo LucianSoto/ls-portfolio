@@ -1,11 +1,10 @@
 import React from 'react'
 import './AboutMe.css'
-// import '/public/imgs/me.png'
+import MyPic from '../assets/images/other-images/me-mia.jpg'
 
 function AboutMe() {
   return (
     <div className='about-container'>
-      {/* <img src="/imgs/pageDivider.png" alt="" /> */}
       <p className="about-paragraph">
       👋 Hi I'm <span >Lucian! </span>&nbsp; A self-taught developer - though it feels wrong to say "self-taught" when I've been blessed with guidance from a few friends and we all learn through community-driven online resources.
       <br/>
@@ -19,7 +18,7 @@ function AboutMe() {
       In my free time, I enjoy playing badminton and making music on my laptop.
       </p>
       <div className="me-div">
-        <img src='https://live.staticflickr.com/65535/51930346556_b48c6880f3_z.jpg' className='me' alt="" />
+        <img src={MyPic} className='me' alt="Selfie" />
       </div>
     </div>
   )

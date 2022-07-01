@@ -1,46 +1,88 @@
-.project-a {
+.project-cont {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
-  border-radius: 10px;
-  height: 100%;
+  border-radius: 5px;
+  height: 510px;
   width: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  height: 100%;
-  width: 100%;
   text-decoration: none;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-.project-a:hover {
-  /* darken component on hover  */
+  position: relative;
+  
 }
 
 .project-image{
-  height: 100%;
+  height: 430px;
   width: 100%;
-  /* object-fit: cover; */
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  transition: .5s ease;
+  opacity: 1;
+  /* backface-visibility: hidden; */
+}
+
+.project-overlay-info {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.project-overlay {
+  opacity: 0;
+  transition-duration: 2s;
+  position: absolute;
+  height: 428.33px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
+}
+
+.project-cont:hover .project-overlay{
+  opacity: 1;
+}
+
+.project-cont:hover .project-image{
+  opacity: .1;
+}
+
+.project-overlay-info {
+  width: 85%;
 }
 
  h4 {
-  /* height: 10%; */
   font-size: 30px;
   text-decoration: none;
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  /* font-weight: bolder; */
- 
-  /* text-shadow: 0px 1px black; */
+  width: 70%;
+  margin: 20px 0 25px 0;
+  cursor: pointer;
 }
 
 h4:hover {
+  color: #949209;
   background: -webkit-linear-gradient(white, #6e6d04);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .project-cont {
+    height: 400px;
+  }
+  .project-overlay {
+    height: 328px;
+  }
+  h4{
+    font-size: 23px;
+  }
 }

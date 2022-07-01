@@ -11,6 +11,8 @@ function Graph() {
     { name: 'PostgreSQL', uv: 20, pv: 100, },
     { name: 'NodeJS', uv: 30, pv: 100,  },
   ]
+
+  console.log(data)
   
 
   return (

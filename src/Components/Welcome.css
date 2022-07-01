@@ -10,14 +10,45 @@
   overflow: hidden;
 }
 
+.name-wrapper {
+  width: 90%;
+}
+
 h1 {
+  /* margin: 0; */
+  margin-top: 0px;
+  width: 90%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* width: 90%; */
+  transform: translate(-50%, -50%);
   font-size: 110px;
   font-weight: 700;
-  background: -webkit-linear-gradient(white, #38495a);
+  background: #b1b162cc -webkit-gradient(linear, left top, right top, from(#6e6d04), to(#6e6d04), color-stop(0.5, rgba(255, 255, 255, 0.952))) 0 0 no-repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
+  -webkit-background-size: 150px;
+  /* -webkit-text-fill-color: transparent; */
+  color: rgba(255,255,255,0.1);
+  animation: animate 4s infinite;
+  /* position: relative; */
   z-index: 3;
+}
+
+@keyframes animate {
+  0%, 10%{
+    background-position: -1000px;
+  }
+  10%{
+    background-position: top left;
+  }
+  98% {
+    background-position: top right;
+  }
+
+  100%{
+    background-position: 1200px;
+  }
 }
 
 .welcome-h3 {
@@ -43,12 +74,12 @@ h1 {
 }
 
 .stars {
-  background: rgb(0, 0, 0) url(/public/imgs/stars.png);
+  background: rgb(0, 0, 0) url(/src/assets/images/other-images/stars.png);
   z-index: -2;
 }
 
 .twinkling {
-  background: transparent url(/public/imgs/twinkling.png);
+  background: transparent url(/src/assets/images/other-images/twinkling.png);
   z-index: -1;
   animation: move-twinkle-back 180s linear infinite;
 }
@@ -64,5 +95,23 @@ h1 {
 
   .welcome-h3{
     font-size: 40px;
+  }
+
+  .name-wrapper{
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+    animation: animate 8s infinite;
+  }
+  @keyframes animate {
+    0%{
+      background-position: -800px;
+    }
+  
+    100%{
+      background-position: 1000px;
+    }
   }
 }

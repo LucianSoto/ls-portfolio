@@ -8,7 +8,9 @@ function Welcome() {
     <div className="welcome-section">
       <div className="stars" id="stars" ></div>
       <div className="twinkling"></div>
-      <h1>LUCIAN BROOKS</h1>
+      <div className="name-wrapper">
+        <h1>LUCIAN BROOKS</h1>
+      </div>
       <h3 className='welcome-h3'>A Web Developer</h3>
       
 
