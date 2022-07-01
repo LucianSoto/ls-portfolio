@@ -41,11 +41,32 @@ nav{
   align-items: center;
   background-color: rgba(0, 0, 0, 0.836);
   padding-left: 30px;
-  animation: rotateZ 300ms ease-in-out ;
-  transform-origin: top center;
+  /* animation: rotateZ 300ms ease-in-out ; */
+  animation: growDown 330ms ease-in-out ;
+  transform-origin: right ;
+  transition: animation 0s 500ms, opacity 300ms linear;
 }
 
-@keyframes rotateZ {
+.hidden {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: display 0s 500ms, opacity 500ms linear;
+}
+
+@keyframes growDown {
+  0% {
+      transform: scaleX(0)
+  }
+  80% {
+      transform: scaleX(1.005)
+  }
+  100% {
+      transform: scaleX(1)
+  }
+}
+
+/* @keyframes rotateZ {
   0% {
     opacity: 0;
     transform: translateZ(290px);
@@ -59,7 +80,7 @@ nav{
     opacity: 1;
     transform: translateZ(0);
   }
-}
+} */
 
 .navLink {
   padding-right: 3rem;
@@ -73,7 +94,9 @@ nav{
 .ellipsis {
   font-size: 25px;
   cursor: pointer;
-  animation: rotateZ 300ms ease-in-out ;
+  opacity: 1;
+  /* transition: opacity 2s linear; */
+  animation: rotateZ 400ms ease-in-out ;
 }
 
 .menu-item:hover, .lb-logo:hover {
@@ -113,9 +136,7 @@ nav{
     margin-top: 5px;
     position: absolute;
   }
-  /* .nav-items{ 
-    /* width: 50%;  
-  } */
+  
   .menu-div {
     align-items: unset;
   }
@@ -133,7 +154,22 @@ nav{
     align-items: flex-end;
     margin-top: 65px;
     margin-right: 3px;
+    animation: growDownMobile 400ms ease-in-out ;
+    transform-origin: top;
   }
+
+  @keyframes growDownMobile {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.005)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+  }
+
   .navLink{
     padding:0;
     justify-self: end;

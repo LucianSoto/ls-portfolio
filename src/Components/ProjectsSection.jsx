@@ -34,7 +34,7 @@ console.log(windowWidth)
         <b>Dislikes:</b>  &nbsp; What I didn't enjoy was that it took the client far too long to finalize a menu, leaving me in limbo for over a month. But it was a great lesson learned because from then on I try to keep clients on schedule. 
         </p>
         <p className="time">
-        <b>Time:</b> &nbsp;  It honeslty took about 20 hours to get to the finish line (Not including the wait time in between). Building it was not too difficult albeit I was still not that agile with CSS I admit. It was the fact that it was my first time having to deploy, but it was great because I learned a lot along the way about how the internet works and how it all comes together.
+        <b>Time:</b> &nbsp;  It honeslty took about 15 hours to get to the finish line (Not including the wait time in between). Building it was not too difficult albeit I was still not that agile with CSS I admit. It was the fact that it was my first time having to deploy, but it was great because I learned a lot along the way about how the internet works and how it all comes together.
         </p>
         <a href="https://www.mamhanoi.com/">Visit Project Here</a>
       </div>
