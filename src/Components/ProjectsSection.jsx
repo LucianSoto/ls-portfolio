@@ -19,7 +19,7 @@ const Projects = ProjectsAboutData.map((project) =>
     about={project.about}
     likes={project.likes}
     difficulties={project.difficulties}
-    dislike={project.dislike}
+    dislike={project.dislikes}
     time={project.time}
     link={project.link}
     images={project.images}

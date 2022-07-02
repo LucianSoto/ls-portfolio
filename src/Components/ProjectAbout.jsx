@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carouse.min.css"
-// general styles
-// import 'style!css!react-responsive-carousel/lib/styles/main.css';
-
-// carousel styles
-// import 'style!css!react-responsive-carousel/lib/styles/carousel.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 import { 
   BarChart, 
@@ -25,7 +20,7 @@ const ProjectAbout = ({
   about, 
   likes, 
   difficulties, 
-  dislike, 
+  dislikes, 
   time, 
   link, 
   images,
@@ -37,9 +32,10 @@ const ProjectAbout = ({
   
   console.log(images.length)
 
-  const imageCarousel = images.map((image, index) => 
+  const imagesForCarousel = images.map((image, index) => 
     <div>
-      <img src={image[index]} alt="" />
+      <img src={image} alt="" />
+      <p></p>
     </div>
   )
 
@@ -53,31 +49,23 @@ const ProjectAbout = ({
                 <b>About:</b>{about}
               </p>
               <p className='likes'>
-              <b>Likes:</b>{likes}  
+              <b>Likes:</b>&nbsp;{likes}  
               </p>
               <p className="difficulties">
-              <b>Difficulties:</b>{difficulties}
+              <b>Difficulties:</b>&nbsp;{difficulties}
               </p>
               <p className="dislikes">
-              <b>Dislikes:</b>{dislike}
+              <b>Dislikes:</b>&nbsp;{dislikes}
               </p>
               <p className="time">
-              <b>Time:</b>{time}
+              <b>Time:</b>&nbsp;{time}
               </p>
-              <a href={link} >Visit Project Here</a>
+              <a href={link} >Visit Project Here 🚀</a>
             </div>
             <div className="project-media-cont">
               {/* <img src={images[0]} alt="" className="project-about-img" /> */}
-              <Carousel>
-                <div>
-                  <img src={images[0]} alt="" />
-                </div>
-                <div>
-                  <img src={images[1]} alt="" />
-                </div>
-                <div>
-                  <img src={images[2]} alt="" />
-                </div>
+              <Carousel infiniteLoop autoPlay showThumbs={false} >
+                {imagesForCarousel}
               </Carousel>
               <div className="graph-cont">
                 <h3 className='graph-title'>Languages Used</h3>

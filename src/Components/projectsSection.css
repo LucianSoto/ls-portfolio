@@ -20,7 +20,8 @@
 
 .project-inner-cont {
   display: flex;
-  
+  align-items: center;
+  justify-content: space-around;
 }
 
 .project-description {
@@ -56,7 +57,7 @@ a {
     margin: 0;
   }
 
-  .project {
+  .project-inner-cont {
     flex-direction: column;
     align-items: center;
   }
