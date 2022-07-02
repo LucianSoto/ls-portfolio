@@ -52,6 +52,7 @@ a {
 }
 
 @media screen and (max-width: 1150px) {
+
   .project-title {
     text-align: center;
     margin: 0;
@@ -78,6 +79,10 @@ a {
 @media screen and (max-width: 600px) {
   .project-media-cont, .project-description {
     width: 100%;
+  }
+
+  .projects-cont{
+    margin-bottom: 30px;
   }
 }
  

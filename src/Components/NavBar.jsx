@@ -12,12 +12,6 @@ function NavBar() {
     setDD(!dd)
   }
 
-  // const changeNavBackground = () => {
-  //   window.scrollY >= 120 ? setNavBar(true) : setNavBar(false)
-  // }
-
-  // window.addEventListener('scroll', changeNavBackground)
-
   return (
     <nav 
     // className={navBar ? 'nav-bar active' : 'nav-bar'}
@@ -45,7 +39,6 @@ function NavBar() {
           }
         </div >
     </nav>
-
   )
 }
 

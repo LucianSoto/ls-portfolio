@@ -12,9 +12,9 @@ import MamHanoiImage from '../assets/images/project-images/mamhanoi.png'
 
 const ProjectsSection = () => { 
 
-const Projects = ProjectsAboutData.map((project) => 
+const Projects = ProjectsAboutData.map((project, index) => 
   <ProjectAbout
-    key={project.title}
+    key={project.id}
     title={project.title}
     about={project.about}
     likes={project.likes}
