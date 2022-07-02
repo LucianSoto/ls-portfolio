@@ -1,7 +1,7 @@
 import React from 'react'
 import './Portfolio.css'
 import ProjectsData from './ProjectTilesData.js'
-import Project from './ProjectTile'
+import ProjectTile from './ProjectTile'
 import ProjectsSection from './ProjectsSection'
 import { useState, useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
@@ -20,16 +20,15 @@ function Portfolio() {
   const notify = () => toast("Hover and click on project descriptions to learn more or click on the titles to go to site")
 
   const ProjectComponents = data.map((project) => 
-  <Project
-      key={project.id}
-      name={project.name}
-      image={project.image}
-      address={project.address}
-      projectStyle={project.projectStyle}
-      info={project.info}
-      // onClick={}
-    // {console.log(project.name)}
-  />)
+    <ProjectTile
+        key={project.id}
+        name={project.name}
+        image={project.image}
+        address={project.address}
+        projectStyle={project.projectStyle}
+        info={project.info}
+    />
+  )
   return (
     <div className='portfolio-cont'>
       <h3 className='portfolio-title'>Portfolio</h3>

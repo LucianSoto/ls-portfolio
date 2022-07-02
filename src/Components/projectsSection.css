@@ -11,11 +11,16 @@
 
 .project {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   height: 100%;
   width: 100%;
   margin: 0;
+}
+
+.project-inner-cont {
+  display: flex;
+  
 }
 
 .project-description {
