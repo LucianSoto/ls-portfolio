@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import './projectsSection.css'
 
 import { 
   BarChart, 
@@ -64,7 +65,7 @@ const ProjectAbout = ({
             </div>
             <div className="project-media-cont">
               {/* <img src={images[0]} alt="" className="project-about-img" /> */}
-              <Carousel infiniteLoop autoPlay showThumbs={false} >
+              <Carousel className='carousel' infiniteLoop autoPlay showThumbs={false} >
                 {imagesForCarousel}
               </Carousel>
               <div className="graph-cont">

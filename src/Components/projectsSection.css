@@ -65,6 +65,14 @@ a {
   .project-media-cont, .project-description {
     width: 80%;
   }
+
+  .project-description {
+    margin-bottom: 1rem;
+  }
+
+  .carousel {
+    margin-bottom: 2rem;
+  }
 } 
 
 @media screen and (max-width: 600px) {
