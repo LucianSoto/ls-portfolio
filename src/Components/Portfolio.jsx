@@ -14,7 +14,17 @@ function Portfolio() {
   // const notificationString = ;
   useEffect(() => {
     setTimeout(()=> notify(), 3000)
+    handleScroll()
   }, [])
+
+  const handleScroll = () => {
+    setTimeout(()=> {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }, 100) 
+  }
 
   const [data, setData] = useState(ProjectsData)
   const notify = () => toast("Hover and click on project descriptions to learn more or click on the titles to go to site")

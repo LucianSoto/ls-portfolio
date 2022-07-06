@@ -70,9 +70,11 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 25vh;
+  }
   .contacts-cont{
-    /* height: 300px; */
-    padding-bottom: 25px;
+    height: 100px;
   }
 }

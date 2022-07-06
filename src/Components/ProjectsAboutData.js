@@ -18,9 +18,29 @@ export const ProjectsAboutData = [
        require('../assets/images/project-images/mamhanoi3.png'),       
     ],
     graphData: [
+      { name: 'HTML 48%', uv: 48, pv: 100, },
+      { name: 'CSS 48%', uv: 48, pv: 100 },
+      { name: 'JS 4%', uv: 2, pv: 100 },
+    ]
+  },
+  {  
+    id: 2,
+    title: 'House Marketplace',
+    about: ' -A full-stack application using React, and Firebase. After making a simple verison of this using VanillaJS NodeJS and PostgreSQL last year I thought it was time to give it a shot with react and a cloud based database.',
+    likes: " So far I'm enjoying making fullstack applications. Although I am a novince with backend related work, there's just something about getting everything to come together and work that gives such a sense of fulfillment. But for this project in particular I would say that it was interesting learning a database that does not use SQL and learning how to render Route paths dynamically using React",
+    difficulties: " The things that gave me the toughest time here was the fact that Firebase doesn't do too well with error handling so it made it difficult when I got stuck at one point when I was trying to retrieve data.",
+    dislikes: " The thing that gave me the toughest time here was the fact that Firebase doesn't do too well with error handling so it made it difficult when I got stuck at one point when I was trying to retrieve data.",
+    time: " It's still a work in progress but so far I have put it about 30hrs. With plans to add the ability to see each individual post and hopefully get Google Auth to work on Github Pages.",
+    link: "https://lucianaiolos.github.io/House-Marketplace/",
+    images: [
+       require('../assets/images/project-images/house-marketplace-1.png'), 
+       require('../assets/images/project-images/house-marketplace-2.png'),
+       require('../assets/images/project-images/house-marketplace-3.png'),       
+    ],
+    graphData: [
       {name: 'HTML 48%', uv: 48, pv: 100, },
       {name: 'CSS 48%', uv: 48, pv: 100 },
       {name: 'JS 4%', uv: 2, pv: 100},
     ]
   }
-]
+]                       

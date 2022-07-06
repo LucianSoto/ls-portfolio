@@ -33,8 +33,9 @@ const ProjectAbout = ({
   window.addEventListener('resize', ()=> {setWindowWidth(window.screen.width)})
 
   const imagesForCarousel = images.map((image, i) => 
-    <div key={i}>
-      <img src={image}  alt="" />
+    <div key={i} className="images-cont" 
+    >
+      <img src={image}  alt="" height={ windowWidth > 800 ? 400 : windowWidth < 600 ? 250 : 300 }/>
     </div>
   )
 
@@ -62,13 +63,23 @@ const ProjectAbout = ({
         </div>
         <div className="project-media-cont">
           {/* <img src={images[0]} alt="" className="project-about-img" /> */}
-          <Carousel className='carousel' infiniteLoop autoPlay showThumbs={false} >
+          <Carousel 
+            className='carousel' 
+            infiniteLoop 
+            autoPlay 
+            showThumbs={false}
+            interval={3000}
+            centerSlidePercentage={80} 
+            transitionTime={1000}
+            
+          >
             {imagesForCarousel}
           </Carousel>
           <div className="graph-cont">
             <h3 className='graph-title'>Languages Used</h3>
             <ResponsiveContainer 
-              height={windowWidth > 800 ? 400 : windowWidth < 600 ? 250 : 300}>
+              height={windowWidth > 800 ? 350 : windowWidth < 600 ? 200 : 250}
+            >
               <BarChart data={graph}>
                 <XAxis dataKey="name" stroke='white' />
                 <YAxis stroke='lightgray' />

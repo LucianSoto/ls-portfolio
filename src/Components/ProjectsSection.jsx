@@ -15,11 +15,12 @@ const ProjectsSection = () => {
 const Projects = ProjectsAboutData.map((project, index) => 
   <ProjectAbout
     key={project.id}
+    // don't really need key prop?
     title={project.title}
     about={project.about}
     likes={project.likes}
     difficulties={project.difficulties}
-    dislike={project.dislikes}
+    dislikes={project.dislikes}
     time={project.time}
     link={project.link}
     images={project.images}
