@@ -50,8 +50,6 @@ a {
 
 .carousel {
   margin-bottom: 5rem;
-  
-
 }
 
 
@@ -107,6 +105,11 @@ a {
 
   .project-description {
     padding: 0;
+    margin-bottom: 3rem;
+  }
+
+  .carousel {
+    margin-bottom: 3rem;
   }
 }
  
