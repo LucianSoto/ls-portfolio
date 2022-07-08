@@ -76,13 +76,20 @@ h1 {
 .stars {
   background: rgb(0, 0, 0) url(/src/assets/images/other-images/stars.png);
   z-index: -2;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .twinkling {
   background: transparent url(/src/assets/images/other-images/twinkling.png);
   z-index: -1;
   animation: move-twinkle-back 180s linear infinite;
+  background-attachment: fixed;
 }
+
+
 
 @media screen and (max-width: 600px) {
   .welcome-section {
