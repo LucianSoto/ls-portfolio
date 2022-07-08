@@ -63,4 +63,24 @@ export const ProjectsAboutData = [
       {name: 'JS 31%', uv: 31, pv: 100},
     ]
   },
+  {  
+    id: 4,
+    title: 'Festival Website',
+    about: " A music festival mock-up webiste so essentially bringing together several things that I enjoy. Coding, Music, Visuals. This was the first project I did to test myself and I include it becuase it tells part of my coding journey since this was the project that I felt sparked the flame in my coding journey!",
+    likes: " This was definitely a fun one, I finally got to build something where I got the feeling like I got to express myself(visually) and I that definitely helped determine my Front End path because I am a very visual person. I also ejoyed playing with gradients, fonts, styling and the lay out.",
+    difficulties: " When I said test myself I meant test my CSS skills because oh man. I had a really tough time getting things where I wanted them or getting things to do the things I wanted them to do or getting a PNG file's transparency to work for some reason. BUT, it taught me a lot and helped me understand what I needed to work on such as flex-box.",
+    dislikes: " I am not entirely happy with how far I got and the amount of animations or things I did because I wanted more but after I got it to look close enough to what I wanted I decided to move on as to not burn me out and to so I could focus on establising the fundimentals.",
+    time: " Took about 40 hrs getting everything to dislay the way I intended and I'm not emberrased about the number of hours it took because I know that number would be much much lower these days.",
+    link: "https://lucianaiolos.github.io/Music-Festival-X/",
+    images: [
+       require('../assets/images/project-images/jungle.PNG'), 
+       require('../assets/images/project-images/jungle-2.png'),
+       require('../assets/images/project-images/jungle-3.png'),       
+    ],
+    graphData: [
+      {name: 'HTML 34%', uv: 34, pv: 100, },
+      {name: 'CSS 57%', uv: 57, pv: 100 },
+      {name: 'JS 9.5%', uv: 9.5, pv: 100},
+    ]
+  },
 ]                       
