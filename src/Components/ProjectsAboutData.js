@@ -38,9 +38,9 @@ export const ProjectsAboutData = [
        require('../assets/images/project-images/house-marketplace-3.png'),       
     ],
     graphData: [
-      {name: 'HTML 48%', uv: 48, pv: 100, },
-      {name: 'CSS 48%', uv: 48, pv: 100 },
-      {name: 'JS 4%', uv: 2, pv: 100 },
+      {name: 'HTML 56%', uv: 48, pv: 100, },
+      {name: 'CSS 39%', uv: 48, pv: 100 },
+      {name: 'JS 5%', uv: 2, pv: 100 },
     ]
   },
   {  
@@ -58,9 +58,9 @@ export const ProjectsAboutData = [
        require('../assets/images/project-images/pokedex-3.png'),       
     ],
     graphData: [
-      {name: 'HTML 48%', uv: 48, pv: 100, },
-      {name: 'CSS 48%', uv: 48, pv: 100 },
-      {name: 'JS 4%', uv: 2, pv: 100},
+      {name: 'HTML 30%', uv: 48, pv: 100, },
+      {name: 'CSS 39%', uv: 48, pv: 100 },
+      {name: 'JS 31%', uv: 2, pv: 100},
     ]
   },
 ]                       

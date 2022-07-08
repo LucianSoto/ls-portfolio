@@ -52,7 +52,13 @@ a {
   margin-bottom: 5rem;
 }
 
+.imageWindow {
+  height: 100%;
+}
 
+.responsive-container {
+  height: 100%;
+}
 
 @media screen and (max-width: 1950px ) {
   .project-media-cont {

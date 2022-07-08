@@ -32,10 +32,12 @@ const ProjectAbout = ({
   const [windowWidth, setWindowWidth] = useState(0)
   window.addEventListener('resize', ()=> {setWindowWidth(window.screen.width)})
 
+  console.log(windowWidth)
+
   const imagesForCarousel = images.map((image, i) => 
     <div key={i} className="images-cont" 
     >
-      <img src={image}  alt="" height={ windowWidth > 800 ? 400 : windowWidth < 600 ? 250 : 300 }/>
+      <img className='imageWindow' src={image}  alt="" height={ windowWidth > 800 ? 400 : windowWidth < 600 ? 250 : 300 }/>
     </div>
   )
 
@@ -80,7 +82,7 @@ const ProjectAbout = ({
             <ResponsiveContainer 
               height={windowWidth > 800 ? 350 : windowWidth < 600 ? 200 : 250}
             >
-              <BarChart data={graph}>
+              <BarChart data={graph} className="responsive-container">
                 <XAxis dataKey="name" stroke='white' />
                 <YAxis stroke='lightgray' />
                 <Bar dataKey="uv" className='bar' barSize={50} />
