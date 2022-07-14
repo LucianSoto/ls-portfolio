@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProjectStyles.css'
+import './ProjectTileStyles.css'
 import { Link } from 'react-router-dom'
 
 function Project({ id, name, image, address, info }) {
@@ -11,7 +11,6 @@ function Project({ id, name, image, address, info }) {
             <p className="project-overlay-info" 
               // make a LINK!!!!
             >{info}</p>
-            {/* <Link rel="stylesheet" href="" />Go To Project<Link/> */}
           </div>
           <h4 className="project-name" onClick={()=> window.open(`${address}`, '_blank') }>{name}</h4>
       </div>
