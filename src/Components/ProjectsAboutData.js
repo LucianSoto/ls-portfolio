@@ -73,7 +73,7 @@ export const ProjectsAboutData = [
     time: " Took about 40 hrs getting everything to dislay the way I intended and I'm not emberrased about the number of hours it took because I know that number would be much much lower these days.",
     link: "https://lucianaiolos.github.io/Music-Festival-X/",
     images: [
-       require('../assets/images/project-images/jungle.PNG'), 
+       require('../assets/images/project-images/jungle.png'), 
        require('../assets/images/project-images/jungle-2.png'),
        require('../assets/images/project-images/jungle-3.png'),       
     ],

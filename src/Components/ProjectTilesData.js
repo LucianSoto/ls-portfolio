@@ -1,6 +1,6 @@
 import MamHanoi from '../assets/images/project-images/mamhanoi.png'
 import Pokedex from '../assets/images/project-images/pokedex.png'
-import Jungle from '../assets/images/project-images/jungle.PNG'
+import Jungle from '../assets/images/project-images/jungle.png'
 import Waitlist from '../assets/images/project-images/waitlist.png'
 import Feedback from '../assets/images/project-images/feedback-app.png'
 import HouseMarketplaceTwo from '../assets/images/project-images/house-marketplace-2.png'
@@ -42,7 +42,7 @@ import HouseMarketplaceTwo from '../assets/images/project-images/house-marketpla
     name: 'Feedback App',
     image: Feedback,
     address: 'https://lucianaiolos.github.io/Feedback-App/',
-    info: 'React feedback app using a JSON server for a moc back-end.'
+    info: 'React feedback app using a JSON server for a mock back-end.'
   },
   {
     id: '4',
