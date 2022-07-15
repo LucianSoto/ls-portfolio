@@ -1,6 +1,3 @@
-//images Mam Hanoi
-import MamHanoi from '../assets/images/project-images/mamhanoi.png'
-
 
 export const ProjectsAboutData = [
   {
