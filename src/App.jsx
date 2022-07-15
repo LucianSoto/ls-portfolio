@@ -29,7 +29,7 @@ function App() {
       
       <Routes>
         <Route 
-          path='/lb-portfolio' 
+          path='/' 
           element={ !loader && <><Welcome /><AboutMe/></> } 
         />
         <Route 
