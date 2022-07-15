@@ -78,9 +78,9 @@ export const ProjectsAboutData = [
        require('../assets/images/project-images/jungle-3.png'),       
     ],
     graphData: [
-      {name: 'HTML 34%', uv: 34, pv: 100, },
-      {name: 'CSS 57%', uv: 57, pv: 100 },
-      {name: 'JS 9.5%', uv: 9.5, pv: 100},
+      { name: 'HTML 34%', uv: 34, pv: 100 },
+      { name: 'CSS 57%', uv: 57, pv: 100 },
+      { name: 'JS 9.5%', uv: 9.5, pv: 100 },
     ]
   },
 ]                       
