@@ -5,7 +5,6 @@ import Waitlist from '../assets/images/project-images/waitlist.png'
 import Feedback from '../assets/images/project-images/feedback-app.png'
 import HouseMarketplaceTwo from '../assets/images/project-images/house-marketplace-2.png'
 
-
  const ProjectsData = [
   
   {
