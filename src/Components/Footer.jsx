@@ -21,7 +21,8 @@ function Footer() {
               <stop stopColor='#38495a' offset='100%'/>
             </linearGradient>
           </svg>
-          <FaGithub style={{ fill: "url(#blue-gradient)", marginRight: "10px" }} />GitHub
+          <FaGithub style={{ fill: "url(#blue-gradient)"}} className='gradient-svg'/>
+          <span className='footer-span'>GitHub</span>
         </a>
         <a className="contact" 
            style={browserType === 'Safari' ? {color: '#8a8a8a'} : {color: 'transparent'}} 
@@ -32,19 +33,20 @@ function Footer() {
             <stop stopColor='#38495a' offset='100%'/>
           </linearGradient>
         </svg>
-        <FaLinkedin style={{ fill: "url(#blue-gradient)", marginRight: "10px"}} />LinkedIn
+        <FaLinkedin style={{ fill: "url(#blue-gradient)"}} className='gradient-svg' />
+        <span className='footer-span'>LinkedIn</span>
         </a>
         <Link className="contact" 
            style={browserType === 'Safari' ? {color: '#8a8a8a'} : {color: 'transparent'}} 
            to='/email' >
-          {/* onClick={()=> window.scroll(0,0)} */}
           <svg width='0' height='0'>
             <linearGradient id="env-gradient" x1="0%" y1="0%" x2="0%" y2="100%" >
               <stop stopColor='white' offset='0%'/> 
               <stop stopColor='#38495a' offset='100%'/>
             </linearGradient>
           </svg>
-          <FaEnvelope style={{ fill: "url(#env-gradient)" , marginRight: "10px"}} />Email
+          <FaEnvelope style={{ fill: "url(#env-gradient)"}} className='gradient-svg'/>
+          <span className='footer-span'>Email</span>
         </Link>
       </div>
     </div>

@@ -13,21 +13,22 @@ nav{
   letter-spacing: 3px;
   font-size: 22px;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.896);
 }
 
 .menu-item {
   text-decoration: none;
-  background: -webkit-linear-gradient(white, #38495a);
+  /* background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
+    -webkit-text-fill-color: transparent; */
+  color: gold;
 }
 
 .menu-div {
   display: flex;
   flex-direction: row;
   /* align-items: center; */
-  max-width: 500px;
+  max-width: 650px;
   font-size: 25px;
 }
 
@@ -35,12 +36,15 @@ nav{
   font-size: 28px;
 }
 
+.underlined {
+  
+}
+
 .menu-dd {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.836);
-  padding-left: 30px;
+  padding-left: 00px;
   /* animation: rotateZ 300ms ease-in-out ; */
   animation: growDown 330ms ease-in-out ;
   transform-origin: right ;
@@ -100,10 +104,11 @@ nav{
 }
 
 .menu-item:hover, .lb-logo:hover {
-  color: #949209;
+  /* color: #949209;
   background: -webkit-linear-gradient(white, #6e6d04);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: white;
 }
 
 .ellipsis:hover {
