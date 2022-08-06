@@ -9,31 +9,26 @@
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
-  /* scrollbar-width: 3px; */
   margin: 0;
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-}
+  width: 8px;
+} 
 
-
-/* ::-webkit-scrollbar-track {
-  background: #3900a3;
+::-webkit-scrollbar-track {
+  background: #6c6c5c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(161, 143, 172, 0.562);
-}  */
+  background: rgba(235, 210, 70, 0.679);
+}  
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-image: linear-gradient(
-    200deg, rgba(0, 0, 0, 0.904), rgb(14, 7, 7)
-  ); */
   background-color: black;
   margin: 0;
   width: 100%;
@@ -41,6 +36,4 @@ body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   color: seashell; 
   scroll-behavior: smooth;
-  scrollbar-width: 3px;
-  
 }

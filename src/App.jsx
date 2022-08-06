@@ -30,15 +30,15 @@ function App() {
       <Routes>
         <Route 
           path='/' 
-          element={ !loader && <><Welcome /><AboutMe/></> } 
+          element={ !loader && <><Welcome /></> } 
         />
         <Route 
           path="/portfolio" 
           element={ !loader && <><Portfolio/></> }
         />
         <Route 
-          path="/email"
-          element={ !loader && <><Email/></>}
+          path="/about"
+          element={ !loader && <><AboutMe/></>}
         />
       </Routes>
       { !loader && <Footer /> } 

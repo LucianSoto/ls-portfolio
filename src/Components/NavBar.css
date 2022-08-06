@@ -9,7 +9,7 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 3px;
   font-size: 22px;
   text-transform: uppercase;
@@ -18,10 +18,10 @@ nav{
 
 .menu-item {
   text-decoration: none;
-  /* background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(rgb(246, 224, 94), rgb(231, 203, 45));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-  color: gold;
+    -webkit-text-fill-color: transparent;
+  /* color: gold; */
 }
 
 .menu-div {
@@ -104,11 +104,10 @@ nav{
 }
 
 .menu-item:hover, .lb-logo:hover {
-  /* color: #949209;
-  background: -webkit-linear-gradient(white, #6e6d04);
+  /* color: #949209; */
+  background: -webkit-linear-gradient(white, #fdfdfd);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    color: white;
+    -webkit-text-fill-color: white;
 }
 
 .ellipsis:hover {

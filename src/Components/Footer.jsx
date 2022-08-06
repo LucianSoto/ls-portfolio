@@ -3,12 +3,16 @@ import { FaGithub, FaFacebook, FaInstagram, FaMobileAlt, FaAt, FaEnvelope, FaEll
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import { browserName } from "react-device-detect"
+import Email from './Email'
 
 function Footer() {
   let browserType = browserName
 
   return (
     <div className='footer'>
+      
+      <p className="footer-blurb"></p>
+      <Email/>
       <h3 className='footer-h3'>Let's work together!</h3>
       <div className="contacts-cont">
         <a className="contact" 

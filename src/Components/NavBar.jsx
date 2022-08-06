@@ -26,7 +26,7 @@ function NavBar() {
               <div className="menu-dd" onClick={changeDD}>
                 <Link className='menu-item navLink' to='/'>Home</Link>
                 <Link className="menu-item navLink" to="/portfolio" >Portfolio</Link>
-                <Link className="menu-item navLink" to="/email" >About</Link>
+                <Link className="menu-item navLink" to="/about" >About</Link>
                 <Link className="menu-item navLink" to="/resume">Resume</Link>
                 <p className='menu-item' style={{display: "none"}} id='x'>X</p>
               </div>
