@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fredoka+One&family=Fuzzy+Bubbles&family=Genos:wght@500&family=Krona+One&family=Merriweather+Sans:wght@300&family=Press+Start+2P&family=Roboto:wght@300&family=Tajawal:wght@200&family=Titillium+Web:wght@300&display=swap');
 
 .welcome-section {
-  height: 110vh;
+  height: 105vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ h1 {
   background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  margin-top: 0;
+  margin: 0;
 }
 
 @keyframes move-twinkle-back {
@@ -88,8 +88,6 @@ h1 {
   animation: move-twinkle-back 180s linear infinite;
   background-attachment: fixed;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .welcome-section {

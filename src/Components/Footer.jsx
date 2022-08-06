@@ -10,10 +10,7 @@ function Footer() {
 
   return (
     <div className='footer'>
-      
-      <p className="footer-blurb"></p>
-      <Email/>
-      <h3 className='footer-h3'>Let's work together!</h3>
+      <p className="footer-design">Designed and Developed by Lucian Brooks</p>
       <div className="contacts-cont">
         <a className="contact" 
            style={browserType === 'Safari' ? {color: '#8a8a8a'} : {color: 'transparent'}} 

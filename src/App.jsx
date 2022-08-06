@@ -8,6 +8,7 @@ import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 import Email from "./Components/Email";
 import { Routes, Route } from "react-router-dom"
+import Blurb from "./Components/Blurb";
 
 function App() {
   const [loader, setLoader] = useState(true)
@@ -30,7 +31,7 @@ function App() {
       <Routes>
         <Route 
           path='/' 
-          element={ !loader && <><Welcome /></> } 
+          element={ !loader && <><Welcome /><Blurb/></> } 
         />
         <Route 
           path="/portfolio" 

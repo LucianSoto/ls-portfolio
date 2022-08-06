@@ -4,31 +4,14 @@ import ProjectsData from './ProjectTilesData.js'
 import ProjectTile from './ProjectTile'
 import ProjectsSection from './ProjectsSection'
 import { useState, useEffect } from 'react'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import Email from './Email'
 // import waitlistImage from '/public/imgs/ProjectImages/waitlist.PNG'
 // import wI from '/imgs/waitlist.png'
 
 
 function Portfolio() {
-  // const notificationString = ;
-  useEffect(() => {
-    setTimeout(()=> notify(), 3000)
-    handleScroll()
-  }, [])
-
-  const handleScroll = () => {
-    setTimeout(()=> {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      })
-    }, 100) 
-  }
 
   const [data, setData] = useState(ProjectsData)
-  const notify = () => toast("Hover and click on project descriptions to learn more or click on the titles to go to site")
-
   const ProjectComponents = data.map((project) => 
     <ProjectTile
         key={project.id}
@@ -47,7 +30,8 @@ function Portfolio() {
         {ProjectComponents}
       </div>   
       <ProjectsSection/>
-      <ToastContainer theme="dark" />
+      <h3 className='footer-h3'>Let's work together!</h3>
+      <Email/>
     </div>
   )
 }

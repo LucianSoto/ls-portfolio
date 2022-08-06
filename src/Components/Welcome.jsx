@@ -1,5 +1,6 @@
 import './Welcome.css'
 import AboutMe from './AboutMe'
+import Blurb from './Blurb'
 
 function Welcome() {
 

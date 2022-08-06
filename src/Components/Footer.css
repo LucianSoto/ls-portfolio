@@ -1,17 +1,24 @@
 .footer {
   width: 100%;
-  height: 60vh;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: ;
+  justify-content: space-between;
   background-color: transparent;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(192, 180, 109, 0.113);
+}
+
+.footer-design {
+  font-size: 20px;
+  margin-left: 50px;
 }
 
 .contacts-cont {
   display: flex;
   justify-content: space-around;
-  width: 60%;
+  width: 40%;
 }
 
 .contacts-cont a {
@@ -38,13 +45,6 @@
   background-image: linear-gradient(to bottom, white, gray); */
 }
 
-.footer-h3 {
-  font-size: 80px;
-  color: rgba(255, 245, 238, 0.842);
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .footer-span {
   margin-left: 10px;

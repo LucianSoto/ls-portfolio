@@ -37,7 +37,7 @@ function Email() {
     <div className='form-cont'>
       <h3 className="email-title">Contact</h3>
       <form action="" onSubmit={sendEmail}>
-        <div className="input-cont">
+        {/* <div className="input-cont">
           <label>Name</label>
           <input 
             type="text" 
@@ -45,8 +45,8 @@ function Email() {
             placeholder='First & Last'
             name='from_name'
           />
-        </div>
-        <div className="input-cont">
+        </div> */}
+        {/* <div className="input-cont">
           <label>Email</label>
           <input 
             type="email" 
@@ -54,7 +54,7 @@ function Email() {
             placeholder='example@gmail.com'
             name='from_email'
           />
-        </div>
+        </div> */}
         <div className="input-cont message-cont">
           <label>Message</label>
           <textarea 
