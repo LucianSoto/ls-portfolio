@@ -1,12 +1,16 @@
+.hi {
+  margin-top: 150px;
+  font-size: 45px;
+}
+
 .about-container {
-  height: 100%;
+  height: 70vh;
   width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 5rem;
+  margin: 0;
 }
 
 .about-paragraph {
@@ -23,6 +27,7 @@
   margin-left: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .me-div img {

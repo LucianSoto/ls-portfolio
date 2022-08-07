@@ -13,10 +13,11 @@
 
 .portfolio-title {
   font-size: 45px;
-    background: -webkit-linear-gradient(white, rgb(250, 231, 218));
+    /* background: -webkit-linear-gradient(white, rgb(250, 231, 218));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem; */
+  color: white;
 }
 
 .under-construction {

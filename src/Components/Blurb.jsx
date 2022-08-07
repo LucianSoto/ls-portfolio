@@ -9,7 +9,7 @@ const Blurb = () => {
         <p className="blurb-p">Another freelance web developer who fell in love with React, JavaScript and fascinated by CSS animations. 😵⭐🌠</p>
         <p className="blurb-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas delectus necessitatibus accusantium atque nesciunt obcaecati qui ducimus consequuntur eaque pariatur commodi?👨‍💻🧙‍♂️</p>
       </div>
-      <img src={MeImage} alt="" />
+      <img className='blurb-img' src={MeImage} alt="" />
     </div>
   )
 }

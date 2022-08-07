@@ -13,15 +13,15 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 } 
 
 ::-webkit-scrollbar-track {
-  background: #6c6c5c;
+  background: #6c6c5c7b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(235, 210, 70, 0.679);
+  background: rgba(235, 210, 70, 0.548);
 }  
 
 body {
@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: seashell; 
+  color: white; 
   scroll-behavior: smooth;
 }
 
