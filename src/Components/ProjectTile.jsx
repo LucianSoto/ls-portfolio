@@ -1,9 +1,17 @@
 import React from 'react'
 import './ProjectTileStyles.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
-function Project({ id, name, image, address, info, link }) {
-  const openProject = () => {
+function Project({key, id, name, image, info, link }) {
+  //state for display, 
+
+  const navigate = useNavigate()
+
+  const openProjectSection = (id) => {
+    // e.preventDefault()
+    console.log(id)
+    // navigate('/projectSection')
+  
 
   }
 
@@ -11,14 +19,17 @@ function Project({ id, name, image, address, info, link }) {
 
   return (
     <>
-      <div className='project-tile-cont' >
+      <div className='project-tile-cont' key={key} >
           <img className='project-image' src={image} alt="" />
           <div className="project-overlay">
             <p className="project-overlay-info" >{info}</p>
-            <div className="learn-button" onClick={() => openProject()}>Learn More</div>
+            {/* {id && ( */}
+              <div className="learn-button" id={id} onClick={() =>
+                openProjectSection(id)}>Learn More
+              </div>
+            {/*  )} */}
           </div>
           {/* <h4 className="project-name" onClick={()=> window.open(`${address}`, '_blank') }>{name}</h4> */}
-          
       </div>
     </>
   )

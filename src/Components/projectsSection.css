@@ -5,10 +5,10 @@
   display: none;
 }
 
-.project-title {
+/* .project-title {
   font-size: 27px;
   text-align: center;
-}
+} */
 
 .project {
   display: flex;

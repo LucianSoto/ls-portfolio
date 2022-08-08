@@ -8,20 +8,35 @@ import './projectsSection.css'
 import Project from './Project'
 //images 
 import MamHanoiImage from '../assets/images/project-images/mamhanoi.png'
-
+import ProjectsData from './ProjectTilesData.js'
+import ProjectTile from './ProjectTile'
 
 const ProjectsSection = () => {
   
   const [currentProject, setCurrentProject] = useState(0)
 
   const project = ProjectsAboutData[currentProject]
+  const [data, setData] = useState(ProjectsData)
 
+  // const ProjectsGrid = data.map((project) => 
+  //   <ProjectTile
+  //       key={project.id}
+  //       name={project.name}
+  //       image={project.image}
+  //       address={project.address}
+  //       projectStyle={project.projectStyle}
+  //       info={project.info}
+  //   />
+  // )
   return (
   <div className="project-cont">
     {/* <img src={require('../assets/images/project-images/feedback-app.png')} alt="" /> THIS FUCKING WOKRS!!!!!!! :D)))*/}
+
+    {/* <div className="projects-grid-open">
+      {ProjectsGrid}
+    </div>  */}
     <Project
       key={project.id}
-      // don't really need key prop?
       title={project.title}
       about={project.about}
       likes={project.likes}
@@ -31,7 +46,6 @@ const ProjectsSection = () => {
       link={project.link}
       images={project.images}
       graph={project.graphData}
-      // what can i do about the graph data??
     />
   </div> 
   )

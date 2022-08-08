@@ -16,7 +16,7 @@ import './Graph.css'
 import './projectsSection.css'
 
 
-const ProjectAbout = ({ 
+const Project = ({ 
   id,
   title,
   about, 
@@ -31,8 +31,6 @@ const ProjectAbout = ({
 
   const [windowWidth, setWindowWidth] = useState(0)
   window.addEventListener('resize', ()=> {setWindowWidth(window.screen.width)})
-
-  console.log(windowWidth)
 
   const imagesForCarousel = images.map((image, i) => 
     <div key={i} className="images-cont" 
@@ -95,7 +93,7 @@ const ProjectAbout = ({
   )
 }
 
-export default ProjectAbout
+export default Project
 
 
 

@@ -33,6 +33,17 @@
   justify-content: center;
 }
 
+.projects-grid-side {
+  display: grid;
+  width: 30%;
+  height: 100%;
+  grid-template-columns: 22rem ;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* @media screen and (max-width: 1000) */
 
 /* @media screen and (max-width: 1300px) {

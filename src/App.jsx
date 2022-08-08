@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Email from "./Components/Email";
 import { Routes, Route } from "react-router-dom"
 import Blurb from "./Components/Blurb";
+import ProjectSection from "./Components/ProjectSection";
 
 function App() {
   const [loader, setLoader] = useState(true)
@@ -33,15 +34,19 @@ function App() {
           path='/' 
           element={ !loader && <><Welcome /><Blurb/></> } 
         />
-        <Route path="/email" element={ !loader && <><Email/></>}
+        <Route path="/email" element={<Email/>}
         />
         <Route 
           path="/portfolio" 
-          element={ !loader && <><Portfolio/></> }
+          element={<Portfolio/>}
         />
         <Route 
           path="/about"
-          element={ !loader && <><AboutMe/></>}
+          element={<AboutMe/>}
+        />
+        <Route
+          path="/projectSection"
+          element={<ProjectSection/>}
         />
       </Routes>
       { !loader && <Footer /> } 
