@@ -2,20 +2,11 @@ import React from 'react'
 import './ProjectTileStyles.css'
 import { Link, useNavigate } from 'react-router-dom'
 
-function Project({key, id, name, image, info, link }) {
-  //state for display, 
-
-  const navigate = useNavigate()
+function Project({key, id, name, image, info, link, changeCurrentProject}) {
 
   const openProjectSection = (id) => {
-    // e.preventDefault()
-    console.log(id)
-    // navigate('/projectSection')
-  
-
+    changeCurrentProject(id)
   }
-
- 
 
   return (
     <>

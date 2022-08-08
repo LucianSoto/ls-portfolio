@@ -20,36 +20,47 @@ function Portfolio() {
   const [display, setDisplay] = useState(false)
 
   const changeCurrentProject = (num) => {
-    //if 
+    console.log(num)
     if(grid){
       setGrid(false)
     }
     setCurrentProject(num)
+    setDisplay(true)
   }
+
+  
 
   const ProjectsGrid = data.map((project) => 
     <ProjectTile
+        changeCurrentProject={changeCurrentProject}
         key={project.id}
         id={project.id}
         name={project.name}
         image={project.image}
-        // link={project.address}
         info={project.info}
     />
   )
   return (
-    <div className='portfolio-cont'>
+    <>
       <h3 className='portfolio-title'>    Featured Projects</h3>
-      <p className="under-construction">Currently Under Construction 🐱‍💻</p>
-      <div className={ grid ? 
-        "projects-grid-open" : "projects-grid-side"}
-      >
-        {ProjectsGrid}
-      </div>   
-      <ProjectSection displayProject={display}/>
-      <h3 className='footer-h3'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email">here</Link></span></h3>
-      {/* <Email/> */}
-    </div>
+        <p className="under-construction">Currently Under Construction 🐱‍💻</p>
+      <div className='portfolio-cont'>
+        
+        <div className={ grid ? 
+          "projects-grid-open" : "projects-grid-side"}
+        >
+          {/* view as grid button  */}
+          {ProjectsGrid}
+        </div>   
+        <ProjectSection 
+          displayProject={display} 
+          sentProject={currentProject}
+        />
+        
+      </div>
+      <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email">here</Link></span></p>
+        {/* <Email/> */}
+    </>
   )
 }
 
