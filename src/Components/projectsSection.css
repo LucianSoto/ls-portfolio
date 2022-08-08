@@ -1,8 +1,6 @@
 .project-cont {
   width: 80%;
-  margin-top: 10rem;
   text-align: left;
-  
 }
 
 /* .project-title {
@@ -13,12 +11,17 @@
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   height: 100%;
   width: 100%;
   /* margin-bottom: 8rem; */
   padding-bottom: 8rem;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.788); */
+}
+
+.project-title {
+  margin-left: 50px;
+  font-size: 28px;
 }
 
 .project-inner-cont {
@@ -35,7 +38,7 @@
 }
 
 .project-description p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 a {

@@ -38,6 +38,7 @@ function Portfolio() {
         name={project.name}
         image={project.image}
         info={project.info}
+        display={display}
     />
   )
   return (
@@ -49,7 +50,13 @@ function Portfolio() {
         <div className={ grid ? 
           "projects-grid-open" : "projects-grid-side"}
         >
-          {/* view as grid button  */}
+          {/* <div 
+            className="view-grid-button"
+            style={display ? {display: 'flex'} : { display: 'none'}}
+            onClick={() => setDisplay(false)}
+          >
+            Back To Grid View
+          </div> */}
           {ProjectsGrid}
         </div>   
         <ProjectSection 

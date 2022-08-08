@@ -2,7 +2,7 @@ import React from 'react'
 import './ProjectTileStyles.css'
 import { Link, useNavigate } from 'react-router-dom'
 
-function Project({key, id, name, image, info, link, changeCurrentProject}) {
+function Project({ key, id, name, image, info, link, changeCurrentProject, display }) {
 
   const openProjectSection = (id) => {
     changeCurrentProject(id)
@@ -11,7 +11,7 @@ function Project({key, id, name, image, info, link, changeCurrentProject}) {
   return (
     <>
       <div className='project-tile-cont' key={key} >
-          <img className='project-image' src={image} alt="" />
+          <img className={ display ? 'project-image-side' : 'project-image'} src={image} alt="" />
           <div className="project-overlay">
             <p className="project-overlay-info" >{info}</p>
             {/* {id && ( */}
