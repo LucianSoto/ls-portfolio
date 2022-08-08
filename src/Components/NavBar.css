@@ -1,5 +1,5 @@
 nav{
-  height: 80px;
+  height: 65px;
   width: 90%;
   position: fixed;
   top: 0;
@@ -9,19 +9,14 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-weight: 900;
   letter-spacing: 3px;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.896);
 }
 
 .menu-item {
-  text-decoration: none;
-  background: -webkit-linear-gradient(rgb(246, 224, 94), rgb(231, 203, 45));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  /* color: gold; */
+  color: rgb(255, 255, 255);
 }
 
 .menu-div {
@@ -29,11 +24,12 @@ nav{
   flex-direction: row;
   /* align-items: center; */
   max-width: 650px;
-  font-size: 25px;
 }
 
 .lb-logo {
-  font-size: 28px;
+  font-size: 23px;
+  font-weight: 800;
+  color: rgba(255, 217, 0, 0.728);
 }
 
 .underlined {

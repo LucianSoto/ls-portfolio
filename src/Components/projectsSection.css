@@ -1,12 +1,13 @@
-.projects-cont {
+.project-cont {
   width: 80%;
   margin-top: 10rem;
   text-align: left;
+  display: none;
 }
 
 .project-title {
-  font-size: 40px;
-  margin-left: 1rem;
+  font-size: 27px;
+  text-align: center;
 }
 
 .project {
@@ -30,6 +31,10 @@
 .project-description {
   padding: 30px;
   width: 35%;
+  font-size: 20px;
+}
+
+.project-description p {
   font-size: 20px;
 }
 

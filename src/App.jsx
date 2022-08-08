@@ -33,6 +33,8 @@ function App() {
           path='/' 
           element={ !loader && <><Welcome /><Blurb/></> } 
         />
+        <Route path="/email" element={ !loader && <><Email/></>}
+        />
         <Route 
           path="/portfolio" 
           element={ !loader && <><Portfolio/></> }

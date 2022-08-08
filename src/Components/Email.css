@@ -20,11 +20,12 @@ form {
 }
 
 .email-title {
-  font-size: 40px;
+  font-size: 35px;
   background: 
   -webkit-linear-gradient(white, rgb(250, 231, 218));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  margin-top: 100px;
   margin-bottom: 4rem;
 }
 

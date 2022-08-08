@@ -2,18 +2,16 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: ;
   justify-content: space-between;
-  background-color: transparent;
   margin: 0;
   border-top: 1px solid rgba(192, 180, 109, 0.113);
-  
+  font-size: 20px;
+  color: white;
 }
 
 .footer-design {
-  font-size: 20px;
   margin-left: 50px;
+  font-size: 20px;
 }
 
 .contacts-cont {
@@ -22,33 +20,16 @@
   width: 40%;
 }
 
-.contacts-cont a {
-  text-decoration: none;
-  color: lightgray;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray);
-  background-image: -webkit-linear-gradient(to bottom, white, gray);
-  background-image: -moz-linear-gradient(to bottom, white, gray);
-  background-image: -o-linear-gradient(to bottom, white, gray);
-  background-image: -ms-linear-gradient(to bottom, white, gray);
-}
-
 .contact {
   text-align: center;
-  text-decoration: none;
-  /* color: white; */
-  font-size: 25px;
-  font-weight: 700;
+  color: rgba(255, 255, 255, 0.712);
   display: flex;
   align-items: center;
-  /* color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray); */
 }
-
 
 .footer-span {
   margin-left: 10px;
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {

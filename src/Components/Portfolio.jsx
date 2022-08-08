@@ -11,8 +11,10 @@ import Email from './Email'
 
 function Portfolio() {
 
+  //close grid-to side, open project, loader
+
   const [data, setData] = useState(ProjectsData)
-  const ProjectComponents = data.map((project) => 
+  const ProjectsGrid = data.map((project) => 
     <ProjectTile
         key={project.id}
         name={project.name}
@@ -24,14 +26,14 @@ function Portfolio() {
   )
   return (
     <div className='portfolio-cont'>
-      <h3 className='portfolio-title'>Portfolio</h3>
-      <p className="under-construction">Under Construction</p>
-      <div className="projects-grid">
-        {ProjectComponents}
+      <h3 className='portfolio-title'>    Featured Projects</h3>
+      <p className="under-construction">Currently Under Construction 🐱‍💻</p>
+      <div className="projects-grid-open">
+        {ProjectsGrid}
       </div>   
       <ProjectsSection/>
       <h3 className='footer-h3'>Let's work together!</h3>
-      <Email/>
+      {/* <Email/> */}
     </div>
   )
 }

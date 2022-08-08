@@ -1,7 +1,7 @@
-.project-cont {
+.project-tile-cont {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
-  border-radius: 5px;
-  height: 510px;
+  /* border: 3px solid rgba(64, 253, 216, 0.657); */
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,44 +16,51 @@
 }
 
 .project-image{
-  height: 430px;
+  height: 250px;
   width: 100%;
   overflow: hidden;
-  border-radius: 5px 5px 0 0;
   transition: .5s ease;
   opacity: 1;
   /* backface-visibility: hidden; */
 }
 
 .project-overlay-info {
-  font-size: 30px;
-  cursor: pointer;
+  /* font-size: 20px; */
 }
 
 .project-overlay {
   opacity: 0;
   transition-duration: 2s;
   position: absolute;
-  height: 428.33px;
+  height: 100%;
   width: 100%;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px 5px 0 0;
   background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
 }
 
-.project-cont:hover .project-overlay{
+.learn-button {
+  border: 1px solid rgba(255, 255, 255, 0.548);
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.project-tile-cont:hover .project-overlay{
   opacity: 1;
 }
 
-.project-cont:hover .project-image{
+.project-tile-cont:hover .project-image{
   opacity: .1;
 }
 
 .project-overlay-info {
-  width: 85%;
+  width: 100%;
 }
 
  h4 {
@@ -76,7 +83,7 @@ h4:hover {
 
 
 @media screen and (max-width: 1000px) {
-  .project-cont {
+  .project-tile-cont {
     height: 400px;
   }
   .project-overlay {

@@ -35,9 +35,10 @@ function Email() {
 
   return (
     <div className='form-cont'>
-      <h3 className="email-title">Contact</h3>
+      <h3 className="email-title">Any Questions?</h3>
+      <p>Feel free to contact me directly!</p>
       <form action="" onSubmit={sendEmail}>
-        {/* <div className="input-cont">
+        <div className="input-cont">
           <label>Name</label>
           <input 
             type="text" 
@@ -45,7 +46,7 @@ function Email() {
             placeholder='First & Last'
             name='from_name'
           />
-        </div> */}
+        </div>
         {/* <div className="input-cont">
           <label>Email</label>
           <input 
