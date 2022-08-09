@@ -1,17 +1,17 @@
-.hi {
-  margin-top: 100px;
-  font-size: 40px;
-  /* color: #6e6d04; */
-}
-
 .about-container {
-  height: 70vh;
-  width: 70%;
+  height: 100%;
+  width: 75%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 15rem 0 10rem 0;
+}
+
+.hi {
+  margin-top: 100px;
+  font-size: 35px;
+  /* color: #6e6d04; */
 }
 
 .about-paragraph {
@@ -20,6 +20,10 @@
   font-size: 25px;
   line-height: 35px;
   width: 65%;
+}
+
+.highlight {
+
 }
 
 .me-div {

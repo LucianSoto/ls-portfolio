@@ -27,7 +27,7 @@ function NavBar() {
                 <Link className='menu-item navLink' to='/'>Home</Link>
                 <Link className="menu-item navLink" to="/portfolio" >Portfolio</Link>
                 <Link className="menu-item navLink" to="/about" >About</Link>
-                <Link className="menu-item navLink" to="/resume">Resume</Link>
+                {/* <Link className="menu-item navLink" to="/resume">Resume</Link> */}
                 <p className='menu-item' style={{display: "none"}} id='x'>X</p>
               </div>
               {/* <svg width='0' height='0'>

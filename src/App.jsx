@@ -44,10 +44,6 @@ function App() {
           path="/about"
           element={<AboutMe/>}
         />
-        <Route
-          path="/projectSection"
-          element={<ProjectSection/>}
-        />
       </Routes>
       { !loader && <Footer /> } 
       

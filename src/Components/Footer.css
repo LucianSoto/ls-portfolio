@@ -1,23 +1,28 @@
 .footer {
   width: 100%;
-  height: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  border-top: 1px solid rgba(192, 180, 109, 0.113);
+  align-items: center;
+  margin: 0 0 0 0;
+  border-top: 1px solid rgba(160, 150, 92, 0.256);
   font-size: 20px;
   color: white;
+  /* position: absolute; */
+  bottom: 0;
 }
 
 .footer-design {
-  margin-left: 50px;
+  margin: 0 0 0 50px;
   font-size: 20px;
+  text-align: center;
 }
 
 .contacts-cont {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  margin-right: 20px;
 }
 
 .contact {
@@ -30,12 +35,6 @@
 .footer-span {
   margin-left: 10px;
   color: white;
-}
-
-@media screen and (max-width: 1000px) {
-  .footer-h3 {
-    font-size: 60px;
-  }
 }
 
 
