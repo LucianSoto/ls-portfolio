@@ -1,6 +1,7 @@
 .project-cont {
   width: 80%;
   text-align: left;
+  padding: 0;
 }
 
 /* .project-title {
@@ -20,7 +21,7 @@
 }
 
 .project-title {
-  margin-left: 50px;
+  margin-left: 70px;
   font-size: 28px;
 }
 
@@ -32,9 +33,8 @@
 }
 
 .project-description {
-  padding: 30px;
+  padding: 0;
   width: 35%;
-  font-size: 20px;
 }
 
 .project-description p {
@@ -49,7 +49,7 @@ a {
 
 .project-media-cont {
   padding-top: 33px;
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +67,7 @@ a {
 .responsive-container {
   height: 100%;
 }
-
+/* 
 @media screen and (max-width: 1950px ) {
   .project-media-cont {
     width: 40%;
@@ -76,7 +76,7 @@ a {
   .carousel {
     margin-bottom: 5rem;
   }
-}
+} */
 
 
 @media screen and (max-width: 1150px) {

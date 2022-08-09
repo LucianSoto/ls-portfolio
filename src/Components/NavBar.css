@@ -1,6 +1,6 @@
 nav{
   height: 65px;
-  width: 90%;
+  width: 100%;
   position: fixed;
   top: 0;
   /* margin-top: 30px; */
@@ -27,6 +27,7 @@ nav{
 }
 
 .lb-logo {
+  margin-left: 50px;
   font-size: 23px;
   font-weight: 800;
   color: rgba(255, 217, 0, 0.728);
@@ -101,9 +102,10 @@ nav{
 
 .menu-item:hover, .lb-logo:hover {
   /* color: #949209; */
-  background: -webkit-linear-gradient(white, #fdfdfd);
+  color: gold;
+  /* background: -webkit-linear-gradient(white, #fdfdfd);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: white; */
 }
 
 .ellipsis:hover {
