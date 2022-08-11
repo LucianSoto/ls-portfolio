@@ -1,13 +1,13 @@
 .form-cont {
   height: 100%;
   width: 90%;
-  margin-top: 1rem;
+  margin: 8rem 0 5rem 0;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
 }
 
 form {
@@ -60,10 +60,11 @@ textarea {
 
 .message-cont {
   height: 150px;
+  
 }
 
 #btn-cont {
-  margin-top: 35px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
