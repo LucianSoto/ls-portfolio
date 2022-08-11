@@ -28,7 +28,8 @@ function App() {
     <div className="App"> 
       { loader? <LoaderComponent /> : null  }
       { !loader &&  <NavBar /> }
-      
+      <div className="stars" id="stars" ></div>
+      <div className="twinkling" id='twinkling'></div>
       <Routes>
         <Route 
           path='/' 

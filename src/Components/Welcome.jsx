@@ -6,8 +6,6 @@ function Welcome() {
 
   return (
     <div className="welcome-section">
-      <div className="stars" id="stars" ></div>
-      <div className="twinkling" id='twinkling'></div>
       <div className="name-wrapper">
         <h1>LUCIAN BROOKS</h1>
       </div>

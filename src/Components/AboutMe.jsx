@@ -7,8 +7,6 @@ function AboutMe() {
     <>
       
       <div className='about-container'>
-        <div className="stars" id="stars" ></div>
-        <div className="twinkling" id='twinkling'></div>
         <div className="about-paragraph">
         <h3 className='hi' > Hi I'm <span>Lucian!</span> 👋</h3>
         A self-taught <span className="highlight">developer</span> - though it feels wrong to say "self-taught" when I've had plenty of guidance from friends and we all learn through community-driven online resources.

@@ -47,7 +47,7 @@ function Email() {
             name='from_name'
           />
         </div>
-        {/* <div className="input-cont">
+        <div className="input-cont">
           <label>Email</label>
           <input 
             type="email" 
@@ -55,7 +55,7 @@ function Email() {
             placeholder='example@gmail.com'
             name='from_email'
           />
-        </div> */}
+        </div>
         <div className="input-cont message-cont">
           <label>Message</label>
           <textarea 
