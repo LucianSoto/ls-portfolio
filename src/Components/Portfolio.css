@@ -1,12 +1,21 @@
 .portfolio-cont {
-  position: relative;
-  margin-top: 10px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
 
+.projects-cont {
+  /* position: relative; */
+  margin-top: 10px;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  /* align-items: center; */
+  justify-content: center;
+  /* align-items: center; */
   /* align-items: center; */
   color: white;
   margin-bottom: 2rem;
@@ -19,9 +28,8 @@
 
 .under-construction {
   font-size: 20px;
-  padding-bottom: 30px;
   color: rgb(255, 196, 2);
-  margin: 0;
+  margin: 0 0 50px 0;
 }
 
 .projects-grid-open {
@@ -31,7 +39,7 @@
   /* grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr, 1fr)); */
   grid-template-columns: 22rem 22rem 22rem;
   /* grid-template-rows: 1fr 1fr; */
-  grid-gap: 10px;
+  grid-gap: 15px;
   align-items: center;
   justify-content: center;
 }
@@ -45,7 +53,7 @@
   grid-gap: 10px;
   align-items: center;
   justify-content: center;
-  margin: -100px 0 0 0;
+  margin: 0px 0 0 0;
 }
 
 .view-grid-button{
@@ -84,3 +92,33 @@
   }
 } */
 
+
+/* twinkles!!!  */
+@keyframes move-twinkle-back {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 5000px; }
+}
+
+ .twinkling, .stars {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  background: rgb(0, 0, 0) url(/src/assets/images/other-images/stars.png);
+  z-index: -2;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.twinkling {
+  background: transparent url(/src/assets/images/other-images/twinkling.png);
+  z-index: -1;
+  animation: move-twinkle-back 180s linear infinite;
+  background-attachment: fixed;
+}

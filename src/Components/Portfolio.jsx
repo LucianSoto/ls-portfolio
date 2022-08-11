@@ -42,10 +42,10 @@ function Portfolio() {
     />
   )
   return (
-    <>
+    <div className='portfolio-cont'>
       <h3 className='portfolio-title'>    Featured Projects</h3>
         <p className="under-construction">Currently Under Construction 🐱‍💻</p>
-      <div className='portfolio-cont'>
+      <div className='projects-cont'>
         
         <div className={ grid ? 
           "projects-grid-open" : "projects-grid-side"}
@@ -67,7 +67,7 @@ function Portfolio() {
       </div>
       <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email">here</Link></span></p>
         {/* <Email/> */}
-    </>
+    </div>
   )
 }
 

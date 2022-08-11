@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './NavBar.css'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaEllipsisV, FaXmark } from 'react-icons/fa'
 
 
@@ -12,10 +12,6 @@ function NavBar() {
     setDD(!dd)
   }
 
-  const params = useSearchParams()
-
-  console.log(params)
-
   return (
     <nav 
     // className={navBar ? 'nav-bar active' : 'nav-bar'}
@@ -24,9 +20,9 @@ function NavBar() {
         <Link className="menu-item lb-logo" to="/" >LB</Link>
         <div className='menu-div' id='menu-div'>
               <div className="menu-dd" onClick={changeDD}>
-                <Link className='menu-item navLink' to='/'>Home</Link>
-                <Link className="menu-item navLink" to="/portfolio" >Portfolio</Link>
-                <Link className="menu-item navLink" to="/about" >About</Link>
+                <NavLink  className='menu-item' to='/'>Home</NavLink>
+                <NavLink  className="menu-item " to="/portfolio" >Portfolio</NavLink>
+                <NavLink  className="menu-item " to="/about" >About</NavLink>
                 {/* <Link className="menu-item navLink" to="/resume">Resume</Link> */}
                 <p className='menu-item' style={{display: "none"}} id='x'>X</p>
               </div>
