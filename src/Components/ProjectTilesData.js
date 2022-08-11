@@ -8,28 +8,28 @@ import HouseMarketplaceTwo from '../assets/images/project-images/house-marketpla
  const ProjectsData = [
   
   {
-    id: '1',
+    id: 0,
     name: "Restaurant Website",
     image: MamHanoi,
-    address: 'https://www.mamhanoi.com/',
+    address: '',
     info: 'A responsived website, built and deployed for client.'
   },
   {
-    id: '6',
+    id: 1,
     name: "House Marketplace",
     image: HouseMarketplaceTwo,
     address: 'https://lucianaiolos.github.io/House-Marketplace',
     info: 'A Simple fullstack application using React and Firebase.'
   },
   {
-    id: '2',
+    id: 2,
     name: "Pokedex",
     image: Pokedex,
     address: 'https://lucianaiolos.github.io/PokeDex-Luxian/',
     info: 'Thanks to the Pokemon API, I was able to build my own version of the Pokedex.'
   },
   {
-    id: '3',
+    id: 3,
     name: "Festival Website",
     image: Jungle,
     address: 'https://lucianaiolos.github.io/Music-Festival-X/',
@@ -37,14 +37,14 @@ import HouseMarketplaceTwo from '../assets/images/project-images/house-marketpla
   },
   
   {
-    id: '5',
+    id: 4,
     name: 'Feedback App',
     image: Feedback,
     address: 'https://lucianaiolos.github.io/Feedback-App/',
     info: 'React feedback app using a JSON server for a mock back-end.'
   },
   {
-    id: '4',
+    id: 5,
     name: "Restaurant Waitlist",
     image: Waitlist,
     address: 'https://lucianaiolos.github.io/Waitlist-LocalStorage/',

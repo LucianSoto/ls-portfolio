@@ -1,6 +1,6 @@
 nav{
-  height: 80px;
-  width: 90%;
+  height: 65px;
+  width: 100%;
   position: fixed;
   top: 0;
   /* margin-top: 30px; */
@@ -9,42 +9,51 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
   letter-spacing: 3px;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.896);
 }
 
-.menu-item {
-  text-decoration: none;
-  background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-}
 
 .menu-div {
   display: flex;
   flex-direction: row;
   /* align-items: center; */
-  max-width: 500px;
-  font-size: 25px;
+  max-width: 650px;
 }
 
-.lb-logo {
-  font-size: 28px;
-}
+
+
 
 .menu-dd {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.836);
-  padding-left: 30px;
+  padding-left: 00px;
   /* animation: rotateZ 300ms ease-in-out ; */
   animation: growDown 330ms ease-in-out ;
   transform-origin: right ;
   transition: animation 0s 500ms, opacity 300ms linear;
+}
+
+.menu-item {
+  color: white;
+  font-weight: 500;
+  margin-right: 3rem;
+  
+}
+
+.active {
+  color: gold;
+  border-bottom: 1px solid gold;
+}
+
+.lb-logo {
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 800;
+  color: rgba(255, 217, 0, 0.728);
 }
 
 .hidden {
@@ -82,9 +91,6 @@ nav{
   }
 } */
 
-.navLink {
-  padding-right: 3rem;
-}
 
 #x {
   font-weight: 900;
@@ -100,11 +106,14 @@ nav{
 }
 
 .menu-item:hover, .lb-logo:hover {
-  color: #949209;
-  background: -webkit-linear-gradient(white, #6e6d04);
+  /* color: #949209; */
+  color: gold;
+  /* background: -webkit-linear-gradient(white, #fdfdfd);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white; */
 }
+
+/* hover underline fill animation */
 
 .ellipsis:hover {
   animation: jiggle .3s ease-in-out ;
@@ -169,18 +178,11 @@ nav{
         transform: scaleY(1)
     }
   }
-
-  .navLink{
-    padding:0;
-    justify-self: end;
-    text-align: right;
-    /* background: rgba(0, 0, 0, 0.95); */
-  }
-  #x {
-    margin: 0;
-    text-align: right;
-  }
+ 
   /* nav.active {
     background-color: rgba(0, 0, 0, 0.95);
   } */
 }
+
+
+

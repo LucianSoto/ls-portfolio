@@ -1,7 +1,7 @@
 .form-cont {
   height: 100%;
   width: 90%;
-  margin-top: 4rem;
+  margin-top: 1rem;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -20,12 +20,13 @@ form {
 }
 
 .email-title {
-  font-size: 40px;
+  font-size: 35px;
   background: 
   -webkit-linear-gradient(white, rgb(250, 231, 218));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  margin-bottom: 4rem;
+  margin-top: 50px;
+  margin: 0;
 }
 
 label {

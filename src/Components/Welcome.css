@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fredoka+One&family=Fuzzy+Bubbles&family=Genos:wght@500&family=Krona+One&family=Merriweather+Sans:wght@300&family=Press+Start+2P&family=Roboto:wght@300&family=Tajawal:wght@200&family=Titillium+Web:wght@300&display=swap');
 
 .welcome-section {
-  height: 110vh;
+  height: 105vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,39 +57,8 @@ h1 {
   background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  margin-top: 0;
+  margin: 0;
 }
-
-@keyframes move-twinkle-back {
-  from { background-position: 0 0; }
-  to { background-position: -1000px 5000px; }
-}
-
- .twinkling, .stars {
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.stars {
-  background: rgb(0, 0, 0) url(/src/assets/images/other-images/stars.png);
-  z-index: -2;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.twinkling {
-  background: transparent url(/src/assets/images/other-images/twinkling.png);
-  z-index: -1;
-  animation: move-twinkle-back 180s linear infinite;
-  background-attachment: fixed;
-}
-
-
 
 @media screen and (max-width: 600px) {
   .welcome-section {

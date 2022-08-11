@@ -8,6 +8,8 @@ import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 import Email from "./Components/Email";
 import { Routes, Route } from "react-router-dom"
+import Blurb from "./Components/Blurb";
+import ProjectSection from "./Components/ProjectSection";
 
 function App() {
   const [loader, setLoader] = useState(true)
@@ -26,19 +28,22 @@ function App() {
     <div className="App"> 
       { loader? <LoaderComponent /> : null  }
       { !loader &&  <NavBar /> }
-      
+      <div className="stars" id="stars" ></div>
+      <div className="twinkling" id='twinkling'></div>
       <Routes>
         <Route 
           path='/' 
-          element={ !loader && <><Welcome /><AboutMe/></> } 
+          element={ !loader && <><Welcome /><Blurb/></> } 
+        />
+        <Route path="/email" element={<Email/>}
         />
         <Route 
           path="/portfolio" 
-          element={ !loader && <><Portfolio/></> }
+          element={<Portfolio/>}
         />
         <Route 
-          path="/email"
-          element={ !loader && <><Email/></>}
+          path="/about"
+          element={<AboutMe/>}
         />
       </Routes>
       { !loader && <Footer /> } 

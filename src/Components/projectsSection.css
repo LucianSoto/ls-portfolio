@@ -1,51 +1,89 @@
-.projects-cont {
+.project-cont {
   width: 80%;
-  margin-top: 10rem;
   text-align: left;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.project-title {
-  font-size: 40px;
-  margin-left: 1rem;
-}
+/* .project-title {
+  font-size: 27px;
+  text-align: center;
+} */
 
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   height: 100%;
   width: 100%;
   /* margin-bottom: 8rem; */
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.788); */
+}
+
+.project-title {
+  margin: 0 0 3rem 0;
+  font-size: 28px;
 }
 
 .project-inner-cont {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* width: 100%; */
+  min-height: 100%;
+  
 }
 
 .project-description {
-  padding: 30px;
   width: 35%;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.project-description p {
+  font-size: 19px;
+  
 }
 
 a {
   color: gold;
   text-decoration: none;
-  cursor: pointer;
+  font-size: 20px;
+}
+
+.project-description a {
+  border: 1px solid gold;
+  border-radius: 3px;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  align-self: center;
+}
+
+.project-description a:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: rgba(218, 190, 32, 0.863);
+  font-weight: 900;
 }
 
 .project-media-cont {
-  padding-top: 33px;
-  width: 30%;
+  width: 35%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  /* margin-top: 4rem; */
+}
+
+.tools {
+  text-justify: center;
+  margin-bottom: 5rem;
 }
 
 .carousel {
@@ -59,7 +97,7 @@ a {
 .responsive-container {
   height: 100%;
 }
-
+/* 
 @media screen and (max-width: 1950px ) {
   .project-media-cont {
     width: 40%;
@@ -68,8 +106,14 @@ a {
   .carousel {
     margin-bottom: 5rem;
   }
-}
+} */
 
+
+@media screen and (min-width: 1850px) {
+  .project-description p {
+    font-size: 25px;
+  }
+}
 
 @media screen and (max-width: 1150px) {
 

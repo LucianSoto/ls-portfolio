@@ -1,16 +1,15 @@
 import './Welcome.css'
 import AboutMe from './AboutMe'
+import Blurb from './Blurb'
 
 function Welcome() {
 
   return (
     <div className="welcome-section">
-      <div className="stars" id="stars" ></div>
-      <div className="twinkling" id='twinkling'></div>
       <div className="name-wrapper">
         <h1>LUCIAN BROOKS</h1>
       </div>
-      <h3 className='welcome-h3'>A Web Developer</h3>
+      <h3 className='welcome-h3'>Web Developer</h3>
     </div>
   )
 }

@@ -1,0 +1,19 @@
+.blurb{
+  height: 100%;
+  width: 70%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 150px 0;
+
+}
+
+.blurb-p {
+  width: 80%;
+}
+
+.blurb-img {
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+}

@@ -3,44 +3,73 @@
 .App {
   text-align: center;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
-  /* scrollbar-width: 3px; */
   margin: 0;
+  /* padding-top: 65px; */
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-}
+  width: 5px;
+} 
 
-
-/* ::-webkit-scrollbar-track {
-  background: #3900a3;
+::-webkit-scrollbar-track {
+  background: #6c6c5c7b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(161, 143, 172, 0.562);
-}  */
+  background: rgba(235, 210, 70, 0.548);
+}  
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-image: linear-gradient(
-    200deg, rgba(0, 0, 0, 0.904), rgb(14, 7, 7)
-  ); */
   background-color: black;
   margin: 0;
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: seashell; 
+  color: white; 
   scroll-behavior: smooth;
-  scrollbar-width: 3px;
-  
+}
+
+p {
+  font-size: 25px;
+}
+
+
+/* Twinkles */
+@keyframes move-twinkle-back {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 5000px; }
+}
+
+ .twinkling, .stars {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  background: rgb(0, 0, 0) url(/src/assets/images/other-images/stars.png);
+  z-index: -2;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.twinkling {
+  background: transparent url(/src/assets/images/other-images/twinkling.png);
+  z-index: -1;
+  animation: move-twinkle-back 180s linear infinite;
+  background-attachment: fixed;
 }

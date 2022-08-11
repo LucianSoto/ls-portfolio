@@ -2,52 +2,71 @@ import React from 'react'
 import './Portfolio.css'
 import ProjectsData from './ProjectTilesData.js'
 import ProjectTile from './ProjectTile'
-import ProjectsSection from './ProjectsSection'
+import ProjectSection from './ProjectSection'
 import { useState, useEffect } from 'react'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import Email from './Email'
+import { Link } from 'react-router-dom'
 // import waitlistImage from '/public/imgs/ProjectImages/waitlist.PNG'
 // import wI from '/imgs/waitlist.png'
 
 
 function Portfolio() {
-  // const notificationString = ;
-  useEffect(() => {
-    setTimeout(()=> notify(), 3000)
-    handleScroll()
-  }, [])
 
-  const handleScroll = () => {
-    setTimeout(()=> {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      })
-    }, 100) 
-  }
+  //close grid-to side, open project, loader
 
   const [data, setData] = useState(ProjectsData)
-  const notify = () => toast("Hover and click on project descriptions to learn more or click on the titles to go to site")
+  const [currentProject, setCurrentProject] = useState(0)
+  const [grid, setGrid] = useState(true)
+  const [display, setDisplay] = useState(false)
 
-  const ProjectComponents = data.map((project) => 
+  const changeCurrentProject = (num) => {
+    console.log(num)
+    if(grid){
+      setGrid(false)
+    }
+    setCurrentProject(num)
+    setDisplay(true)
+  }
+
+  
+
+  const ProjectsGrid = data.map((project) => 
     <ProjectTile
+        changeCurrentProject={changeCurrentProject}
         key={project.id}
+        id={project.id}
         name={project.name}
         image={project.image}
-        address={project.address}
-        projectStyle={project.projectStyle}
         info={project.info}
+        display={display}
     />
   )
   return (
     <div className='portfolio-cont'>
-      <h3 className='portfolio-title'>Portfolio</h3>
-      <p className="under-construction">Under Construction</p>
-      <div className="projects-grid">
-        {ProjectComponents}
-      </div>   
-      <ProjectsSection/>
-      <ToastContainer theme="dark" />
+      <h3 className='portfolio-title'>    Featured Projects</h3>
+        <p className="under-construction">Currently Under Construction 🐱‍💻</p>
+      <div className='projects-cont'>
+        
+        <div className={ grid ? 
+          "projects-grid-open" : "projects-grid-side"}
+        >
+          {/* <div 
+            className="view-grid-button"
+            style={display ? {display: 'flex'} : { display: 'none'}}
+            onClick={() => setDisplay(false)}
+          >
+            Back To Grid View
+          </div> */}
+          {ProjectsGrid}
+        </div>   
+        <ProjectSection 
+          displayProject={display} 
+          sentProject={currentProject}
+        />
+        
+      </div>
+      <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email">here</Link></span></p>
+        {/* <Email/> */}
     </div>
   )
 }

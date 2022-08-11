@@ -1,80 +1,73 @@
 .footer {
   width: 100%;
-  height: 70vh;
+  height: 60px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  margin: 0 0 0 0;
+  border-top: 1px solid rgba(160, 150, 92, 0.256);
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-design {
+  margin: 0 0 0 50px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .contacts-cont {
   display: flex;
   justify-content: space-around;
-  width: 60%;
-}
-
-.contacts-cont a {
-  text-decoration: none;
-  color: lightgray;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray);
-  background-image: -webkit-linear-gradient(to bottom, white, gray);
-  background-image: -moz-linear-gradient(to bottom, white, gray);
-  background-image: -o-linear-gradient(to bottom, white, gray);
-  background-image: -ms-linear-gradient(to bottom, white, gray);
+  width: 40%;
+  margin-right: 20px;
 }
 
 .contact {
   text-align: center;
-  text-decoration: none;
-  /* color: white; */
-  font-size: 25px;
-  font-weight: 700;
+  color: rgba(255, 255, 255, 0.712);
   display: flex;
   align-items: center;
-  /* color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, white, gray); */
 }
 
-.footer-h3 {
-  font-size: 80px;
-  color: rgba(255, 245, 238, 0.842);
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.footer-span {
+  margin-left: 10px;
+  color: white;
 }
 
-@media screen and (max-width: 1000px) {
-  .footer-h3 {
-    font-size: 60px;
+
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 30vh;
+  }
+  .contacts-cont{
+    height: 100px;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .footer{
-    height: 40vh;
+  .gradient-svg {
+    margin: 0;
   }
+
   .footer-h3{ 
     font-size: 40px; 
     width: 90%;
   }
   .contacts-cont {
-    height: 200px;
+    height: 150px;
     width: 95%;
     justify-items: space-between ;
-
   }
+
+  .footer-span {
+    display: none;
+  }
+
   .contact {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .footer {
-    height: 25vh;
-  }
-  .contacts-cont{
-    height: 100px;
+    font-size: 33px;
   }
 }
