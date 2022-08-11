@@ -79,6 +79,12 @@ a {
 } */
 
 
+@media screen and (min-width: 1850px) {
+  .project-description p {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
 
   .project-title {
