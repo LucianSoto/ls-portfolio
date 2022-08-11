@@ -73,11 +73,17 @@
 .learn-button {
   border: 1px solid rgba(255, 255, 255, 0.548);
   background-color: transparent;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 100;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.learn-button:hover {
+  border: 1px solid goldenrod;
+  color: goldenrod;
+  font-weight: 900; 
 }
 
 .project-tile-cont:hover .project-overlay, .project-tile-cont:hover .project-overlay-side{

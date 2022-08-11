@@ -9,7 +9,7 @@ import Project from './Project'
 //images 
 import MamHanoiImage from '../assets/images/project-images/mamhanoi.png'
 import ProjectsData from './ProjectTilesData.js'
-import ProjectTile from './ProjectTile'
+// import ProjectTile from './ProjectTile'
 
 const ProjectsSection = ({displayProject, sentProject}) => {
   const project = ProjectsAboutData[sentProject]
@@ -27,11 +27,13 @@ const ProjectsSection = ({displayProject, sentProject}) => {
       about={project.about}
       likes={project.likes}
       difficulties={project.difficulties}
-      dislikes={project.dislikes}
+      why={project.why}
       time={project.time}
       link={project.link}
       images={project.images}
       graph={project.graphData}
+      repo={project.repo}
+      tools={project.tools}
     />
   </div> 
   )

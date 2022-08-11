@@ -1,9 +1,10 @@
 .graph-cont {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -2rem;
+  justify-content: center;
+  margin-left: -1rem;
 }
 
 .graph-title {

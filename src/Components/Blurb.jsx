@@ -6,8 +6,10 @@ const Blurb = () => {
   return (
     <div className='blurb'>
       <div className="blurb-p">
-        <p className="blurb-p">Another freelance web developer who fell in love with React, JavaScript and fascinated by CSS animations. 😵⭐🌠</p>
-        <p className="blurb-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas delectus necessitatibus accusantium atque nesciunt obcaecati qui ducimus consequuntur eaque pariatur commodi?👨‍💻🧙‍♂️</p>
+        <p className="blurb-p">Another freelance web developer who fell in love with React!😵⭐🌠</p>
+        <p className="blurb-p">Fascinated by CSS animations and eager to learn! 😈 
+        <br />
+        This is a personal website to showcase some of my work and eventually some of my music. 👨‍💻🧙‍♂️</p>
       </div>
       <img className='blurb-img' src={MeImage} alt="" />
     </div>

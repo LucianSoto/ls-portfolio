@@ -39,14 +39,14 @@ nav{
 
 .menu-item {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 3rem;
   
 }
 
 .active {
   color: gold;
-  border-bottom: 2px solid gold;
+  border-bottom: 1px solid gold;
 }
 
 .lb-logo {

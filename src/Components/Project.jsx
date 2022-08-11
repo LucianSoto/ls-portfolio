@@ -26,7 +26,10 @@ const Project = ({
   time, 
   link, 
   images,
-  graph
+  graph,
+  repo,
+  why,
+  tools
 }) => {
 
   const [windowWidth, setWindowWidth] = useState(0)
@@ -39,13 +42,19 @@ const Project = ({
     </div>
   )
 
+  const toolsUsed = tools.map((tool, i) => 
+    <p key={i}>✔ &nbsp;{tool}</p>
+  )
+
+  // const techUsedIcons 
+
   return ( 
-    <div className="project 1" key={id}>
-      <h3 className="project-title">{title}</h3>
-      <div className='project-inner-cont'>
+    // <div className="project" > 
+      <div className='project-inner-cont' key={id}>
         <div className="project-description">
+          <h3 className="project-title">{title}</h3>
           <p className="about-project">
-            <b>About:</b>{about}
+          <b>About:</b>&nbsp;{about}
           </p>
           <p className='likes'>
           <b>Likes:</b>&nbsp;{likes}  
@@ -53,16 +62,30 @@ const Project = ({
           <p className="difficulties">
           <b>Difficulties:</b>&nbsp;{difficulties}
           </p>
-          <p className="dislikes">
-          <b>Dislikes:</b>&nbsp;{dislikes}
-          </p>
-          <p className="time">
+          <p className="time" style={{ paddingBottom: 20 }}>
           <b>Time:</b>&nbsp;{time}
           </p>
-          <a href={link} >Visit Project Here 🚀</a>
+          <a href={link} >Website</a>
+          <br />
+          <br />
+          {repo ? <a href={repo}>Repository</a> : null }
         </div>
         <div className="project-media-cont">
-          {/* <img src={images[0]} alt="" className="project-about-img" /> */}
+          <div className="graph-cont">
+            <h3 className='graph-title'>Tools Used</h3>
+            {/* <ResponsiveContainer 
+              height={windowWidth > 800 ? 350 : windowWidth < 600 ? 200 : 250}
+            >
+              <BarChart data={graph} className="responsive-container">
+                <XAxis dataKey="name" stroke='white' />
+                <YAxis stroke='lightgray' />
+                <Bar dataKey="uv" className='bar' barSize={50} />
+              </BarChart>
+            </ResponsiveContainer> */}
+            <div className='tools'>
+              {toolsUsed}
+            </div>
+          </div>
           <Carousel 
             className='carousel' 
             infiniteLoop 
@@ -75,21 +98,10 @@ const Project = ({
           >
             {imagesForCarousel}
           </Carousel>
-          <div className="graph-cont">
-            <h3 className='graph-title'>Languages Used</h3>
-            <ResponsiveContainer 
-              height={windowWidth > 800 ? 350 : windowWidth < 600 ? 200 : 250}
-            >
-              <BarChart data={graph} className="responsive-container">
-                <XAxis dataKey="name" stroke='white' />
-                <YAxis stroke='lightgray' />
-                <Bar dataKey="uv" className='bar' barSize={50} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+          
         </div>
       </div>
-    </div>
+    // </div>
   )
 }
 
