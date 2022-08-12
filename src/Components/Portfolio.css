@@ -37,7 +37,7 @@
   width: 80%;
   height: 100%;
   /* grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr, 1fr)); */
-  grid-template-columns: 22rem 22rem 22rem;
+  grid-template-columns: repeat(3, 20rem);
   /* grid-template-rows: 1fr 1fr; */
   grid-gap: 15px;
   align-items: center;

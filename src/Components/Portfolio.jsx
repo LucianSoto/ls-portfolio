@@ -3,8 +3,7 @@ import './Portfolio.css'
 import ProjectsData from './ProjectTilesData.js'
 import ProjectTile from './ProjectTile'
 import ProjectSection from './ProjectSection'
-import { useState, useEffect } from 'react'
-import Email from './Email'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 // import waitlistImage from '/public/imgs/ProjectImages/waitlist.PNG'
 // import wI from '/imgs/waitlist.png'
@@ -12,15 +11,12 @@ import { Link } from 'react-router-dom'
 
 function Portfolio() {
 
-  //close grid-to side, open project, loader
-
   const [data, setData] = useState(ProjectsData)
   const [currentProject, setCurrentProject] = useState(0)
   const [grid, setGrid] = useState(true)
   const [display, setDisplay] = useState(false)
 
   const changeCurrentProject = (num) => {
-    console.log(num)
     if(grid){
       setGrid(false)
     }

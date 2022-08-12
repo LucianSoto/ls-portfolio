@@ -1,11 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
-import { FaEllipsisV, FaXmark } from 'react-icons/fa'
-
 
 function NavBar() {
-  const [navViz, setNavViz] = useState(false)
   const [dd, setDD] = useState(false)
 
   const changeDD = () => {
