@@ -9,7 +9,6 @@ import Footer from "./Components/Footer";
 import Email from "./Components/Email";
 import { Routes, Route } from "react-router-dom"
 import Blurb from "./Components/Blurb";
-import ProjectSection from "./Components/ProjectSection";
 
 function App() {
   const [loader, setLoader] = useState(true)
