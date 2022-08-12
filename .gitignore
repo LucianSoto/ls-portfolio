@@ -24,3 +24,6 @@ yarn-error.log*
 
 ./notes.txt
 /notes.txt
+
+/dependencies.txt
+./dependencies.txt
