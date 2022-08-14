@@ -15,7 +15,7 @@ function AboutMe() {
         My coding journey began when a friend introduced me to FreeCodeCamp as a way to dip my toes into coding. At first I felt indifferent about it but I stuck with it, and now I can say that I truly enjoy it! 💜
         <br />
         <br />
-        Currently, I work with <span className='highlight'>JavaScript</span>, <span className="highlight">ReactJS</span> and <span className="hightlight">NodeJS</span>. I've done some freelance gigs and although my main focus is in front-end work, my goal is to become a full-stack developer.
+        Currently, I work with <span className='highlight'>JavaScript</span>, <span className="highlight">ReactJS</span> and <span className="hightlight">NodeJS</span>. I've done some freelance gigs and although my main focus is in front-end work, my goal is to become a full-stack developer. 
         <br />
         <br />
         In my free time, I enjoy playing badminton and composing music!
