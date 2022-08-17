@@ -116,8 +116,8 @@ export const ProjectsAboutData = [
     likes: " I enjoyed learning learning about Context and it's state management and how it's more suitable for smaller applications.",
     difficulties: " I was not aware that UseEffect now renders twice on load and I was stumped there for a minute but in the end it was good because it taught me how to deal with that update and I was able to catch the issue the next time it came up!",
     time: " Took 12 hours give or take. It's getting a lot easier to figure out how CSS flex-box works and how state and props are handled!",
-    link: "https://lucianaiolos.github.io/Music-Festival-X/",
-    repo: "https://github.com/LucianAiolos/Music-Festival-X",
+    link: "https://lucianaiolos.github.io/Feedback-App/",
+    repo: "https://github.com/LucianAiolos/Feedback-App",
     tools: [
       "ReactJS",
       "JSON-Server",
