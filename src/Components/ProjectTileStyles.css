@@ -32,10 +32,6 @@
   opacity: 1;
 }
 
-.project-overlay-info {
-  /* font-size: 20px; */
-}
-
 .project-overlay {
   opacity: 0;
   transition-duration: 600ms;
@@ -45,10 +41,14 @@
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center ;
   align-items: center;
   background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
+  font-size: 23px;
+  font-weight: 900;
 }
+
+
 
 .project-overlay-side {
   opacity: 0;
@@ -67,6 +67,7 @@
   /* background-color: rgba(0, 0, 0, 0.733); */
   border: 1px solid white;
   font-weight: 900;
+  font-size: 15px;
 }
 
 

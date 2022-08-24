@@ -18,7 +18,7 @@ function AboutMe() {
         Currently, I work with <span className='highlight'>JavaScript</span>, <span className="highlight">ReactJS</span> and <span className="hightlight">NodeJS</span>. I've done some freelance gigs and although my main focus is in front-end work, my goal is to become a full-stack developer. 
         <br />
         <br />
-        In my free time, I enjoy playing badminton and composing music!
+        In my free time, I enjoy playing badminton and compose music!
         </div>
         <div className="me-div">
           <img src={MyPic} className='me' alt="Selfie" />

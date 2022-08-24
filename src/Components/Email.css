@@ -21,12 +21,6 @@ form {
 
 .email-title {
   font-size: 35px;
-  background: 
-  -webkit-linear-gradient(white, rgb(250, 231, 218));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  margin-top: 50px;
-  margin: 0;
 }
 
 label {

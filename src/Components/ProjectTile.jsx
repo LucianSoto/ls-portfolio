@@ -12,7 +12,7 @@ function ProjectTile({ projectKey, id, name, image, info, link, changeCurrentPro
       <div className='project-tile-cont' key={projectKey} >
           <img className={ display ? 'project-image-side' : 'project-image'} src={image} alt="" />
           <div className={ display ? "project-overlay-side" : "project-overlay" }>
-            { display? name : <p className="project-overlay-info" >{info}</p> }
+            <p className="name" style={display? {fontSize: 18} : {fontSize: 23}}>{name}</p>
             <div className="learn-button" id={id} onClick={() =>
               openProjectSection(id)}>Learn More
             </div>
