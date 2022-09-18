@@ -1,6 +1,6 @@
 
 import { ProjectsAboutData } from './ProjectsAboutData'
-import './Graph.css'
+import '../Components/Graph.css'
 import './projectsSection.css'
 import Project from './Project'
 

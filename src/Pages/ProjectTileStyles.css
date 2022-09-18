@@ -12,7 +12,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
-  
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .project-image{
@@ -21,7 +22,8 @@
   overflow: hidden;
   transition: .5s ease;
   opacity: 1;
-  /* backface-visibility: hidden; */
+  border-radius: 10px;
+  
 }
 
 .project-image-side{
@@ -46,6 +48,7 @@
   background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
   font-size: 23px;
   font-weight: 900;
+  border-radius: 10px;
 }
 
 
@@ -53,11 +56,11 @@
 .project-overlay-side {
   opacity: 0;
   z-index: 10;
-  transition-duration: 600ms;
+  transition-duration: 500ms;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
+  height: 105%;
+  width: 105%;
+  top: -5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,18 +76,42 @@
 
 .learn-button {
   border: 1px solid rgba(255, 255, 255, 0.548);
-  background-color: transparent;
+  background-color: rgb(196, 139, 5);
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 800;
+  padding: 5px 15px 7px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: none;
+  color: black;
+  transition: .2s ;
+}
+
+.learn-button-left {
+  border: none;
+  background-color: rgb(196, 139, 5);
+  font-size: 15px;
+  font-weight: 800;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  transition: .2s ;
 }
 
 .learn-button:hover {
-  border: 1px solid goldenrod;
-  color: goldenrod;
-  font-weight: 900; 
+  background-color: goldenrod;
+   scale: 1.05;
+   transform: translateY(2px);
+}
+
+.learn-button-left:hover {
+  background-color: goldenrod;
+   scale: 1.03;
+   transform: translateY(1px);
 }
 
 .project-tile-cont:hover .project-overlay, .project-tile-cont:hover .project-overlay-side{

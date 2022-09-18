@@ -33,26 +33,26 @@
 }
 
 .me-div {
-  height: 100%;
-  width: 400px;
   margin-left: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
 .me-div img {
-  height: 400px;
-  width: 400px;
-  /* margin-left: 100px; */
-  object-fit: contain;
-  /* border-radius: 50%; */
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .about-paragraph span {
   color: rgba(255, 217, 0, 0.801);
   font-weight: 1000;
 }
+
+
 
 
 
