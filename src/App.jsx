@@ -1,12 +1,12 @@
 import NavBar from "./Components/NavBar";
 import './App.css'
 import Welcome from "./Components/Welcome";
-import Portfolio from "./Components/Portfolio";
+import Portfolio from "./Pages/Portfolio";
 import LoaderComponent from "./Components/LoaderComponent";
 import { useState } from 'react'
-import AboutMe from "./Components/AboutMe";
+import AboutMe from "./Pages/AboutMe";
 import Footer from "./Components/Footer";
-import Email from "./Components/Email";
+import Email from "./Pages/Email";
 import { Routes, Route } from "react-router-dom"
 import Blurb from "./Components/Blurb";
 
