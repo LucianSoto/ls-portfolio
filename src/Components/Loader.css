@@ -69,11 +69,11 @@
 }
 
 #l {
-  animation: moveDown 2.5s ease;
+  animation: moveDown 2s ease;
 }
 
 #b {
-  animation: bounce 2.7s linear;
+  animation: bounce 2.2s linear;
 }
 
 @keyframes moveDown {
