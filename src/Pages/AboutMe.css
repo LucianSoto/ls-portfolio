@@ -12,7 +12,7 @@
   margin: 0;
   top: 0;
   bottom: 0;
-  padding: 5rem 0 10rem 0;
+  padding: 7rem 0 10rem 0;
 }
 
 .hi {
@@ -70,7 +70,14 @@
   }
 
   .me-div img {
-    height: 500px;
+    /* height: 350px; */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .me-div img {
+    height: 250px;
+    width: 250px;
   }
 }
 
@@ -81,14 +88,14 @@
     margin: 2rem 0 3rem 0;
   }
 
-  .me-div {
+  /* .me-div {
     width: 100%;;
     margin: 0;
-  }
-  .me-div img {
+  } */
+  /* .me-div img {
     width: 100%;
     height: 500px;
-  }
+  } */
 
   .about-paragraph {
     width: 70%;

@@ -10,30 +10,29 @@
 
 .blurb-p {
   width: 80%;
+  margin-top: 50px;
 }
 
 .blurb-img {
   height: 250px;
   width: auto;
   border-radius: 50%;
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 900px) {
   .blurb {
     display: flex;
     flex-direction: column-reverse;
-    /* justify-content: center; */
     align-items: center;
-    /* text-align: center; */
-    margin: 0;
   }
   .blurb-img {
     width: 300px;
     height: 300px;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
   }
   .blurb-p {
-    margin-bottom: 80px;
+    margin-bottom: 7rem;
     font-size: 22px;
   }
 }     
@@ -41,6 +40,7 @@
 @media screen and (max-width:670px) {
   .blurb{
     width: 95%;
+    margin: 0;
   }
 }
 
@@ -48,6 +48,7 @@
 @media screen and (max-width: 550px) {
   .blurb-p {
     font-size: 20px;
+    margin-left: 15px;
   }
   .blurb-img {
     width: 250px;
