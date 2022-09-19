@@ -8,7 +8,7 @@
   border-top: 1px solid rgba(160, 150, 92, 0.256);
   font-size: 20px;
   color: white;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -39,17 +39,17 @@
 
 
 @media screen and (max-width: 800px) {
-  .footer {
+  /* .footer {
     height: 30vh;
   }
   .contacts-cont{
     height: 100px;
     width: 90%;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
-  .gradient-svg {
+  /* .gradient-svg {
     margin: 0;
   }
 
@@ -69,5 +69,5 @@
 
   .contact {
     font-size: 33px;
-  }
+  } */
 }

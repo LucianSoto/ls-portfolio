@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
 import './NavBar.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useSearchParams } from 'react-router-dom'
 
 function NavBar() {
   const [dd, setDD] = useState(false)
+  const params = useSearchParams()
+
+  console.log(params, 'hi')
 
   const changeDD = () => {
     setDD(!dd)
@@ -24,13 +27,6 @@ function NavBar() {
                 {/* <Link className="menu-item navLink" to="/resume">Resume</Link> */}
                 <p className='menu-item' style={{display: "none"}} id='x'>X</p>
               </div>
-              {/* <svg width='0' height='0'>
-                <linearGradient id='blue-gradient' x1="00%" y1="00%" x2="0%" y2="100%">
-                  <stop stopColor='white' offset='0%'/> 
-                  <stop stopColor='#38495a' offset='100%'/>
-                </linearGradient>
-              </svg>
-              <FaEllipsisV className={dd? 'hidden' : 'ellipsis'} style={{ fill: "url(#blue-gradient)" }}  onClick={changeDD} /> */}
         </div >
     </nav>
   )

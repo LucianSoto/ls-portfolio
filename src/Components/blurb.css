@@ -17,3 +17,37 @@
   width: auto;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 900px) {
+  .blurb {
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    margin: 0;
+  }
+  .blurb-img {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .blurb-p {
+    margin-bottom: 80px;
+  }
+}     
+
+@media screen and (max-width:670px) {
+  .blurb{
+    width: 95%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .blurb-p {
+    font-size: 20px;
+  }
+  .blurb-img {
+    width: 250px;
+  }
+}
