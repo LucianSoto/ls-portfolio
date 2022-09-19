@@ -8,12 +8,12 @@
   border-top: 1px solid rgba(160, 150, 92, 0.256);
   font-size: 20px;
   color: white;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
 .footer-design {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 30px;
   font-size: 20px;
   text-align: center;
 }
@@ -38,36 +38,41 @@
 }
 
 
-@media screen and (max-width: 800px) {
-  .footer {
-    height: 30vh;
+@media screen and (max-width: 930px) {
+  .footer-design {
+    font-size: 16px;
   }
-  .contacts-cont{
-    height: 100px;
-    width: 90%;
+  .contacts-cont a {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .gradient-svg {
-    margin: 0;
-  }
-
-  .footer-h3{ 
-    font-size: 40px; 
-    width: 90%;
-  }
+@media screen and (max-width: 725px) {
   .contacts-cont {
-    height: 150px;
-    width: 95%;
-    justify-items: space-between ;
+    width: 25%;
+    margin-right: 30px;
   }
-
-  .footer-span {
+  .contacts-cont a {
+    font-size: 20px;
+  }
+  .contact span {
     display: none;
   }
+}
 
-  .contact {
-    font-size: 33px;
+@media screen and (max-width: 580px) {
+  .footer-design {
+    font-size: 12px;
+    /* margin-left: 20px; */
+  }
+
+}
+
+@media screen and (max-width:420px) {
+  .footer-design {
+    width: 50%;
+  }
+  .contacts-cont {
+    width: 35%;
   }
 }
