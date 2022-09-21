@@ -1,26 +1,20 @@
 .project-cont {
-  width: 80%;
+  width: 75%;
   text-align: left;
   padding: 0;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-/* .project-title {
-  font-size: 27px;
-  text-align: center;
-} */
 
 .project {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   height: 100%;
   width: 100%;
-  /* margin-bottom: 8rem; */
   padding-bottom: 1rem;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.788); */
+
 }
 
 .project-title {
@@ -31,27 +25,32 @@
 .project-inner-cont {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 100%;
-  
+  width: 95%;
 }
 
 .project-description {
-  width: 35%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  /* margin-right: 5rem; */
 }
 
 .project-description p {
-  font-size: 19px;
+  font-size: 1.2rem;
   
 }
 
 a {
   color: gold;
   text-decoration: none;
-  font-size: 20px;
+  /* font-size: 1.5rem; */
+}
+
+.tools p {
+  font-size: 1.5rem;
 }
 
 .project-description a {
@@ -76,7 +75,7 @@ a {
 }
 
 .project-media-cont {
-  width: 35%;
+  width: 40%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -117,9 +116,14 @@ a {
   }
 }
 
-@media screen and (max-width: 1150px) {
-
-  .project-title {
+@media screen and (max-width: 1000px) {
+  .project-cont {
+    width: 70%;
+  }
+  .project-description p {
+    font-size: 17px;
+  }
+  /* .project-title {
     text-align: center;
     margin: 0;
   }
@@ -135,16 +139,16 @@ a {
 
   .project-description {
     margin-bottom: 1rem;
-  }
+  } */
 } 
 
 @media screen and (max-width: 800px) {
   .projects-cont{
-    width: 90%;
+    /* width: 90%; */
     margin-bottom: 30px;
   }
 }
-
+/* 
 @media screen and (max-width: 600px) {
   .project-media-cont, .project-description {
     width: 97%;
@@ -163,7 +167,7 @@ a {
   .carousel {
     margin-bottom: 3rem;
   }
-}
+} */
  
 
 

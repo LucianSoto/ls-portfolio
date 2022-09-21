@@ -44,7 +44,7 @@ function Portfolio() {
       <div className='projects-cont'>
         
         <div className={ grid ? 
-          "projects-grid-open" : "projects-grid-side"}
+          "projects-grid-open" : "projects-grid-small"}
         >
           {/* <div 
             className="view-grid-button"
@@ -61,8 +61,8 @@ function Portfolio() {
         />
         
       </div>
-      <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email">here</Link></span></p>
-        {/* <Email/> */}
+      <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email"> here</Link></span></p>
+
     </div>
   )
 }

@@ -40,10 +40,6 @@ body {
   scroll-behavior: smooth;
 }
 
-p {
-  font-size: 25px;
-}
-
 
 /* Twinkles */
 @keyframes move-twinkle-back {

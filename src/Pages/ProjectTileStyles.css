@@ -14,7 +14,14 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  
 }
+
+/* @media screen and (max-width: 1150px) {
+  .project-tile-cont {
+    border-radius: 50%;
+  }
+} */
 
 .project-image{
   height: 250px;
@@ -146,12 +153,6 @@ h4:hover {
 
 
 @media screen and (max-width: 1000px) {
-  .project-tile-cont {
-    height: 400px;
-  }
-  .project-overlay {
-    height: 328px;
-  }
   h4{
     font-size: 23px;
   }
