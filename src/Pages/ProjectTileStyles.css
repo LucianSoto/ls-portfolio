@@ -53,9 +53,9 @@
   justify-content: center ;
   align-items: center;
   background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
-  font-size: 23px;
+  font-size: 55px !important; 
   font-weight: 900;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 
