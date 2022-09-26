@@ -13,7 +13,7 @@ function ProjectTile({ projectKey, id, name, image, info, link, changeCurrentPro
           <img className={ display ? 'project-image-side' : 'project-image'} src={image} alt="" />
           <div className={ display ? "project-overlay-side" : "project-overlay" }>
             <p 
-              className="tile-name" 
+              id="tile-name" 
               style={display? {fontSize: 18} : {fontSize: 23}}
               onClick={() => openProjectSection(id)}
             >

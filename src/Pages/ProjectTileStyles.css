@@ -9,7 +9,7 @@
   align-items: center;
   text-decoration: none;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px;
@@ -55,7 +55,7 @@
   background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
   font-size: 55px !important; 
   font-weight: 900;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 
@@ -80,45 +80,15 @@
   font-size: 15px;
 }
 
-
-.learn-button {
-  border: 1px solid rgba(255, 255, 255, 0.548);
-  background-color: rgb(196, 139, 5);
-  font-size: 18px;
-  font-weight: 800;
-  padding: 5px 15px 7px 15px;
+#tile-name {
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 30px;
-  border: none;
-  color: black;
-  transition: .2s ;
+  transition: .25s;
 }
 
-.learn-button-left {
-  border: none;
-  background-color: rgb(196, 139, 5);
-  font-size: 15px;
-  font-weight: 800;
-  padding: 5px 10px 5px 10px;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: none;
-  color: black;
-  transition: .2s ;
-}
 
-.learn-button:hover {
-  background-color: goldenrod;
-   scale: 1.05;
-   transform: translateY(2px);
-}
-
-.learn-button-left:hover {
-  background-color: goldenrod;
-   scale: 1.03;
-   transform: translateY(1px);
+#tile-name:hover {
+  transform: scale(1.3);
+  color:
 }
 
 .project-tile-cont:hover .project-overlay, .project-tile-cont:hover .project-overlay-side{
