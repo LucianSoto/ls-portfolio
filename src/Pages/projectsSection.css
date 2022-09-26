@@ -7,6 +7,12 @@
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1150px) {
+  .project-cont {
+    width: 90%;
+    justify-content: center;
+  }
+}
 
 .project {
   display: flex;
@@ -117,9 +123,9 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .project-cont {
+  /* .project-cont {
     width: 70%;
-  }
+  } */
   .project-description p {
     font-size: 17px;
   }

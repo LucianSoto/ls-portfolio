@@ -5,9 +5,10 @@ import ProjectTile from './ProjectTile'
 import ProjectSection from './ProjectSection'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
+import { Carousel } from 'react-responsive-carousel'
 // import waitlistImage from '/public/imgs/ProjectImages/waitlist.PNG'
 // import wI from '/imgs/waitlist.png'
-
 
 function Portfolio() {
 
@@ -24,7 +25,50 @@ function Portfolio() {
     setDisplay(true)
   }
 
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
+  };
   
+  // console.log(grid, display)
+
+  const sliderPics = data.map((p) => 
+    <div 
+    // onClick={changeCurrentProject(p.id)} 
+    >
+      <img src={p.image} alt="" />
+    </div>
+  )
 
   const ProjectsGrid = data.map((project) => 
     <ProjectTile
@@ -43,26 +87,30 @@ function Portfolio() {
         <p className="under-construction">Currently Under Construction 🐱‍💻</p>
       <div className='projects-cont'>
         
-        <div className={ grid ? 
-          "projects-grid-open" : "projects-grid-small"}
+      <Carousel
+      className='projects-carousel'
+      >
+        {sliderPics}
+      </Carousel>
+      {/* <Slider {...settings}>
+        {sliderPics}
+        <div>
+          <img src="" alt="" />
+        </div>
+      </Slider>
+      <h1>hi</h1> */}
+
+        {/* <div className={ grid ? 
+          "projects-grid-lg" : "projects-grid-small"}
         >
-          {/* <div 
-            className="view-grid-button"
-            style={display ? {display: 'flex'} : { display: 'none'}}
-            onClick={() => setDisplay(false)}
-          >
-            Back To Grid View
-          </div> */}
           {ProjectsGrid}
-        </div>   
+        </div>    */}
         <ProjectSection 
           displayProject={display} 
           sentProject={currentProject}
         />
-        
       </div>
       <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email"> here</Link></span></p>
-
     </div>
   )
 }

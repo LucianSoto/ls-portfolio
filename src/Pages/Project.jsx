@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Carousel } from 'react-responsive-carousel'
+import Slider from 'react-slick'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import './projectsSection.css'
 import "../Components/Graph.css"
 import './projectsSection.css'
-
 
 const Project = ({ 
   id,
@@ -22,20 +22,64 @@ const Project = ({
   tools
 }) => {
 
+  const mounted = useRef(true)
+
+  useEffect(()=> {
+    if(mounted.current) {
+      // imagesForCarousel()
+      mounted.current = false
+    }
+  },[])
+
+  console.log(images)
+
   const [windowWidth, setWindowWidth] = useState(0)
   window.addEventListener('resize', ()=> {setWindowWidth(window.screen.width)})
 
   const imagesForCarousel = images.map((image, i) => 
-    <div key={i} className="images-cont" >
-      <img className='imageWindow' src={image}  alt="" height={ windowWidth > 800 ? 400 : windowWidth < 600 ? 250 : 300 }/>
+    <div key={i}  className='images-cont' >
+      <img className='imageWindow' src={image}  alt=""/>
     </div>
   )
 
-  const toolsUsed = tools.map((tool, i) => 
+  const toolsUsed = tools.map((tool, i) =>  
     <p key={i} >✔ &nbsp;{tool}</p>
   )
-
-  // const techUsedIcons 
+  
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return ( 
     // <div className="project" > 
@@ -81,7 +125,9 @@ const Project = ({
           >
             {imagesForCarousel}
           </Carousel>
-          
+          {/* <Slider {...settings} >
+           {imagesForCarousel}
+          </Slider> */}
         </div>
       </div>
     // </div>

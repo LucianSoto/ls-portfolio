@@ -56,9 +56,25 @@
   font-size: 55px !important; 
   font-weight: 900;
   border-radius: 10px;
+  cursor: pointer;
 }
 
+.project-overlay:hover #tile-name {
+  /* transition: 1s; */
+  animation: tile-name-scale 1.5s infinite ease-in-out;
+}
 
+@keyframes tile-name-scale {
+  0%{
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.15)
+  }
+  100%{
+    transform: scale(1.01)
+  }
+}
 
 .project-overlay-side {
   opacity: 0;
@@ -78,6 +94,7 @@
   border: 1px solid white;
   font-weight: 900;
   font-size: 15px;
+  cursor: pointer;
 }
 
 #tile-name {
@@ -87,8 +104,8 @@
 
 
 #tile-name:hover {
-  transform: scale(1.3);
-  color:
+  transform: scale(1.1);
+  color: gold;
 }
 
 .project-tile-cont:hover .project-overlay, .project-tile-cont:hover .project-overlay-side{
