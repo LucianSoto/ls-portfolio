@@ -30,6 +30,12 @@ const ProjectsSection = ({displayProject, sentProject}) => {
       repo={project.repo}
       tools={project.tools}
     />
+    <div className="link-btns">
+      <a href={project.link} >Website</a>
+      <br />
+      <br />
+      {project.repo ? <a href={project.repo}>Repository</a> : null }
+    </div>
   </div> 
   )
 }

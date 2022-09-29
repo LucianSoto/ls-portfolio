@@ -65,7 +65,24 @@ a {
   }
 }
 
-.project-description a {
+.link-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  min-width: 100%;
+  right: 10%;
+  position: relative;
+  /* position: absolute; */
+}
+
+@media screen and (max-width: 1150px) {
+  .link-btns {
+    position: ;
+    right: 0;
+  }
+}
+
+.link-btns a {
   border: 1px solid gold;
   border-radius: 30px;
   width: 200px;
@@ -79,7 +96,7 @@ a {
   transition: 500ms ease;
 }
 
-.project-description a:hover {
+.link-btns a:hover {
   border: 1px solid black;
   color: black;
   background-color: rgba(218, 190, 32, 0.863);

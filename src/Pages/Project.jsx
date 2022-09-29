@@ -59,10 +59,6 @@ const Project = ({
           <p className="time" style={{ paddingBottom: 20 }}>
             <b>Time:</b>&nbsp;{time}
           </p>
-          <a href={link} >Website</a>
-          <br />
-          <br />
-          {repo ? <a href={repo}>Repository</a> : null }
         </div>
         <div className="project-media-cont">
           <div className="graph-cont">
