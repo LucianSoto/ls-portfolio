@@ -17,11 +17,24 @@
   
 }
 
-/* @media screen and (max-width: 1150px) {
-  .project-tile-cont {
-    border-radius: 50%;
-  }
-} */
+.project-tile-cont-smoll {
+  background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
+  /* border: 3px solid rgba(64, 253, 216, 0.657); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
 
 .project-image{
   height: 250px;
@@ -34,7 +47,7 @@
 }
 
 .project-image-side{
-  height: 130px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   transition: .5s ease;
@@ -60,7 +73,6 @@
 }
 
 .project-overlay:hover #tile-name {
-  /* transition: 1s; */
   animation: tile-name-scale 1.5s infinite ease-in-out;
 }
 
@@ -100,15 +112,20 @@
 #tile-name {
   cursor: pointer;
   transition: .25s;
+  width: 70%;
 }
 
 
 #tile-name:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: gold;
 }
 
 .project-tile-cont:hover .project-overlay, .project-tile-cont:hover .project-overlay-side{
+  opacity: 1;
+}
+
+.project-tile-cont-smoll:hover .project-overlay, .project-tile-cont-smoll:hover .project-overlay-side{
   opacity: 1;
 }
 
@@ -142,5 +159,28 @@ h4:hover {
 @media screen and (max-width: 1000px) {
   h4{
     font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .project-tile-cont-smoll {
+    border-radius: 50%;
+    border: 5px solid magenta;
+    scroll-snap-align: center;
+    
+  }
+
+  #tile-name{
+    font-size: 1rem !important;
+  }
+
+  .project-overlay-side{
+    /* opacity: 1; */
+    /* background-color: transparent; */
+  }
+  .project-image-side{
+    border-radius: 50%;
+    width: 101%;
+    height: 101%;
   }
 }

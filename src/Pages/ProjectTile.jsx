@@ -10,7 +10,7 @@ function ProjectTile({ projectKey, id, name, image, info, link, changeCurrentPro
   return (
     <>
       <div 
-        className='project-tile-cont' 
+        className={display ? 'project-tile-cont-smoll' : 'project-tile-cont'}
         key={projectKey} 
         onClick={() => openProjectSection(id)} 
       >
@@ -22,7 +22,7 @@ function ProjectTile({ projectKey, id, name, image, info, link, changeCurrentPro
               onClick={() => openProjectSection(id)}
             >
               {name}
-            </p>
+            </p> 
           </div>
       </div>
     </>

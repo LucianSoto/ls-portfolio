@@ -31,11 +31,6 @@ const Project = ({
     }
   },[])
 
-  console.log(images)
-
-  const [windowWidth, setWindowWidth] = useState(0)
-  window.addEventListener('resize', ()=> {setWindowWidth(window.screen.width)})
-
   const imagesForCarousel = images.map((image, i) => 
     <div key={i}  className='images-cont' >
       <img className='imageWindow' src={image}  alt=""/>
@@ -45,41 +40,6 @@ const Project = ({
   const toolsUsed = tools.map((tool, i) =>  
     <p key={i} >✔ &nbsp;{tool}</p>
   )
-  
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
 
   return ( 
     // <div className="project" > 
