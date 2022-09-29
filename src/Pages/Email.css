@@ -1,5 +1,5 @@
 .form-cont {
-  height: 100%;
+  min-height: 85vh;
   width: 90%;
   margin: 8rem 0 5rem 0;
   padding-bottom: 50px;
@@ -28,7 +28,7 @@ label {
 
   display: flex;
   justify-content: flex-start;
-  margin-left: 5px;
+  margin: 0 0 5px 5px;
 }
 
 .form-control {
@@ -65,17 +65,29 @@ textarea {
 }
 
 .btn {
-  width: 50%;
-  height: 50px;
-  border: 1px solid seashell;
-  background-color: transparent;
-  color: white;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-family: 
-  'Montserrat',
-  Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  
+  width: 200px;
+  height: 30;
+  border: 1px solid rgba(255, 255, 255, 0.548);
+  background-color: rgb(196, 139, 5);
+  font-size: 18px;
+  font-weight: 900;
+  padding: 7px 15px 7px 15px;
   cursor: pointer;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: none;
+  color: black;
+  transition: .2s;
+  text-transform: uppercase;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+  border-radius: 5px;
+  background-color: black;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 600px) { 

@@ -9,11 +9,31 @@
   align-items: center;
   text-decoration: none;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  
+}
+
+.project-tile-cont-smoll {
+  background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
+  /* border: 3px solid rgba(64, 253, 216, 0.657); */
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  
 }
 
 .project-image{
@@ -27,7 +47,7 @@
 }
 
 .project-image-side{
-  height: 130px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   transition: .5s ease;
@@ -46,12 +66,27 @@
   justify-content: center ;
   align-items: center;
   background: linear-gradient(rgba(83, 48, 139, 0.568), rgba(24, 64, 70, 0.534));
-  font-size: 23px;
+  font-size: 55px !important; 
   font-weight: 900;
   border-radius: 10px;
+  cursor: pointer;
 }
 
+.project-overlay:hover #tile-name {
+  animation: tile-name-scale 1.5s infinite ease-in-out;
+}
 
+@keyframes tile-name-scale {
+  0%{
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.15)
+  }
+  100%{
+    transform: scale(1.01)
+  }
+}
 
 .project-overlay-side {
   opacity: 0;
@@ -71,50 +106,27 @@
   border: 1px solid white;
   font-weight: 900;
   font-size: 15px;
-}
-
-
-.learn-button {
-  border: 1px solid rgba(255, 255, 255, 0.548);
-  background-color: rgb(196, 139, 5);
-  font-size: 18px;
-  font-weight: 800;
-  padding: 5px 15px 7px 15px;
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 30px;
-  border: none;
-  color: black;
-  transition: .2s ;
 }
 
-.learn-button-left {
-  border: none;
-  background-color: rgb(196, 139, 5);
-  font-size: 15px;
-  font-weight: 800;
-  padding: 5px 10px 5px 10px;
+#tile-name {
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: none;
-  color: black;
-  transition: .2s ;
+  transition: .25s;
+  width: 70%;
 }
 
-.learn-button:hover {
-  background-color: goldenrod;
-   scale: 1.05;
-   transform: translateY(2px);
-}
 
-.learn-button-left:hover {
-  background-color: goldenrod;
-   scale: 1.03;
-   transform: translateY(1px);
+
+#tile-name:hover {
+  transform: scale(1.05);
+  color: gold;
 }
 
 .project-tile-cont:hover .project-overlay, .project-tile-cont:hover .project-overlay-side{
+  opacity: 1;
+}
+
+.project-tile-cont-smoll:hover .project-overlay, .project-tile-cont-smoll:hover .project-overlay-side{
   opacity: 1;
 }
 
@@ -124,7 +136,7 @@
 
 .project-overlay-info {
   width: 100%;
-}
+} 
 
  h4 {
   font-size: 30px;
@@ -146,13 +158,45 @@ h4:hover {
 
 
 @media screen and (max-width: 1000px) {
-  .project-tile-cont {
-    height: 400px;
-  }
-  .project-overlay {
-    height: 328px;
-  }
   h4{
     font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .project-tile-cont-smoll {
+    border-radius: 50%;
+    border: 5px solid goldenrod;
+    scroll-snap-align: center;
+    
+  }
+
+  #tile-name{
+    font-size: 1rem !important;
+  }
+ @media screen and (max-width: 808px) {
+  .project-tile-cont-smoll {
+    border: 4px solid goldenrod;
+  }
+  #tile-name {
+    margin-top: 10px;
+    font-size: 12px !important;
+    width: 90%;
+    /* height: 110%; */
+  }
+  .project-overlay-side {
+    /* top: 0; */
+    margin: 0;
+  }
+ }
+
+  .project-overlay-side{
+    opacity: 0;
+    background-color: transparent;
+  }
+  .project-image-side{
+    border-radius: 50%;
+    width: 101%;
+    height: 101%;
   }
 }

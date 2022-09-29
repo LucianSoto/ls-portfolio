@@ -1,25 +1,33 @@
+
 .portfolio-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  min-height: 100%;
+  width: 100%;
 }
 
 .projects-cont {
-  /* position: relative; */
   margin-top: 10px;
   min-height: 100%;
-  width: 100%;
+  width: 97%;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: center;
-  /* align-items: center; */
-  /* align-items: center; */
   color: white;
   margin-bottom: 2rem;
+
 }
+
+@media screen and (max-width: 1150px) {
+  .projects-cont {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
 
 .portfolio-title {
   font-size: 35px;
@@ -32,63 +40,103 @@
   margin: 0 0 50px 0;
 }
 
-.projects-grid-open {
+.projects-grid-lg {
   display: grid;
   width: 80%;
   height: 100%;
-  /* grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr, 1fr)); */
   grid-template-columns: repeat(3, 20rem);
-  /* grid-template-rows: 1fr 1fr; */
-  grid-gap: 15px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 16px;
   align-items: center;
   justify-content: center;
 }
 
-.projects-grid-side {
+@media screen and (max-width: 1150px) {
+  .projects-grid-lg {
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .projects-grid-lg {
+    width: 50%;
+    grid-template-columns: repeat(1, 20rem);
+  }
+
+}
+.projects-grid-small {
   display: grid;
   width: 15%;
   height: 100%;
   grid-template-columns: 12rem ;
-  /* grid-template-rows: 1fr 1fr; */
   grid-gap: 10px;
   align-items: center;
-  justify-content: center;
-  margin: 0px 0 0 0;
+  /* justify-content: center; */
+  /* JUSTIFY CONTENT MAKES IT SO OVERFLOW X SCROLL DOES NOT WORK AND HIDES SOME OF THE CONTENT */
+  margin: 0 0 0 0;
 }
 
-.view-grid-button{
-  color: white;
-  padding: 3px 8px 3px 8px;
-  border: 2px solid rgba(255, 255, 255, 0.752);
-  border-radius: 3px;
-  width: 70%;
-  height: 20px;
-  text-align: center;
-  margin: 0;
-  cursor: pointer;
-  display: none;
-  justify-self: center;
+@media screen and (max-width: 1150px) {
+  .projects-grid-small{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 
-
-
-.thanks {
-  font-size: 22px;
-  margin: 3rem 0 6rem 0;
+@media screen and (max-width: 980px) {
+  .projects-grid-small{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(6, 180px) ;
+    grid-gap: 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x proximity;
+  }
+  .projects-grid-small::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-/* @media screen and (max-width: 1000) */
-
-/* @media screen and (max-width: 1300px) {
-  .projects-grid {
-    width: 50%;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+@media screen and (max-width: 808px) {
+  .projects-grid-small {
+    width: 100%;
+    grid-template-columns: repeat(6, 125px);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .projects-grid {
-    width: 90%;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  .projects-grid-small{
+    grid-template-columns: repeat(6, 100px)
   }
-} */
+}
+
+.thanks {
+  width: 50%;
+  font-size: 22px;
+  margin: 3rem 0 6rem 0;
+  font-size: 1.5rem;
+  /* display: flex; */
+}
+
+@media screen and (max-width: 500px) {
+  .thanks {
+    font-size: 18px;
+  }
+}
+
+/* Carousel */
+.projects-carousel {
+  height: 200px;
+}
+
+.projects-carousel {
+  /* height: 80px; */
+}
