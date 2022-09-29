@@ -42,10 +42,8 @@ const Project = ({
   )
 
   return ( 
-    // <div className="project" > 
       <div className='project-inner-cont' >
         <div className="project-description">
-          <h3 className="project-title">{title}</h3>
           <p className="about-project">
             <b>About:</b>&nbsp;{about}
           </p>
@@ -80,17 +78,12 @@ const Project = ({
             showThumbs={false}
             interval={3000}
             centerSlidePercentage={80} 
-            transitionTime={1000}
-            
+            transitionTime={1000}      
           >
             {imagesForCarousel}
           </Carousel>
-          {/* <Slider {...settings} >
-           {imagesForCarousel}
-          </Slider> */}
         </div>
       </div>
-    // </div>
   )
 }
 

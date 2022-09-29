@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 600px) {
   .projects-grid-small{
-    grid-template-columns: repeat(6, 90px)
+    grid-template-columns: repeat(6, 100px)
   }
 }
 

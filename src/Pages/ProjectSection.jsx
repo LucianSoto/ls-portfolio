@@ -11,8 +11,10 @@ const ProjectsSection = ({displayProject, sentProject}) => {
   return (
   <div
     className="project-cont"
-    style={displayProject? {display: 'flex'} : {display: 'none'}}
+    style={displayProject? {display: 'flex', flexDirection: "column"} : {display: 'none'}}
   >
+    <h3 className="project-title">{project.title}</h3>
+
     {/* <img src={require('../assets/images/project-images/feedback-app.png')} alt="" /> THIS FUCKING WOKRS!!!!!!! :D)))*/}
     <Project
       id={project.id}

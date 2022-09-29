@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100%;
+  height: 100%;
   width: 95%;
 }
 
@@ -57,6 +57,12 @@ a {
 
 .tools p {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 808px) {
+  .tools p {
+    font-size: 1.3rem;
+  }
 }
 
 .project-description a {
@@ -89,9 +95,9 @@ a {
 }
 
 .tools {
-  text-justify: center;
-  margin-bottom: 5rem;
+  margin: 0 0 5rem 1rem;
 }
+
 
 .carousel {
   margin-bottom: 5rem;
@@ -129,32 +135,39 @@ a {
   .project-description p {
     font-size: 17px;
   }
-  /* .project-title {
+}
+
+@media screen and (max-width: 600px) {
+  .project-title {
     text-align: center;
-    margin: 0;
+    margin-bottom: 0 0 2rem 0;
   }
 
   .project-inner-cont {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .project-media-cont, .project-description {
-    width: 80%;
+    width: 97%;
   }
 
   .project-description {
     margin-bottom: 1rem;
-  } */
+  }
+  .project-cont{
+    width: 100%;
+  }
 } 
 
 @media screen and (max-width: 800px) {
   .projects-cont{
-    /* width: 90%; */
+    width: 90%;
     margin-bottom: 30px;
   }
 }
-/* 
+
 @media screen and (max-width: 600px) {
   .project-media-cont, .project-description {
     width: 97%;
@@ -173,7 +186,7 @@ a {
   .carousel {
     margin-bottom: 3rem;
   }
-} */
+}
  
 
 
