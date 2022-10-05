@@ -17,6 +17,12 @@
   fill: #949209;
 }
 
+@media screen and (max-width: 808px) {
+  .graph-title {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .graph-cont {
     width: 110%;

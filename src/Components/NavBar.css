@@ -116,7 +116,7 @@ nav {
     background-color: black;
   }
   .menu-div {
-    /* display: none; */
+    z-index: 100;
     flex-direction: column;
     width: 100%;
     margin-top: 20rem;
