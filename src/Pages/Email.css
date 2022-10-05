@@ -66,22 +66,29 @@ textarea {
 
 .btn {
   letter-spacing: 5px;
-  
+  text-align: cn;
   width: 200px;
   height: 30;
-  border: 1px solid rgba(255, 255, 255, 0.548);
-  background-color: rgb(196, 139, 5);
+  /* border: 1px solid rgba(255, 255, 255, 0.548); */
+  /* background-color: rgb(196, 139, 5); */
+  color: gold;
+  border: 1px solid gold;
   font-size: 18px;
   font-weight: 900;
   padding: 7px 15px 7px 15px;
   cursor: pointer;
   margin-top: 10px;
   border-radius: 30px;
-  border: none;
-  color: black;
+  /* border: none; */
+  /* color: black; */
   transition: .2s;
   text-transform: uppercase;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.btn:hover {
+  color: black;
+  background-color: gold;
 }
 
 input, textarea {
