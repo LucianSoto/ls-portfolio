@@ -71,7 +71,7 @@ function Email() {
             
             type="submit" 
             className="btn" 
-            value='Send'
+            value=' Send'
           />
         </div>
       </form>
