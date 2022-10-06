@@ -9,9 +9,15 @@ import Footer from "./Components/Footer";
 import Email from "./Pages/Email";
 import { Routes, Route } from "react-router-dom"
 import Blurb from "./Components/Blurb";
+import { useEffect } from "react";
 
 function App() {
   const [loader, setLoader] = useState(true)
+
+
+useEffect(() => {
+   loaderTimer()
+ }, [loader])
 
   const stopLoader = () => {
     setLoader(false)
@@ -20,7 +26,6 @@ function App() {
     setInterval(() => stopLoader(), 4000 )
   }
 
-  loaderTimer()
 
   return (
    

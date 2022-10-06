@@ -1,27 +1,36 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './NavBar.css'
 import { Link, NavLink, useSearchParams } from 'react-router-dom'
-import {FaClose} from 'react-icons/fa'
-import {GrMenu} from 'react-icons/gr'
-import {FaReact} from 'react-icons/fa'
-import {AiOutlineClose} from 'react-icons/ai'
-import {FaBars} from 'react-icons/fa'
+import { FaClose } from 'react-icons/fa'
+import { GrMenu } from 'react-icons/gr'
+import { FaReact } from 'react-icons/fa'
+import { AiOutlineClose } from 'react-icons/ai'
+import { FaBars } from 'react-icons/fa'
+import { changeProjects, selectDisplay }  from '../app/gridSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 function NavBar() {
   const [dd, setDD] = useState(false)
   const [nav, setNav] = useState(false)
   const params = useSearchParams()
 
-  // window on scroll change nav background color 
-  const winWidth = window.addEventListener('resize', null)
+  const dispatch = useDispatch()
+  const display = useSelector(selectDisplay)
 
- window.addEventListener('scroll', () => {
-  if(window.scrollY > 50) {
-    setNav(true)
-  } else {
-    setNav(false)
-  }
- })
+  const winWidth = window.addEventListener('resize', null)
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 50) {
+      setNav(true)
+    } else {
+      setNav(false)
+    }
+  })
+
+ const changePortfolio = () => {
+  setDD(!dd)
+  dispatch( changeProjects() )
+  // console.log(display, 'nav display')
+ }
 
   return (
     <nav className='nav-bar'
@@ -29,21 +38,21 @@ function NavBar() {
     >
       <Link className="menu-item lb-logo" to="/" >LB</Link>
       <div 
-        // className='menu-div' 
         id='menu-div' 
         className={winWidth > 800 ? 'menu-div' : 
-          dd? 'menu-div' : 'menu-div menu-display'
+          !dd? 'menu-div' : 'menu-div menu-display'
         }
-        // style={dd? {display: 'flex'} : {display: 'none'}}
       >
-          <NavLink  className='menu-item' to='/'>Home</NavLink>
-          <NavLink  className="menu-item" to="/portfolio" >Portfolio</NavLink>
-          <NavLink  className="menu-item" to="/about" >About</NavLink>
-          <NavLink  className="menu-item" to="/email" >Contact</NavLink>                
-          {/* <Link className="menu-item navLink" to="/resume">Resume</Link> */}
-        </div > 
-      {!dd ?
+        <NavLink  className='menu-item' to='/' onClick={() =>setDD(!dd)}>Home</NavLink>
+        <NavLink  className="menu-item" to="/portfolio" onClick={() => {changePortfolio()}}>Portfolio</NavLink>
+        <NavLink  className="menu-item" to="/about" onClick={() =>setDD(!dd)} >About</NavLink>
+        <NavLink  className="menu-item" to="/email" onClick={() =>setDD(!dd)} >Contact</NavLink>                
+        {/* <Link className="menu-item navLink" to="/resume">Resume</Link> */}
+      </div > 
+      {dd ?
         <AiOutlineClose className='dd-btn' onClick={() =>setDD(!dd)}/>
+        // make funciton on click hides the menu and loads clicked page
+        // also using useParams if page=portfolio then reload grid
         :
         <FaBars className='dd-btn' onClick={() =>setDD(!dd)}/>
       }

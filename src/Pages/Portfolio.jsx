@@ -8,19 +8,32 @@ import Slider from 'react-slick'
 import { Carousel } from 'react-responsive-carousel'
 // import waitlistImage from '/public/imgs/ProjectImages/waitlist.PNG'
 // import wI from '/imgs/waitlist.png'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { selectDisplay } from '../app/gridSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 function Portfolio() {
   const [data, setData] = useState(ProjectsData)
   const [currentProject, setCurrentProject] = useState(0)
   const [grid, setGrid] = useState(true)
   const [display, setDisplay] = useState(false)
+
+  const dispatch = useDispatch()
+  const reduxDisplay = useSelector(selectDisplay)
+
+  useEffect(() => {
+    console.log(reduxDisplay, 'oh yes!')
+    if(!grid) {
+      setGrid(true)
+      setCurrentProject(null)
+      setDisplay(false)
+    }
+  }, [reduxDisplay])
 
   const changeCurrentProject = (num) => {
     if(grid){
@@ -47,13 +60,13 @@ function Portfolio() {
   return (
     <div className='portfolio-cont'>
       <h3 className='portfolio-title'>    Featured Projects</h3>
-        <p className="under-construction">Currently Under Construction 🐱‍💻</p>
+      <p className="under-construction">Currently Under Construction 🐱‍💻</p>
       <div className='projects-cont'>
-          <div className={ grid ? 
-            "projects-grid-lg" : "projects-grid-small"}
-            >
-            {ProjectsGrid}
-          </div> 
+        <div className={ grid ? 
+          "projects-grid-lg" : "projects-grid-small"}
+        >
+          {ProjectsGrid}
+        </div> 
         <ProjectSection 
           displayProject={display} 
           sentProject={currentProject}
