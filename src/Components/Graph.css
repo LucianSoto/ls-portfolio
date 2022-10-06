@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: -1rem;
+  margin: 0 0 2rem -1rem;
 }
 
 .graph-title {
@@ -21,10 +21,14 @@
   .graph-title {
     margin: 0;
   }
+  .graph-cont {
+    margin-bottom: 15rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .graph-cont {
     width: 110%;
+    margin-bottom: 5rem;
   }
 }

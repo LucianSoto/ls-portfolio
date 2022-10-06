@@ -166,7 +166,7 @@ h4:hover {
 @media screen and (max-width: 980px) {
   .project-tile-cont-smoll {
     border-radius: 50%;
-    border: 5px solid goldenrod;
+    /* border: 5px solid goldenrod; */
     scroll-snap-align: center;
     
   }
