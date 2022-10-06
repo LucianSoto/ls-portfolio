@@ -13,7 +13,7 @@ nav {
   font-size: 20px;
   text-transform: uppercase;
   /* background-color: rgba(0, 0, 0, 0.896); */
-  z-index: 5;
+  z-index: 1000;
 }
 
 .menu-div {

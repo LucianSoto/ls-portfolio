@@ -23,7 +23,7 @@ useEffect(() => {
     setLoader(false)
   }
   const loaderTimer = () => {
-    setInterval(() => stopLoader(), 4000 )
+    setInterval(() => stopLoader(), 2200 )
   }
 
 

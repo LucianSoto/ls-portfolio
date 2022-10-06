@@ -27,7 +27,6 @@ function Portfolio() {
   const reduxDisplay = useSelector(selectDisplay)
 
   useEffect(() => {
-    console.log(reduxDisplay, 'oh yes!')
     if(!grid) {
       setGrid(true)
       setCurrentProject(null)

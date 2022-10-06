@@ -9,7 +9,6 @@ const ProjectsSection = ({displayProject, sentProject }) => {
   // const [data, setData] = useState(ProjectsData)
 
   useEffect(() => {
-    console.log(displayProject, 'p')
   },[displayProject])
 
   return (
