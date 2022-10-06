@@ -9,15 +9,24 @@ import {FaBars} from 'react-icons/fa'
 
 function NavBar() {
   const [dd, setDD] = useState(false)
+  const [nav, setNav] = useState(false)
   const params = useSearchParams()
 
   // window on scroll change nav background color 
-  const winWidth = window.addEventListener('resize', ()=> {console.log(window.screen.width)})
+  const winWidth = window.addEventListener('resize', null)
 
-  
+ window.addEventListener('scroll', () => {
+  if(window.scrollY > 50) {
+    setNav(true)
+  } else {
+    setNav(false)
+  }
+ })
 
   return (
-    <nav className='nav-bar'>
+    <nav className='nav-bar'
+        style={nav? {backgroundColor: 'black'}: null }
+    >
       <Link className="menu-item lb-logo" to="/" >LB</Link>
       <div 
         // className='menu-div' 
