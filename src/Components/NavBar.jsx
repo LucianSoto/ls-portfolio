@@ -11,27 +11,29 @@ function NavBar() {
   const [dd, setDD] = useState(false)
   const params = useSearchParams()
 
-  console.log(params, 'hi')
+  // window on scroll change nav background color 
+  const winWidth = window.addEventListener('resize', ()=> {console.log(window.screen.width)})
 
-  // const changeDD = () => {
-  //   setDD(!dd)
-  // }
+  
 
   return (
     <nav className='nav-bar'>
       <Link className="menu-item lb-logo" to="/" >LB</Link>
-      {dd ? 
-      <div className='menu-div' id='menu-div'>
+      <div 
+        // className='menu-div' 
+        id='menu-div' 
+        className={winWidth > 800 ? 'menu-div' : 
+          dd? 'menu-div' : 'menu-div menu-display'
+        }
+        // style={dd? {display: 'flex'} : {display: 'none'}}
+      >
           <NavLink  className='menu-item' to='/'>Home</NavLink>
           <NavLink  className="menu-item" to="/portfolio" >Portfolio</NavLink>
           <NavLink  className="menu-item" to="/about" >About</NavLink>
           <NavLink  className="menu-item" to="/email" >Contact</NavLink>                
           {/* <Link className="menu-item navLink" to="/resume">Resume</Link> */}
         </div > 
-        :
-        null
-      }
-      {dd ?
+      {!dd ?
         <AiOutlineClose className='dd-btn' onClick={() =>setDD(!dd)}/>
         :
         <FaBars className='dd-btn' onClick={() =>setDD(!dd)}/>

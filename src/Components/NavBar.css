@@ -12,7 +12,7 @@ nav {
   letter-spacing: 3px;
   font-size: 20px;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.896);
+  /* background-color: rgba(0, 0, 0, 0.896); */
   z-index: 5;
 }
 
@@ -116,6 +116,7 @@ nav {
     background-color: black;
   }
   .menu-div {
+    display: none;
     z-index: 100;
     flex-direction: column;
     width: 100%;
@@ -126,17 +127,22 @@ nav {
     /* border-bottom: 1px solid gray; */
     box-shadow: 0px 0px 1px 
   }
+
+  .menu-display {
+    display: flex;
+  }
+
   .menu-item {
     /* width: 100%; */
     height: 2rem;
     border: none;
+    margin: 1rem 0;
   }
+
   .dd-btn {
     display: block;
   }
-  .menu-item {
-    margin: 1rem 0;
-  }
+
   .lb-logo {
     margin-left: 20px;
   }
