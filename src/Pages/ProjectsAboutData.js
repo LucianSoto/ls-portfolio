@@ -42,7 +42,6 @@ export const ProjectsAboutData = [
       'Firebase',
       'Toastify',
       'OAuth',
-      'Redux',
       'React-Router-DOM'
     ],
     images: [
