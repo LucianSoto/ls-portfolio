@@ -31,7 +31,7 @@ export const ProjectsAboutData = [
     id: 2,
     title: 'House Marketplace',
     why: " I have always had an interest in Real Estate and I've used apps such as Offer-Up or Craigslist and so I figured this would be a cool full-stack project to try! Also wanted to try a different type of database that was not SQL based.",
-    about: ' -A full-stack application using React, and Firebase. After making a simple verison of this using VanillaJS NodeJS and PostgreSQL last year I thought it was time to give it a shot with react and a cloud based database.',
+    about: ' A full-stack application using React, and Firebase. After making a simple verison of this using VanillaJS NodeJS and PostgreSQL last year I thought it was time to give it a shot with react and a cloud based database.',
     likes: " So far I'm enjoying making fullstack applications. Although I am a novince with backend related work, there's just something about getting everything to come together and work that gives such a sense of fulfillment. But for this project in particular I would say that it was interesting learning a database that does not use SQL which from what I'm seeing is easier to use because I didn't need to use Express or NodeJS to make any APIs or anything so it was very streamlined. Also learning how to render Route paths dynamically using React,  I just thought it was so cool, and honestly React itself - the more I learn the more I like it.",
     difficulties: " The things that gave me the toughest time here was the fact that Firebase doesn't do too well with error handling so it made it difficult when I got stuck at one point when I was trying to retrieve data.",
     time: " It's still a work in progress but so far I have put it about 30hrs. With plans to add the ability to see each individual post.  ",
@@ -88,7 +88,7 @@ export const ProjectsAboutData = [
     about: " A music festival mock-up webiste so essentially bringing together several things that I enjoy. Coding, Music, Visuals. This was the first project I did to test myself and I include it because it tells part of my coding journey since this was the project that I felt sparked the flame in my coding journey!",
     likes: " This was definitely a fun one, I finally got to build something where I got the feeling like I got to express myself(visually) and I that definitely helped determine my Front End path because I am a very visual person. I also ejoyed playing with gradients, fonts, styling and the lay out.",
     difficulties: " When I said test myself I meant test my CSS skills because oh man. I had a really tough time getting things where I wanted them or getting things to do the things I wanted them to do or getting a PNG file's transparency to work for some reason. BUT, it taught me a lot and helped me understand what I needed to work on such as flex-box.",
-    time: " Took about 45 hrs getting everything to dislay the way I intended and I'm not emberrased about the number of hours it took because I know that number would be much much lower these days.",
+    time: " Took about 45 hrs getting everything to dislay the way I intended and I'm not emberrassed about the number of hours it took because I know that number would be much much lower these days.",
     link: "https://lucianaiolos.github.io/Music-Festival-X/",
     repo: "https://github.com/LucianAiolos/Music-Festival-X",
     tools: [

@@ -44,8 +44,8 @@
   display: grid;
   width: 80%;
   height: 100%;
-  grid-template-columns: repeat(3, 20rem);
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 35rem);
+  grid-template-rows: 27rem;
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
