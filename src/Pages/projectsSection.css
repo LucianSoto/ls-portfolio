@@ -30,7 +30,7 @@
 
 .project-inner-cont {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   height: 100%;
   width: 95%;
