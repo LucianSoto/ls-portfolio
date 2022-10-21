@@ -43,7 +43,7 @@ function NavBar() {
           !dd? 'menu-div' : 'menu-div menu-display'
         }
       >
-        <NavLink  className='menu-item' to='/' exact={true} onClick={() =>setDD(!dd)}>Home</NavLink>
+        <NavLink  className='menu-item' to='/' end onClick={() =>setDD(!dd)}>Home</NavLink>
         <NavLink  className="menu-item" to="/portfolio" onClick={() => {changePortfolio()}}>Portfolio</NavLink>
         <NavLink  className="menu-item" to="/about" onClick={() =>setDD(!dd)} >About</NavLink>
         <NavLink  className="menu-item" to="/email" onClick={() =>setDD(!dd)} >Contact</NavLink>                
