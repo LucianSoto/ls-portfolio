@@ -30,8 +30,9 @@ useEffect(() => {
   return (
    
     <div className="App"> 
-      { loader? <LoaderComponent /> : null  }
-      { !loader &&  <NavBar /> }
+      { loader? <LoaderComponent /> : 
+      <>
+      <NavBar />
       <div className="stars" id="stars" ></div>
       <div className="twinkling" id='twinkling'></div>
       <Routes>
@@ -50,7 +51,9 @@ useEffect(() => {
           element={<AboutMe/>}
         />
       </Routes>
-      { !loader && <Footer /> } 
+     <Footer /> 
+     </>
+     }
       
     </div>
     
