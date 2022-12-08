@@ -1,7 +1,7 @@
 import MamHanoi from '../assets/images/project-images/mamhanoi.png'
 import Pokedex from '../assets/images/project-images/pokedex.png'
 import Jungle from '../assets/images/project-images/jungle.png'
-import Waitlist from '../assets/images/project-images/waitlist.png'
+import Waitlist from '../assets/images/project-images/waitlist-1.png'
 import Feedback from '../assets/images/project-images/feedback-app.png'
 import HouseMarketplaceTwo from '../assets/images/project-images/house-marketplace-2.png'
 
@@ -45,7 +45,7 @@ import HouseMarketplaceTwo from '../assets/images/project-images/house-marketpla
   },
   {
     id: 5,
-    name: "Restaurant Waitlist",
+    name: "Firebase Waitlist",
     image: Waitlist,
     address: 'https://lucianaiolos.github.io/Waitlist-LocalStorage/',
     projectStyle: "waitlist-style",
