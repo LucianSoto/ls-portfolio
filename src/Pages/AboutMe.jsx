@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
-import MyPic from '../assets/images/other-images/me-mia.jpg'
+import MyPic from '../assets/images/other-images/me-linkedin.jpg'
 
 function AboutMe() {
   return (
@@ -9,16 +9,19 @@ function AboutMe() {
       <div className='about-container'>
         <div className="about-paragraph">
         <h3 className='hi' > Hi I'm <span>Lucian!</span> 👋</h3>
-        A self-taught <span className="highlight">developer</span> - though it feels wrong to say "self-taught" when I've had plenty of guidance from friends and we all learn through community-driven online resources.
+        A <span className="highlight">Full Stack</span> Web Developer and recent graduate from Skillspire's Full Stack Bootcamp.
         <br/>
         <br />
         My coding journey began when a friend introduced me to FreeCodeCamp as a way to dip my toes into coding. At first I felt indifferent about it but I stuck with it, and now I can say that I truly enjoy it! 💜
         <br />
         <br />
-        Currently, I work with <span className='highlight'>JavaScript</span>, <span className="highlight">ReactJS</span> and <span className="hightlight">NodeJS</span>. I've done some freelance gigs and although my main focus is in front-end work, my goal is to become a full-stack developer. 
+        I really enjoyed Skillspire Bootcamp, it gave me the confidence to move forward and I found making full stack applications quite fascinating. Learning how all the pieces come together to create <span className='highlight'>APIs</span>, handle authorization and having it all work with the client side harmoniously. It gave a deep sense of satisfaction, almost as though when you finish a big puzzle. Not to mention I have always had an interest in puzzles, legos(as a kid), and working on automobiles as a young adult. 
         <br />
         <br />
-        In my free time, I enjoy playing badminton and compose music!
+        Currently, my work includes but is not limited to technoligies such as -<span className="highlight">ReactJS</span> and <span className='highlight'>TailwindCSS</span> for client side applicaitons. And <span className="hightlight">NodeJS</span>, <span className='highlight'>ExpressJS</span>, and <span className='highlight'>Firebase</span> for the backend. I've done several freelance gigs mostly involving front-end work now I am focusing on finding employment in a team where I can flourish.
+        <br />
+        <br />
+        In my free time, I also enjoy playing badminton and hiking!
         </div>
         <div className="me-div">
           <img src={MyPic} className='me' alt="Selfie" />
