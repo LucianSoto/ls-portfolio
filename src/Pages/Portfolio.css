@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .projects-cont {
+  .projects-cont { 
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
@@ -45,7 +45,7 @@
   width: 80%;
   height: 100%;
   grid-template-columns: repeat(2, 35rem);
-  grid-template-rows: 27rem;
+  grid-template-rows: repeat(2, 27rem);
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;

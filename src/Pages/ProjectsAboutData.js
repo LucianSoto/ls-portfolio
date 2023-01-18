@@ -133,4 +133,30 @@ export const ProjectsAboutData = [
       { name: 'JS 9.5%', uv: 9.5, pv: 100 },
     ]
   },
+  {  
+    id: 5,
+    title: 'Firebase Waitlist',
+    why: " I was inspired by the Yelp waitlist App after using it at a restaurant and thought I'd give it a shot! Also thougth I would give firebase a shot after using MongoDB",
+    about: ' An app to collect customer information to be added to a waitlist for a restaurant using React, Firebase, and Tailwind.',
+    likes: " I enjoyed ",
+    difficulties: " I was not aware that UseEffect now renders twice on load and I was stumped there for a minute but in the end it was good because it taught me how to deal with that update and I was able to catch the issue the next time it came up!",
+    time: " Took 20 hours. I got stuck because I was not aware I had to use user authentication to manipulate data in the database.",
+    link: "https://lucianaiolos.github.io/firebase-waitlist/",
+    repo: "https://github.com/LucianAiolos/firebase-waitlist",
+    tools: [
+      "ReactJS",
+      "Firebase",
+      "Tailwind CSS",
+    ],
+    images: [
+       require('../assets/images/project-images/waitlist-1.png'), 
+       require('../assets/images/project-images/waitlist-2.png'),
+       require('../assets/images/project-images/waitlist-3.png'),       
+    ],
+    graphData: [
+      { name: 'HTML 34%', uv: 34, pv: 100 },
+      { name: 'CSS 57%', uv: 57, pv: 100 },
+      { name: 'JS 9.5%', uv: 9.5, pv: 100 },
+    ]
+  },
 ]                       
