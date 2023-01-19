@@ -1,17 +1,17 @@
-import MamHanoi from '../assets/images/project-images/mamhanoi.png'
+import CryptoTile from '../assets/images/project-images/crypto-tile.png'
 import Pokedex from '../assets/images/project-images/pokedex.png'
 import Jungle from '../assets/images/project-images/jungle.png'
-import Waitlist from '../assets/images/project-images/waitlist-1.png'
+import Waitlist from '../assets/images/project-images/fb-waitlist-tile.png'
 import Feedback from '../assets/images/project-images/feedback-app.png'
-import HouseMarketplaceTwo from '../assets/images/project-images/house-marketplace-2.png'
+import HouseMarketplaceTwo from '../assets/images/project-images/houseMarket-tile.png'
 
  const ProjectsData = [
   
   {
     id: 0,
-    name: "Restaurant Website",
-    image: MamHanoi,
-    address: '',
+    name: "Crypto Watch",
+    image: CryptoTile,
+    address: 'https://lucianaiolos.github.io/Crypto-Market/',
     info: 'A responsived website, built and deployed for client.'
   },
   {
