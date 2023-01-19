@@ -3,17 +3,17 @@ export const ProjectsAboutData = [
   {
     id: 1,
     title: 'Crypto Market', 
-    why: ' I was looking to put my skills to use and so I inquired with a someone about thier friend who was opening a new restaurant in the bay and asked if they wanted a website built for their business ',
-    about: ' A mobile web app to that obtains crypto market information throught the CoinCap API',
-    likes: ' Well I as pretty stoked, it being my very first gig and all, I enjoyed the pressure of having to deliver. It suddenly felt different, when it actually became work and I had to put my skills to the test. The client left it all up to me so I definitely had some help with design suggestions but it was great seeing how even a small app goes from ideas to reality.',
-    difficulties: " The hardest part of the job was deployment. Figuring out how it all went together, what everything did (DNS, SSL), and troubleshooting/debugging when things weren't working how I inteded them to even though they worked on my computer.",
-    time: " It honeslty took about 15 hours to get to the finish line (Not including the wait time in between). Building it was not too difficult albeit I was still not that agile with CSS I admit. It was the fact that it was my first time having to deploy, but it was great because I learned a lot along the way about how the internet works and how it all comes together.",
-    link: "https://www.mamhanoi.com/",
-    repo: '',
+    why: ' This project came to mind after using the Crypto.com app so after some research and finding a suitable api that would allow to me access all the data I required I got to the drawing board.',
+    about: ` A mobile web app that obtains crypto market information throught the CoinCap API. Each coin has it's individual icon and graph data displayed. Users are also able to save their favorites(local-storage) for quick reference in future uses.`,
+    likes: ' I liked how I got the UI close to the Crypto.com version. I am finally seeing the fruits of my labor as it is getting much easier and faster to create more appealing UIs. But overall it was fun learning how to use CSS with ReCharts.',
+    difficulties: " A couple of things that stumped me were the lack of libraries where I could obtain the icons for each individual coin and working with ReCharts. For the coin icons I had to create a workaround where basically I took the name of each coin and used it to link to a website that has all the pngs for the coins. As for the charts - I had to extract each coin's individual price by date in a particular range and then getting the chart to look good was troublesome but after digging around the documentation and searching the web I got it do dipslay exactly how I inteded. ",
+    time: " Took around 48 hrs but that includes time put into deciding the color scheme, looking for a suitable API and dealing with a few bumps along the way. But aside from that, it was smooth sailing for the most part. ",
+    link: "https://lucianaiolos.github.io/Crypto-Market/",
+    repo: 'https://github.com/LucianAiolos/Crypto-Market',
     tools: [
-      'HTML',
-      'CSS',
-      'JavaScript',
+      'React',
+      'ReCharts',
+      'React-Router-Dom',
 
     ],
     images: [
