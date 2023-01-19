@@ -48,7 +48,7 @@ const Project = ({
             <b>About:</b>&nbsp;{about}
           </p>
           <p className="about-why">
-            <b>Why:</b>&nbsp;{why}
+            <b>Purpose:</b>&nbsp;{why}
           </p>
           <p className='likes'>
             <b>Likes:</b>&nbsp;{likes}  

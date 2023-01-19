@@ -1,7 +1,7 @@
 
 export const ProjectsAboutData = [
   {
-    id: 1,
+    id: 0,
     title: 'Crypto Market', 
     why: ' This project came to mind after using the Crypto.com app so after some research and finding a suitable api that would allow to me access all the data I required I got to the drawing board.',
     about: ` A mobile web app that obtains crypto market information throught the CoinCap API. Each coin has it's individual icon and graph data displayed. Users are also able to save their favorites(local-storage) for quick reference in future uses.`,
@@ -27,22 +27,52 @@ export const ProjectsAboutData = [
       { name: 'JS 4%', uv: 2, pv: 100 },
     ]
   },
+  {
+    id: 1,
+    title: 'Coding Community', 
+    why: '  This was my final project for Skillspire Fullstack Bootcamp we were to make MERN Stack apps using what we learned thorughout the course. ',
+    about: ` Full Stack application where I pushed myself to go above and beyond. Aside from the requirements given for the project I also decided I wanted to learn a bit of NodeJS authentication which was quite different from firebase, went in depth with Reduxthunk and used some of the things I leanred from external sources. First I set up the server, routes, models, controllers and middleware to handle CRUD operations for authentication, post creation/delete/read/updates and I used JWTs through middleware and saved the tokens to local storage. On the front end I displayed all the data and had routes for users to longin/sign-up as well as the ability to search users and display their profiles. Reduxthunk helped to asynchronously fetch and store data as state from my API. Also included the ability for users to unload images for their individual posts which was done by storing the images to firebase which returns the image urls which can then be used to display them on each post. `,
+    likes: ' I enjoyed this project along with the bootcamp because it gave me deadlines and goals, therefore pushing me and then showing that I am capable and got me excited for my future as a developer.',
+    difficulties: " I did a lot of research on authorization before deciding what to do, so deciding what to go with was the most difficult thing",
+    time: " Took around 30 hrs  ",
+    // link: "https://lucianaiolos.github.io/Crypto-Market/",
+    repo: 'https://github.com/LucianAiolos/coding-community-2',
+    tools: [
+      'MongoDB',
+      'ExpressJS',
+      'ReactJS',
+      'NodeJS',
+      'Firebase',
+      'Reduxthunk',
+      'JWT',
+    ],
+    images: [
+       require('../assets/images/project-images/Crypto-1.png'), 
+       require('../assets/images/project-images/Crypto-2.png'),
+       require('../assets/images/project-images/Crypto-3.png'),       
+    ],
+    graphData: [
+      { name: 'HTML 48%', uv: 48, pv: 100, },
+      { name: 'CSS 48%', uv: 48, pv: 100 },
+      { name: 'JS 4%', uv: 2, pv: 100 },
+    ]
+  },
   {  
     id: 2,
     title: 'House Marketplace',
-    why: " I have always had an interest in Real Estate and I've used apps such as Offer-Up or Craigslist and so I figured this would be a cool full-stack project to try! Also wanted to try a different type of database that was not SQL based.",
-    about: ' A full-stack application using React, and Firebase. After making a simple verison of this using VanillaJS NodeJS and PostgreSQL last year I thought it was time to give it a shot with react and a cloud based database.',
-    likes: " So far I'm enjoying making fullstack applications. Although I am a novince with backend related work, there's just something about getting everything to come together and work that gives such a sense of fulfillment. But for this project in particular I would say that it was interesting learning a database that does not use SQL which from what I'm seeing is easier to use because I didn't need to use Express or NodeJS to make any APIs or anything so it was very streamlined. Also learning how to render Route paths dynamically using React,  I just thought it was so cool, and honestly React itself - the more I learn the more I like it.",
-    difficulties: " The things that gave me the toughest time here was the fact that Firebase doesn't do too well with error handling so it made it difficult when I got stuck at one point when I was trying to retrieve data.",
-    time: " It's still a work in progress but so far I have put it about 30hrs. With plans to add the ability to see each individual post.  ",
+    why: " I have always had an interest in Real Estate and I've used apps such as Offer-Up and so I figured this would be a cool tutorial to ",
+    about: ' A full-stack application using React, and Firebase by Brad Traversy my one of my favorite teachers out there! After making a simple verison of this using VanillaJS NodeJS and PostgreSQL last year I thought it was time to give it a shot with react and a cloud based database. Here users can browse homes for sale or rent and create accounts from where they can post their own properties for sale along with images, also uses Google Authentication.',
+    likes: " So far I'm enjoying making fullstack applications. Although I am a novince with backend related work, there's just something about getting everything to come together and work that gives such a sense of fulfillment. But for this project in particular I would say that it was interesting learning a database that does not use SQL which from what I'm seeing is easier to use because I didn't need to use Express or NodeJS to make any APIs or anything so it was very streamlined. Also learning how to render Route paths dynamically using React, I just thought it was so cool, and honestly React itself - the more I learn the more I love it.  A couple other things I really liked were learning to use leaflet and google geolocation.",
+    difficulties: " The things that gave me the toughest time here was the fact that Firebase doesn't do too well with error handling so it made it difficult when I got stuck a couple times when I was trying to retrieve data but I learned about how users have to be authenticated first.",
+    time: " I took a fair amount of time (over 80hrs) with this tutorial since I really wanted to learn Firebase. And now I have started using the things I learned from it in other projects. ",
     link: "https://lucianaiolos.github.io/House-Marketplace/",
     repo: "https://github.com/LucianAiolos/House-Marketplace",
     tools: [
       'ReactJS',
       'Firebase',
-      'Toastify',
       'OAuth',
-      'React-Router-DOM'
+      'Leaflet',
+      'Toastify',
     ],
     images: [
        require('../assets/images/project-images/house-marketplace-1.png'), 
@@ -68,7 +98,8 @@ export const ProjectsAboutData = [
     tools: [
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
+      "Pokemong API"
     ],
     images: [
        require('../assets/images/project-images/pokedex.png'), 
