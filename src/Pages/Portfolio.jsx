@@ -71,7 +71,7 @@ function Portfolio() {
           sentProject={currentProject}
         />
       </div>
-      <p className='thanks'>Thanks for browsing, for any questions feel free to reach out <span><Link to="/email"> here</Link></span></p>
+      <p className='thanks'>Thanks for browsing, for any questions feel free to reach out 👉<span><Link to="/email"> here</Link></span></p>
     </div>
   )
 }
