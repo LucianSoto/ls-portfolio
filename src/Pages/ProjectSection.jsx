@@ -10,6 +10,7 @@ const ProjectsSection = ({displayProject, sentProject }) => {
 
   useEffect(() => {
   },[displayProject])
+  console.log(project.link)
 
   return (
     <>
@@ -35,10 +36,10 @@ const ProjectsSection = ({displayProject, sentProject }) => {
             tools={project.tools}
           />
           <div className="link-btns">
-            <a href={project.link} >Website</a>
+            { project.link ? <a href={project.link} >Website</a> : null }
             <br />
             <br />
-            {project.repo ? <a href={project.repo}>Repository</a> : null }
+            { project.repo ? <a href={project.repo}>Repository</a> : null }
           </div>
         </div> 
       }
