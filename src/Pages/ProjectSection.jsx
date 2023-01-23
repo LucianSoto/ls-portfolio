@@ -6,11 +6,9 @@ import Project from './Project'
 
 const ProjectsSection = ({displayProject, sentProject }) => {
   const project = ProjectsAboutData[sentProject]
-  // const [data, setData] = useState(ProjectsData)
 
   useEffect(() => {
   },[displayProject])
-  console.log(project.link)
 
   return (
     <>
