@@ -21,7 +21,7 @@ function AboutMe() {
         Currently, my work includes but is not limited to technoligies such as <span className="highlight">ReactJS</span> and <span className='highlight'>TailwindCSS</span> for client side applicaitons. And <span className="hightlight">NodeJS</span>, <span className='highlight'>ExpressJS</span>, and <span className='highlight'>Firebase</span> for the backend. Currently working on <span className='highlight'>TypeScript</span> and on my <span className='highlight'>AWS</span> certificate. I've done several freelance gigs mostly involving front-end work for private clients i.e. Seattle Badminton Club but now I am focusing on finding employment in a team where I can flourish.
         <br />
         <br />
-        In my free time, I also enjoy playing badminton composing music and hiking!
+        In my free time, I also play badminton, and go hiking!
         </div>
         <div className="me-div">
           <img src={MyPic} className='me' alt="Selfie" />
