@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.93628a56.css",
-    "main.js": "/static/js/main.1477bf81.js",
-    "static/media/mamhanoi.png": "/static/media/mamhanoi.b900e6842ef4707a12f6.png",
-    "static/media/jungle.png": "/static/media/jungle.03638ac1befbc7b385c5.png",
-    "static/media/mamhanoi2.png": "/static/media/mamhanoi2.a6c218d415d47bf8c68a.png",
-    "static/media/jungle-3.png": "/static/media/jungle-3.5f808ed8590e786cb0e5.png",
-    "static/media/mamhanoi3.png": "/static/media/mamhanoi3.73c7bdae741d3042cf83.png",
-    "static/media/jungle-2.png": "/static/media/jungle-2.66b88b8431093933032f.png",
+    "main.js": "/static/js/main.addd9dcf.js",
+    "static/media/houseMarket-tile.png": "/static/media/houseMarket-tile.c2422dacfba8518c5429.png",
     "static/media/pokedex.png": "/static/media/pokedex.b7557adbcc84a6be2bf5.png",
+    "static/media/Crypto-1.png": "/static/media/Crypto-1.3a9856ec6581ab9dd659.png",
     "static/media/pokedex-3.png": "/static/media/pokedex-3.3766b7dccfa1463f5a9f.png",
     "static/media/pokedex-2.png": "/static/media/pokedex-2.1b50879031dd656efd43.png",
+    "static/media/Crypto-2.png": "/static/media/Crypto-2.09137bae385912cb044a.png",
+    "static/media/Crypto-3.png": "/static/media/Crypto-3.789cce85d611e9e5447e.png",
     "static/media/stars.png": "/static/media/stars.90c266f7d69f1ffb6137.png",
     "static/media/me-arms-down.jpg": "/static/media/me-arms-down.ea3e1817698c4a88f4b7.jpg",
     "static/media/waitlist-2.png": "/static/media/waitlist-2.0f650a7e6f719d787fd3.png",
@@ -18,18 +16,28 @@
     "static/media/waitlist-1.png": "/static/media/waitlist-1.067d3ba513b584b0b966.png",
     "static/media/waitlist-3.png": "/static/media/waitlist-3.40a651e231af8268f3d4.png",
     "static/media/house-marketplace-2.png": "/static/media/house-marketplace-2.a423950345781b0f95d4.png",
+    "static/media/cc-4.png": "/static/media/cc-4.ceb16a6f9a95c65e8f05.png",
+    "static/media/cc-7.png": "/static/media/cc-7.c3b56c4c93370f133067.png",
+    "static/media/cc-5.png": "/static/media/cc-5.7a99d63fdbab27600f36.png",
+    "static/media/cc-6.png": "/static/media/cc-6.9fef651034c7decd23a5.png",
     "static/media/feedback-3.png": "/static/media/feedback-3.28af3a71393eccaffdb2.png",
+    "static/media/cc-tile.png": "/static/media/cc-tile.ec327dc0ca864c59af38.png",
+    "static/media/cc-2.png": "/static/media/cc-2.5b932e2d689ad9de711e.png",
     "static/media/feedback-app.png": "/static/media/feedback-app.ff8f1c1e874c92404467.png",
     "static/media/house-marketplace-3.png": "/static/media/house-marketplace-3.c5a6a179fbf5d72e610f.png",
+    "static/media/cc-1.png": "/static/media/cc-1.4aa199b1775da08eec07.png",
+    "static/media/crypto-tile.png": "/static/media/crypto-tile.5e32ac7a5bd60b0c75d2.png",
+    "static/media/cc-3.png": "/static/media/cc-3.d6d49a47e938e527677b.png",
     "static/media/feedback.png": "/static/media/feedback.d01c6bd21b80df61de64.png",
     "static/media/house-marketplace-1.png": "/static/media/house-marketplace-1.127a4c4b64bee4e30569.png",
+    "static/media/fb-waitlist-tile.png": "/static/media/fb-waitlist-tile.4b32aa55554485f8cb97.png",
     "static/media/feedback-2.png": "/static/media/feedback-2.2de436b3a75dbbc0f9cd.png",
     "index.html": "/index.html",
     "main.93628a56.css.map": "/static/css/main.93628a56.css.map",
-    "main.1477bf81.js.map": "/static/js/main.1477bf81.js.map"
+    "main.addd9dcf.js.map": "/static/js/main.addd9dcf.js.map"
   },
   "entrypoints": [
     "static/css/main.93628a56.css",
-    "static/js/main.1477bf81.js"
+    "static/js/main.addd9dcf.js"
   ]
 }
