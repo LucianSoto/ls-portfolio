@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.93628a56.css",
+    "main.css": "/static/css/main.5ce9a6e3.css",
     "main.js": "/static/js/main.addd9dcf.js",
     "static/media/houseMarket-tile.png": "/static/media/houseMarket-tile.c2422dacfba8518c5429.png",
     "static/media/pokedex.png": "/static/media/pokedex.b7557adbcc84a6be2bf5.png",
@@ -33,11 +33,11 @@
     "static/media/fb-waitlist-tile.png": "/static/media/fb-waitlist-tile.4b32aa55554485f8cb97.png",
     "static/media/feedback-2.png": "/static/media/feedback-2.2de436b3a75dbbc0f9cd.png",
     "index.html": "/index.html",
-    "main.93628a56.css.map": "/static/css/main.93628a56.css.map",
+    "main.5ce9a6e3.css.map": "/static/css/main.5ce9a6e3.css.map",
     "main.addd9dcf.js.map": "/static/js/main.addd9dcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.93628a56.css",
+    "static/css/main.5ce9a6e3.css",
     "static/js/main.addd9dcf.js"
   ]
 }
