@@ -244,5 +244,9 @@ h4:hover {
 @media screen and (max-width: 600px) {
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
     /* margin-top: 15px; */
+
+  }
+  .project-image-side {
+    display: none;
   }
 }
