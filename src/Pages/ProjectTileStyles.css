@@ -228,7 +228,7 @@ h4:hover {
   }
   
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 12px !important;
     width: 90%;
   }
@@ -236,13 +236,13 @@ h4:hover {
  }
   .project-image-side{
     border-radius: 50%;
-    width: 101%;
-    height: 101%;
+    /* width: 101%; */
+    /* height: 101%; */
   }
 }
 
 @media screen and (max-width: 600px) {
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
-    margin-top: 15px;
+    /* margin-top: 15px; */
   }
 }
