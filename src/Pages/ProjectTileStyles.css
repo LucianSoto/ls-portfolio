@@ -1,11 +1,9 @@
 .project-tile-cont {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
-  /* border: 3px solid rgba(64, 253, 216, 0.657); */
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
   align-items: center;
   text-decoration: none;
   background-position: center;
@@ -19,7 +17,6 @@
 
 .project-tile-cont-smoll {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
-  /* border: 3px solid rgba(64, 253, 216, 0.657); */
   height: 90%;
   width: 80%;
   display: flex;
@@ -90,7 +87,7 @@
 
 .project-overlay-side {
   opacity: 0;
-  z-index: 10;
+  z-index: 0;
   transition-duration: 500ms;
   position: absolute;
   height: 105%;
@@ -166,6 +163,8 @@ h4:hover {
 @media screen and (max-width: 980px) {
   .project-tile-cont-smoll {
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border: 3px solid goldenrod;
     scroll-snap-align: center;
     box-shadow:  2px 2px 6px rgba(190, 170, 79, 0.337);
@@ -213,7 +212,11 @@ h4:hover {
   .project-overlay-side {
     opacity: .9;
     top: -3px;
-    /* background: transparent; */
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0)
   }
 
   .project-tile-cont:hover .project-image{
