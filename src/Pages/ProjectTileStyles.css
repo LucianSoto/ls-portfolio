@@ -18,6 +18,7 @@
 .project-tile-cont-smoll {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
   height: 90%;
+  /* border: 3px solid rgba(64, 253, 216, 0.657); */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -90,9 +91,9 @@
   z-index: 0;
   transition-duration: 500ms;
   position: absolute;
-  height: 105%;
-  width: 105%;
-  top: -5px;
+  height: 100%;
+  width: 100%;
+  /* top: -5px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,10 +101,12 @@
   background: linear-gradient(rgba(83, 48, 139, 0.968), rgba(24, 64, 70, 0.934));
   color: white;
   /* background-color: rgba(0, 0, 0, 0.733); */
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  border-radius: 50%;
   font-weight: 900;
   font-size: 15px;
   cursor: pointer;
+
 }
 
 #tile-name {
@@ -166,8 +169,9 @@ h4:hover {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border: 3px solid goldenrod;
+    /* border: 3px solid goldenrod; */
     scroll-snap-align: center;
-    box-shadow:  2px 2px 6px rgba(190, 170, 79, 0.337);
+    /* box-shadow:  2px 2px 6px rgba(190, 170, 79, 0.337); */
 
   /* border: 2px solid transparent; 
   background: linear-gradient(45deg, goldenrod, red) border-box; 
@@ -229,7 +233,7 @@ h4:hover {
   }
   
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 12px !important;
     width: 90%;
   }
@@ -237,13 +241,17 @@ h4:hover {
  }
   .project-image-side{
     border-radius: 50%;
-    width: 101%;
-    height: 101%;
+    /* width: 101%; */
+    /* height: 101%; */
   }
 }
 
 @media screen and (max-width: 600px) {
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
-    margin-top: 15px;
+    /* margin-top: 15px; */
+
+  }
+  .project-image-side {
+    display: none;
   }
 }
