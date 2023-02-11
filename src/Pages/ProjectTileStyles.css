@@ -224,7 +224,7 @@ h4:hover {
 
  @media screen and (max-width: 808px) {
   .project-tile-cont-smoll {
-     
+     box-shadow: none;
   }
   
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
