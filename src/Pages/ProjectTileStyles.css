@@ -20,8 +20,7 @@
 .project-tile-cont-smoll {
   background: linear-gradient(rgba(53, 1, 138, 0.568), rgba(0, 47, 53, 0.534));
   /* border: 3px solid rgba(64, 253, 216, 0.657); */
-  height: 90%;
-  width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -166,6 +165,9 @@ h4:hover {
 @media screen and (max-width: 980px) {
   .project-tile-cont-smoll {
     border-radius: 50%;
+    /* border: 3px solid goldenrod; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border: 3px solid goldenrod;
     scroll-snap-align: center;
     box-shadow:  2px 2px 6px rgba(190, 170, 79, 0.337);
@@ -222,7 +224,7 @@ h4:hover {
 
  @media screen and (max-width: 808px) {
   .project-tile-cont-smoll {
-     
+     box-shadow: none;
   }
   
   .projects-grid-small  .project-tile-cont-smoll  #tile-name {
