@@ -170,7 +170,9 @@ h4:hover {
     -moz-border-radius: 50%;
     border: 3px solid goldenrod;
     scroll-snap-align: center;
-    box-shadow:  2px 2px 6px rgba(190, 170, 79, 0.337);
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    /* box-shadow:  2px 2px 6px rgba(190, 170, 79, 0.337); */
 
   /* border: 2px solid transparent; 
   background: linear-gradient(45deg, goldenrod, red) border-box; 
