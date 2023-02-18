@@ -96,9 +96,9 @@
     height: 100%;
     grid-template-columns: repeat(6, 180px) ;
     grid-gap: 20px;
-    padding: 10px 0;
+    padding: 8px 0;
     overflow-x: auto;
-    overflow-y: visible;
+    overflow-y: hidden;
     scroll-snap-type: x proximity;
   }
   .projects-grid-small::-webkit-scrollbar {
