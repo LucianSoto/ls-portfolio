@@ -56,7 +56,9 @@
     grid-template-columns: repeat(2, 20rem);
     grid-template-rows: 1fr 1fr 1fr;
   }
-  
+  .portfolio-title {
+    margin-bottom: 2em;
+  }
 }
 
 @media screen and (max-width: 800px) {
