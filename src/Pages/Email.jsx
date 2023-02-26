@@ -35,8 +35,8 @@ function Email() {
 
   return (
     <div className='form-cont'>
-      <h3 className="email-title">Any Questions?</h3>
-      <p>Feel free to contact me directly!</p>
+      <h3 className="email-title">Contact</h3>
+      
       <form action="" onSubmit={sendEmail}>
         <div className="input-cont">
           <label>Name</label>
