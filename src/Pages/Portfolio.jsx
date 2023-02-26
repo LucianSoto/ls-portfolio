@@ -59,7 +59,6 @@ function Portfolio() {
   return (
     <div className='portfolio-cont'>
       <h3 className='portfolio-title'>    Featured Projects</h3>
-      <p className="under-construction">Currently Under Construction 🐱‍💻</p>
       <div className='projects-cont'>
         <div className={ grid ? 
           "projects-grid-lg" : "projects-grid-small"}

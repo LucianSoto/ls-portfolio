@@ -1,15 +1,14 @@
-import NavBar from "./Components/NavBar";
+import { useState, useEffect } from 'react'
+import { Routes, Route } from "react-router-dom"
 import './App.css'
+import NavBar from "./Components/NavBar";
 import Welcome from "./Components/Welcome";
 import Portfolio from "./Pages/Portfolio";
-import LoaderComponent from "./Components/LoaderComponent";
-import { useState } from 'react'
+import Email from "./Pages/Email";
 import AboutMe from "./Pages/AboutMe";
 import Footer from "./Components/Footer";
-import Email from "./Pages/Email";
-import { Routes, Route } from "react-router-dom"
+import LoaderComponent from "./Components/LoaderComponent";
 import Blurb from "./Components/Blurb";
-import { useEffect } from "react";
 
 function App() {
   const [loader, setLoader] = useState(true)
