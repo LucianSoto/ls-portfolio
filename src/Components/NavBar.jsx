@@ -61,16 +61,6 @@ function NavBar() {
           size={30}
         /> 
       </div>
-       
-        {/* : null */}
-      {/* } */}
-      {/* {dd ?
-        <AiOutlineClose className='dd-btn' onClick={() =>setDD(!dd)}/>
-        // make funciton on click hides the menu and loads clicked page
-        // also using useParams if page=portfolio then reload grid
-        :
-        <FaBars className='dd-btn' onClick={() =>setDD(!dd)}/>
-      } */}
     </nav>
   )
 }
