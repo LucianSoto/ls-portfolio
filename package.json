@@ -1,6 +1,6 @@
 {
   "name": "lb-portfolio",
-  "homepage": "https://main.d2uvhbwu3henpm.amplifyapp.com/",
+  "homepage": "https://lucianaiolos.github.io/lb-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,7 +34,6 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build ",
-    "deploy-aws": "aws s3 sync build/ s3://lucian-brooks-aws-hosting",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

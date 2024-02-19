@@ -10,7 +10,7 @@ function LoaderComponent() {
       <div className="loader-text">Loading...</div> */}
       <div className="loader-letters">
         <div className="letter" id='l'>L</div>
-        <div className="letter" id="b">B</div>
+        <div className="letter" id="b">S</div>
       </div>
     </div>
   )
