@@ -35,7 +35,8 @@
 
 .letter {
   font-size: 100px;
-  font-weight: 900;
+  font-weight: 600;
+  font-family: 'Anta', 'Montserrat', sans-serif;
 }
 
 #l {

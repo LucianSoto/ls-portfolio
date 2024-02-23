@@ -14,6 +14,8 @@ nav {
   text-transform: uppercase;
   /* background-color: rgba(0, 0, 0, 0.896); */
   z-index: 1000;
+  font-family: 'montserrat';
+  font-weight: 1000;
 }
 
 .menu-div {
@@ -22,17 +24,6 @@ nav {
   /* align-items: center; */
   max-width: 650px;
 }
-
-/* .dd-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 00px;
-  animation: growDown 330ms ease-in-out ;
-  transform-origin: right ;
-  transition: animation 0s 500ms, opacity 300ms linear;
-} */
-
 
 .menu-item {
   color: white;
@@ -51,6 +42,7 @@ nav {
   font-size: 25px;
   font-weight: 800;
   color: rgba(255, 217, 0, 0.728);
+  font-family:  'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 500px) {
