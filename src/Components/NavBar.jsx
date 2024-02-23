@@ -39,7 +39,7 @@ function NavBar() {
     <nav className='nav-bar'
         style={nav? {backgroundColor: 'black'}: null }
     >
-      <Link className="menu-item lb-logo" to="/" >LB</Link>
+      <Link className="menu-item lb-logo" to="/" >LS</Link>
       <div 
         id='menu-div' 
         className={winWidth > 800 ? 'menu-div' : 

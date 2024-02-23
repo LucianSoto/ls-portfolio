@@ -37,7 +37,7 @@ useEffect(() => {
       <Routes>
         <Route 
           path='/' 
-          element={ !loader && <><Welcome /><Blurb/></> } 
+          element={ !loader && <Welcome /> } 
         />
         <Route path="/email" element={<Email/>}
         />
