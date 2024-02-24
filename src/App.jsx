@@ -36,7 +36,8 @@ useEffect(() => {
       <div className="twinkling" id='twinkling'></div>
       <Routes>
         <Route 
-          path='/' 
+          
+          path='/ls-portfolio' 
           element={ !loader && <Welcome /> } 
         />
         <Route path="/email" element={<Email/>}
