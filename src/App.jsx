@@ -37,7 +37,7 @@ useEffect(() => {
       <Routes>
         <Route 
           
-          path='/ls-portfolio' 
+          path='/' 
           element={ !loader && <Welcome /> } 
         />
         <Route path="/email" element={<Email/>}
