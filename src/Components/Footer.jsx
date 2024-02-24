@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <div className='footer'>
-      <p className="footer-design">Designed and Developed by Lucian Brooks</p>
+      <p className="footer-design">Designed and Developed by Lucian Soto</p>
       <div className="contacts-cont">
         <a className="contact"  
            href='https://github.com/LucianAiolos'
